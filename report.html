@@ -128,7 +128,7 @@
 <section id="computer-use" class="snapshot-block"><h3>Computer use</h3><p>Five native desktop tasks: Spotify, Pages, TextEdit, Keynote, Numbers. Jev is the desktop adapter; Jev Ultrafast was not run in this lane.</p><div class="table-wrap"><table class="snapshot-table"><thead><tr><th>Approach</th><th>Passes</th><th>Rate</th><th>Time</th><th>Cost</th></tr></thead><tbody><tr><td>Jev</td><td>1 / 5†</td><td>20%</td><td>10.85 s</td><td>$0.0282 / success</td></tr><tr><td>Jev + AX driver</td><td>1 / 4‡</td><td>25%</td><td>not measured</td><td>$0 local</td></tr><tr><td>Hybrid</td><td>5 / 5</td><td>100%</td><td>36.1 s</td><td>$0.0126 / success</td></tr><tr><td>Luna</td><td>5 / 5</td><td>100%</td><td>37.8 s</td><td>$0.0091 / success</td></tr></tbody></table></div></section>
 </div>
 
-<section id="videos" class="video-library"><div class="video-library-intro"><div><div class="section-kicker">Video library</div><h2>Recorded runs</h2></div><p>One table, the same lane filters, and explicit outcome labels for every retained clip.</p></div><div class="run-control-strip"><div class="run-filters"><div class="run-filter-row"><span class="run-filter-label">Lane</span><div class="segmented run-segmented"><button type="button" class="segment run-segment active">Overall</button><button type="button" class="segment run-segment">Simple</button><button type="button" class="segment run-segment">Real-world</button><button type="button" class="segment run-segment">Computer use</button></div></div><div class="run-filter-row"><span class="run-filter-label">Approach</span><div class="segmented run-approach-segmented"><button type="button" class="segment run-approach-segment active">All</button><button type="button" class="segment run-approach-segment">Luna</button><button type="button" class="segment run-approach-segment">Hybrid</button><button type="button" class="segment run-approach-segment">Jev</button></div></div></div><span class="control-note">Overall + All shows the 12 retained clips.</span></div><div class="table-wrap run-table-wrap"><table class="run-table"><thead><tr><th>Approach</th><th>Lane</th><th>Run</th><th>Outcome</th><th>Length</th><th>Video</th></tr></thead><tbody><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
+<section id="videos" class="video-library"><div class="video-library-intro"><div><div class="section-kicker">Video library</div><h2>Recorded runs</h2></div><p>One table, the same lane filters, and explicit outcome labels for every retained clip.</p></div><div class="run-control-strip"><div class="run-filters"><div class="run-filter-row"><span class="run-filter-label">Lane</span><div class="segmented run-segmented"><button type="button" class="segment run-segment active">Overall</button><button type="button" class="segment run-segment">Simple</button><button type="button" class="segment run-segment">Real-world</button><button type="button" class="segment run-segment">Computer use</button></div></div><div class="run-filter-row"><span class="run-filter-label">Approach</span><div class="segmented run-approach-segmented"><button type="button" class="segment run-approach-segment active">All</button><button type="button" class="segment run-approach-segment">Luna</button><button type="button" class="segment run-approach-segment">Hybrid</button><button type="button" class="segment run-approach-segment">Jev</button></div></div></div><span class="control-note">Overall + All shows all 28 retained clips.</span></div><div class="table-wrap run-table-wrap"><table class="run-table"><thead><tr><th>Approach</th><th>Lane</th><th>Run</th><th>Outcome</th><th>Length</th><th>Video</th></tr></thead><tbody><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
 <td><strong>Jev</strong></td>
 <td><span class="run-lane jev">Real-world</span></td>
 <td class="run-title"><strong>Google Flights fare search</strong><span>Not a success: the run reaches the flight-search boundary, but does not complete the requested itinerary selection.</span></td>
@@ -212,13 +212,125 @@
 <td><span class="run-outcome good">Success</span></td>
 <td>3m 40s</td>
 <td><a href="videos/native-desktop/hybrid/numbers-hybrid-composite-stopwatch.mp4">Open video</a></td>
-</tr><tr class="run-empty" hidden><td colspan="6">No retained video matches these filters.</td></tr></tbody></table></div></section>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Real-world</span></td>
+<td class="run-title"><strong>Spotify auth boundary</strong><span>Not a success: Spotify shows its free-account gate after the track attempt; reliable playback is not verified.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>24s</td>
+<td><a href="videos/expanded-evidence/browser/jev-spotify-auth-boundary.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Real-world</span></td>
+<td class="run-title"><strong>TodoMVC incomplete</strong><span>Not a success: a task is visible, but the complete add/complete/filter postcondition is not shown.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>3s</td>
+<td><a href="videos/expanded-evidence/browser/jev-todomvc-incomplete.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Real-world</span></td>
+<td class="run-title"><strong>SauceDemo checkout boundary</strong><span>Not a success: the login form reports a missing password; the run stops before cart and checkout.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>3s</td>
+<td><a href="videos/expanded-evidence/browser/jev-saucedemo-checkout-boundary.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Real-world</span></td>
+<td class="run-title"><strong>Notion edit boundary</strong><span>Not a success: the authenticated page remains at a loading state; no verified text edit is visible.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>5s</td>
+<td><a href="videos/expanded-evidence/browser/jev-notion-no-verified-edit.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Real-world</span></td>
+<td class="run-title"><strong>Resy search boundary</strong><span>Not a success: the restaurant page is visible, but no named restaurant, time, or reservation-details state is reached.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>9s</td>
+<td><a href="videos/expanded-evidence/browser/jev-resy-search-boundary.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="luna">
+<td><strong>Luna</strong></td>
+<td><span class="run-lane luna">Real-world</span></td>
+<td class="run-title"><strong>Resy restaurant search</strong><span>Not a success: the restaurant-search page is visible, but this clip does not show the requested named-slot boundary.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>49s</td>
+<td><a href="videos/expanded-evidence/browser/luna-resy-search.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="luna">
+<td><strong>Luna</strong></td>
+<td><span class="run-lane luna">Real-world</span></td>
+<td class="run-title"><strong>TodoMVC project tracker</strong><span>Success: the requested tasks and the completed/active views are visible at the end.</span></td>
+<td><span class="run-outcome good">Success</span></td>
+<td>2m 29s</td>
+<td><a href="videos/expanded-evidence/browser/luna-todomvc-success.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="hybrid">
+<td><strong>Hybrid</strong></td>
+<td><span class="run-lane hybrid">Real-world</span></td>
+<td class="run-title"><strong>OpenTable recovery boundary</strong><span>Not a success: Luna reaches restaurant results, but the clip ends before the named reservation-details state.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>2m 42s</td>
+<td><a href="videos/expanded-evidence/browser/hybrid-opentable-recovery.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="real-world" data-run-approach="hybrid">
+<td><strong>Hybrid</strong></td>
+<td><span class="run-lane hybrid">Real-world</span></td>
+<td class="run-title"><strong>TodoMVC recovery</strong><span>Success: Luna completes the add/complete/filter workflow after the Jev-first attempt.</span></td>
+<td><span class="run-outcome good">Success</span></td>
+<td>2m 32s</td>
+<td><a href="videos/expanded-evidence/browser/hybrid-todomvc-recovery.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Computer use</span></td>
+<td class="run-title"><strong>Pages false completion</strong><span>Not a success: Pages remains blank at the end even though the agent reported completion; this is the visible stopping point.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>59s</td>
+<td><a href="videos/expanded-evidence/computer-use/jev-pages-false-completion.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Computer use</span></td>
+<td class="run-title"><strong>Spotify not verified</strong><span>Not a success: a Radiohead page is visible, but the strict native playback postcondition is not verified.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>59s</td>
+<td><a href="videos/expanded-evidence/computer-use/jev-spotify-not-verified.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="jev">
+<td><strong>Jev</strong></td>
+<td><span class="run-lane jev">Computer use</span></td>
+<td class="run-title"><strong>Numbers empty sheet</strong><span>Not a success: Numbers ends with an empty table; no requested values are visible.</span></td>
+<td><span class="run-outcome bad">Not a success</span></td>
+<td>2m 00s</td>
+<td><a href="videos/expanded-evidence/computer-use/jev-numbers-empty-sheet.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="luna">
+<td><strong>Luna</strong></td>
+<td><span class="run-lane luna">Computer use</span></td>
+<td class="run-title"><strong>Pages edit</strong><span>Success: the requested text is visible in the native Pages document at the end.</span></td>
+<td><span class="run-outcome good">Success</span></td>
+<td>1m 00s</td>
+<td><a href="videos/expanded-evidence/computer-use/luna-pages-success.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="luna">
+<td><strong>Luna</strong></td>
+<td><span class="run-lane luna">Computer use</span></td>
+<td class="run-title"><strong>Spotify search and play</strong><span>Success: the requested Radiohead track page and active playback state are visible.</span></td>
+<td><span class="run-outcome good">Success</span></td>
+<td>1m 00s</td>
+<td><a href="videos/expanded-evidence/computer-use/luna-spotify-success.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="hybrid">
+<td><strong>Hybrid</strong></td>
+<td><span class="run-lane hybrid">Computer use</span></td>
+<td class="run-title"><strong>Pages recovery</strong><span>Success: Luna repairs the Jev miss and the requested text is visible in Pages.</span></td>
+<td><span class="run-outcome good">Success</span></td>
+<td>1m 00s</td>
+<td><a href="videos/expanded-evidence/computer-use/hybrid-pages-recovery.mp4">Open video</a></td>
+</tr><tr class="run-row" data-run-lane="computer-use" data-run-approach="hybrid">
+<td><strong>Hybrid</strong></td>
+<td><span class="run-lane hybrid">Computer use</span></td>
+<td class="run-title"><strong>Spotify recovery</strong><span>Success: Luna repairs the Jev-first attempt and the requested Radiohead playback state is visible.</span></td>
+<td><span class="run-outcome good">Success</span></td>
+<td>59s</td>
+<td><a href="videos/expanded-evidence/computer-use/hybrid-spotify-recovery.mp4">Open video</a></td>
+</tr><tr class="run-empty" hidden><td colspan="6">No retained video matches these filters.</td></tr></tbody></table></div><p class="small"><a href="expanded-evidence-notes.md">Open the per-run evidence notes</a> for the exact stopping point and failure reason behind each expanded clip.</p></section>
 
 <div id="key" class="callout"><strong>Plain-English key:</strong> <b>Jev Browser</b> and <b>Jev Ultrafast</b> are the two fast browser versions. <b>Luna</b> is the visual computer-use model. <b>Hybrid</b> tries Jev first, checks whether the task really changed, and uses Luna only when Jev missed. “Cost” is a Jev API estimate or Luna token proxy; local browser/tool fees are $0. A dash means that exact lane was not measured for that variant. † Computer-use Jev uses the desktop adapter, shown simply as Jev. ‡ Jev Ultrafast’s real-world number is the separate nine-flow public search lane, not the ten-task browser lane.</div>
 <div class="callout warning"><strong>Safe boundaries:</strong> no purchase, reservation, email, calendar event, share, publish, or payment was submitted. The videos show the agent reaching the meaningful stopping point, including failures and authentication gates.</div>
 
 <h2 id="details">Detailed results</h2>
-<div class="callout"><strong>How to read the video table:</strong> Only twelve inspected clips are shown: two for each approach/lane pair. Every row is binary - <b>Success</b> or <b>Not a success</b>. Success means the stated end state is visible in the clip; it does not mean an irreversible purchase, reservation, send, share, or payment was submitted.</div>
+<div class="callout"><strong>How to read the video table:</strong> The table shows 28 inspected clips, including an expanded evidence set beyond the original two-per-approach/lane sample. Every row is binary - <b>Success</b> or <b>Not a success</b>. Success means the stated end state is visible in the clip; it does not mean an irreversible purchase, reservation, send, share, or payment was submitted.</div>
 
 <h2>Simple tests - detailed data</h2>
 <div class="table-wrap"><table class=""><thead><tr><th>Approach</th><th>Successes / total</th><th>Success rate</th><th>Avg time / task</th><th>Cost</th><th>Cost / success</th><th>Cost basis</th></tr></thead><tbody><tr><td>Jev Browser</td><td>18 / 42</td><td>42.9%</td><td>1.77 s</td><td>$0.00542</td><td>$0.000301</td><td>Jev API estimate</td></tr><tr><td>Jev Ultrafast</td><td>18 / 42</td><td>42.9%</td><td>0.77 s</td><td>$0.00816</td><td>$0.000453</td><td>Jev API estimate</td></tr><tr><td>Luna</td><td>39 / 42</td><td>92.9%</td><td>32.49 s</td><td>$0.41890</td><td>$0.010741</td><td>token proxy, not invoice</td></tr><tr><td>Hybrid</td><td>39 / 42</td><td>92.9%</td><td>25.19 s</td><td>$0.26997</td><td>$0.006922</td><td>fallback only after Jev failure</td></tr></tbody></table></div>

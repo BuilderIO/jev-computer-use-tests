@@ -66,6 +66,7 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 ## Repository contents
 
 - [`report.html`](report.html) - standalone interactive report.
+- [`EXPANDED_EVIDENCE.md`](EXPANDED_EVIDENCE.md) - per-run notes for the expanded 28-clip evidence library, including every stopping point and failure reason.
 - [`RESULTS.md`](RESULTS.md) - concise methodology and result tables.
 - [`data/results.json`](data/results.json) - machine-readable headline results.
 - [`data/evidence.json`](data/evidence.json) - safe provenance, task lanes, cost model, and harness notes.
