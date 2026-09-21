@@ -9,7 +9,7 @@
       {"system": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "cost_per_success_usd": 0.0090},
       {"system": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "cost_per_success_usd": 0.0128},
       {"system": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "cost_per_success_usd": 0.0012, "note": "Native desktop computer use was not measured."},
-      {"system": "Jev Browser", "successes": 19, "total": 57, "rate": 0.333, "avg_seconds": 4.12, "cost_per_success_usd": 0.0018}
+      {"system": "Jev Browser", "successes": 19, "total": 57, "rate": 0.333, "avg_seconds": 4.26, "cost_per_success_usd": 0.00208}
     ]
   },
   "lanes": {
@@ -36,7 +36,7 @@
       "results": [
         {"system": "Luna", "successes": 5, "rate": 1.0, "avg_seconds": 37.82, "cost_per_success_usd": 0.00913, "cost_type": "proxy"},
         {"system": "Hybrid", "successes": 5, "rate": 1.0, "avg_seconds": 36.11, "cost_per_success_usd": 0.012644, "cost_type": "proxy"},
-        {"system": "Jev", "successes": 1, "rate": 0.2, "avg_seconds": 9.3, "cost_per_success_usd": 0.0227},
+        {"system": "Jev", "successes": 1, "rate": 0.2, "avg_seconds": 10.85, "cost_per_success_usd": 0.0282, "note": "Synchronized Keynote and Numbers reruns reproduced blank final states after the old unmatched captures were excluded."},
         {"system": "Jev Ultrafast", "successes": null, "rate": null, "avg_seconds": null, "cost_per_success_usd": null, "note": "Not measured."}
       ]
     }
