@@ -1,0 +1,11 @@
+{
+  "driver": "mac-cua",
+  "not_a_model_score": true,
+  "interface": "macOS Accessibility tree plus screenshot",
+  "results": [
+    {"task": "Pages draft", "success": true, "evidence": "Final screenshot visibly contains both requested lines."},
+    {"task": "Keynote two-slide edit", "success": false, "evidence": "Slide controls were exposed, but rich placeholder targeting drifted and text duplicated."},
+    {"task": "Numbers six-cell edit", "success": false, "evidence": "Cells were exposed, but stale indices shifted values and the final table was wrong."},
+    {"task": "Spotify Radiohead to Karma Police", "success": false, "evidence": "Sparse accessibility tree; no verified artist/track playback state."}
+  ]
+}

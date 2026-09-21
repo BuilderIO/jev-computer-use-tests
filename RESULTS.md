@@ -42,6 +42,19 @@ The original Jev Keynote and Numbers recordings were excluded after review becau
 
 The interesting native result is that Hybrid was not cheaper than Luna. Jev helped only on the easy TextEdit case, while the Keynote and Numbers tasks still needed the Luna path. The extra Jev attempt and verification cost remained in the Hybrid total.
 
+### Separate Accessibility-driver control
+
+We also tested `mac-cua`, an open MCP driver that exposes a macOS Accessibility tree plus screenshots. This is a driver-only control, not another Jev model run, so it is excluded from the leaderboard.
+
+| Driver | Task | Result | Finding |
+| --- | --- | --- | --- |
+| mac-cua | Pages draft | PASS | Background typing produced both requested lines, verified in the final screenshot. |
+| mac-cua | Keynote two-slide edit | FAIL | Slide creation worked, but rich placeholder targeting drifted and the final text was duplicated. |
+| mac-cua | Numbers six-cell edit | FAIL | Cells were exposed, but stale indices shifted values and the final table was wrong. |
+| mac-cua | Spotify Radiohead → Karma Police | FAIL | Spotify exposed a sparse tree; the artist/track state was not reached or verified. |
+
+This control is useful evidence for the native boundary: Accessibility metadata makes controls discoverable, but it does not guarantee stable editing semantics in canvases, spreadsheets, or Electron apps.
+
 ## Browser tools and JavaScript
 
 A deterministic browser-tools probe passed 14/14, and a Jev-plus-JS replay passed 42/42. These are capability checks, not model-controlled Luna scores. The headline Luna browser scores did not have model-controlled JS evaluation enabled, so no points were added from those probes.

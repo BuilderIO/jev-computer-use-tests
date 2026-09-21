@@ -41,6 +41,17 @@
       ]
     }
   },
+  "mac_cua_driver_control": {
+    "not_a_model_score": true,
+    "driver": "mac-cua",
+    "interface": "macOS Accessibility tree plus screenshot; AX clicks and background typing",
+    "results": [
+      {"task": "Pages draft", "success": true, "evidence": "Final screenshot visibly contains both requested lines."},
+      {"task": "Keynote two-slide edit", "success": false, "evidence": "Slide controls were exposed, but rich placeholder targeting drifted and text duplicated."},
+      {"task": "Numbers six-cell edit", "success": false, "evidence": "Cells were exposed, but stale indices shifted values and the final table was wrong."},
+      {"task": "Spotify Radiohead to Karma Police", "success": false, "evidence": "Sparse accessibility tree; no verified artist/track playback state."}
+    ]
+  },
   "browser_tools_probe": {
     "deterministic_browser_tool_proxy": {"successes": 14, "total": 14, "rate": 1.0, "not_a_model_score": true},
     "jev_plus_deterministic_replay": {"successes": 42, "total": 42, "rate": 1.0, "not_a_model_score": true},

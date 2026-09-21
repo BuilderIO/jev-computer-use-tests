@@ -53,6 +53,8 @@ Jev Browser reached partial pages and controls but passed 0/10 strict postcondit
 
 Five desktop tasks used Spotify, Pages, TextEdit, Keynote, and Numbers. TextEdit was the one direct Jev pass. Luna completed all five. Hybrid used Jev when the result was verifiable and Luna when it was not.
 
+We also ran a separate `mac-cua` Accessibility-driver control on the four native failures. It passed Pages and failed strict Keynote, Numbers, and Spotify end states. Because it has no planning model, those results are capability evidence, not a fourth leaderboard system.
+
 ## Browser harness and file upload
 
 The Luna browser runs used Codex's visible in-app browser through CUA. The surface provided screenshots, clicks, and typing, but not a native file-picker or file-input binding. It was not a Playwright/CDP run with `setInputFiles`, and model-controlled JavaScript evaluation was not enabled for the headline Luna scores.
@@ -70,6 +72,7 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 - [`tasks/`](tasks/) - public/demo task definitions that do not require private accounts.
 - [`videos/README.md`](videos/README.md) - recording inventory and why raw clips are not committed here.
 - [`cua-driver-control/`](cua-driver-control/) - a separate TryCua Cua Driver-only native Accessibility control, with result JSON, recording, and verified screenshot; excluded from the Jev/Luna leaderboard.
+- [`data/mac-cua-controls.json`](data/mac-cua-controls.json) - separate AX-tree driver control results; excluded from the Jev/Luna leaderboard.
 - [`report/`](report/) - report screenshots.
 
 ## Reproduce the safe snapshot
