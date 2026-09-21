@@ -31,7 +31,7 @@ The complete interactive report is [`report.html`](report.html). It has light/da
 | Hybrid | $0.0090 | 29.68 s/task | ~$0.0126 proxy | ~36.1 s/task |
 | Luna | $0.0128 | 44.57 s/task | ~$0.0091 proxy | ~37.8 s/task |
 | Jev Ultrafast | $0.0012 | 1.07 s/task | not measured | not measured |
-| Jev Browser | $0.0018 | 4.12 s/task | ~$0.0227 | 9.3 s/task |
+| Jev Browser | $0.00208 | 4.26 s/task | ~$0.0282 | 10.85 s/task |
 
 The native Hybrid cost is higher than Luna because every native task pays for the Jev-first attempt plus the verification/fallback path. Jev directly passed only the clean TextEdit task; Keynote and Numbers still required Luna recovery. The Hybrid path was slightly faster in this small lane, but it did not reduce the expensive work enough to beat pure Luna on cost.
 
