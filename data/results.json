@@ -1,0 +1,53 @@
+{
+  "benchmark": "Jev browser and computer-use benchmark",
+  "run_date": "2026-09-21",
+  "systems": ["Jev Browser", "Jev Ultrafast", "Hybrid", "Luna"],
+  "cost_note": "Costs are estimates or usage proxies from this run, not invoices. Local browser and desktop tooling is treated as $0.",
+  "overall": {
+    "definition": "All measured tasks for each system, ranked by success rate then estimated cost per successful task.",
+    "results": [
+      {"system": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "cost_per_success_usd": 0.0090},
+      {"system": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "cost_per_success_usd": 0.0128},
+      {"system": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "cost_per_success_usd": 0.0012, "note": "Native desktop computer use was not measured."},
+      {"system": "Jev Browser", "successes": 19, "total": 57, "rate": 0.333, "avg_seconds": 4.12, "cost_per_success_usd": 0.0018}
+    ]
+  },
+  "lanes": {
+    "simple_browser": {
+      "total": 42,
+      "results": [
+        {"system": "Hybrid", "successes": 39, "rate": 0.929, "avg_seconds": 25.19, "cost_per_success_usd": 0.006922},
+        {"system": "Luna", "successes": 39, "rate": 0.929, "avg_seconds": 32.49, "cost_per_success_usd": 0.010741},
+        {"system": "Jev Browser", "successes": 18, "rate": 0.429, "avg_seconds": 1.77, "cost_per_success_usd": 0.000301},
+        {"system": "Jev Ultrafast", "successes": 18, "rate": 0.429, "avg_seconds": 0.77, "cost_per_success_usd": 0.000453}
+      ]
+    },
+    "longer_browser": {
+      "total": 10,
+      "results": [
+        {"system": "Hybrid", "successes": 7, "rate": 0.7, "avg_seconds": 45.3, "total_cost_usd": 0.1241, "cost_per_success_usd": 0.0177, "note": "Staged recorded fallback comparison."},
+        {"system": "Luna", "successes": 7, "rate": 0.7, "avg_seconds": 98.7, "total_cost_usd": 0.1876, "cost_per_success_usd": 0.0268},
+        {"system": "Jev Browser", "successes": 0, "rate": 0.0, "avg_seconds": 11.4, "total_cost_usd": 0.00583, "cost_per_success_usd": null},
+        {"system": "Jev Ultrafast", "successes": 1, "total": 9, "rate": 0.111, "avg_seconds": 2.45, "total_cost_usd": 0.014248, "cost_per_success_usd": 0.014248, "note": "Separate public nine-flow lane."}
+      ]
+    },
+    "native_desktop": {
+      "total": 5,
+      "results": [
+        {"system": "Luna", "successes": 5, "rate": 1.0, "avg_seconds": 37.82, "cost_per_success_usd": 0.00913, "cost_type": "proxy"},
+        {"system": "Hybrid", "successes": 5, "rate": 1.0, "avg_seconds": 36.11, "cost_per_success_usd": 0.012644, "cost_type": "proxy"},
+        {"system": "Jev", "successes": 1, "rate": 0.2, "avg_seconds": 9.3, "cost_per_success_usd": 0.0227},
+        {"system": "Jev Ultrafast", "successes": null, "rate": null, "avg_seconds": null, "cost_per_success_usd": null, "note": "Not measured."}
+      ]
+    }
+  },
+  "browser_tools_probe": {
+    "deterministic_browser_tool_proxy": {"successes": 14, "total": 14, "rate": 1.0, "not_a_model_score": true},
+    "jev_plus_deterministic_replay": {"successes": 42, "total": 42, "rate": 1.0, "not_a_model_score": true},
+    "note": "JavaScript/page inspection was kept as a separate capability check. It was not folded into Luna's model-controlled headline score."
+  },
+  "recording_policy": {
+    "public_repo": "Results and safe methodology only; private authenticated raw videos and traces are omitted.",
+    "local_report": "Only clips with sampled frames showing the intended browser or desktop app are linked. Wrong-window blank captures were removed."
+  }
+}

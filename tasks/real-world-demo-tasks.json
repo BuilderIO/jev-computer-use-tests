@@ -1,0 +1,51 @@
+[
+  {
+    "id": "saucedemo-cart",
+    "category": "real-world-demo-commerce",
+    "start_url": "https://www.saucedemo.com/",
+    "goal": "Log in with username standard_user and password secret_sauce. Sort the products by price high to low. Add the most expensive product to the cart. Open the cart and stop once the cart visibly shows the item. Do not checkout or place an order.",
+    "success_hint": "The cart visibly contains Sauce Labs Fleece Jacket."
+  },
+  {
+    "id": "internet-login",
+    "category": "real-world-demo-app-qa",
+    "start_url": "https://the-internet.herokuapp.com/login",
+    "goal": "Log in with username tomsmith and password SuperSecretPassword!, and stop once the page visibly says You logged into a secure area. Do not do anything after the successful login.",
+    "success_hint": "The secure area page visibly says You logged into a secure area."
+  },
+  {
+    "id": "todomvc-complete",
+    "category": "real-world-demo-productivity",
+    "start_url": "https://todomvc.com/examples/react/dist/",
+    "goal": "Add a todo named Buy coffee, mark it complete, filter to Completed, and stop with Buy coffee visible as completed.",
+    "success_hint": "The Completed filter is active and Buy coffee is visibly completed."
+  },
+  {
+    "id": "opentable-discovery",
+    "category": "real-world-booking-discovery",
+    "start_url": "https://www.opentable.com/",
+    "goal": "Find a public restaurant search or reservation result for San Francisco. If a location or search form is visible, search for San Francisco and stop when restaurant results or a reservation time list is visible. Do not sign in, enter payment, or make a reservation.",
+    "success_hint": "A restaurant result or reservation-time list is visibly on screen; this deliberately stops before booking confirmation."
+  },
+  {
+    "id": "google-flights-search",
+    "category": "real-world-travel-search",
+    "start_url": "https://www.google.com/travel/flights?hl=en&curr=USD",
+    "goal": "Search Google Flights for a round trip for one adult from SFO San Francisco to JFK New York, departing September 26, 2026 and returning October 3, 2026. Type the airports and dates, submit the search, and stop when the flight-results list is visibly loaded. Do not select a flight, enter traveler information, or purchase anything.",
+    "success_hint": "The visible results show a San Francisco/SFO to New York/JFK flight search for the requested dates; this deliberately stops before flight selection or purchase."
+  },
+  {
+    "id": "opentable-booking-boundary",
+    "category": "real-world-restaurant-search",
+    "start_url": "https://www.opentable.com/",
+    "goal": "Use OpenTable to search San Francisco for a table for 2 people on September 26, 2026 at 7:00 PM. Type San Francisco into the location field, set the party size, date, and time if controls are available, submit the search, and stop when restaurant details or reservation times are visible. Do not sign in, enter payment, or confirm a reservation.",
+    "success_hint": "A visible restaurant result or reservation-time list is on screen for the requested San Francisco search; this deliberately stops before booking confirmation."
+  },
+  {
+    "id": "resy-booking-boundary",
+    "category": "real-world-restaurant-search",
+    "start_url": "https://resy.com/cities/san-francisco-ca",
+    "goal": "Use Resy to find a San Francisco restaurant for 2 people on September 26, 2026 at 7:00 PM. Use visible search or reservation controls if available, type or select the party size, date, and time, and stop when restaurant cards or reservation times are visible. Do not sign in, enter payment, or confirm a reservation.",
+    "success_hint": "A visible San Francisco restaurant result or reservation-time list is on screen; this deliberately stops before booking confirmation."
+  }
+]

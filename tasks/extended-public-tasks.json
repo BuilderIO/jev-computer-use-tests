@@ -1,0 +1,26 @@
+[
+  {
+    "id": "spotify-search-and-play",
+    "category": "extended-real-world-public",
+    "start_url": "https://open.spotify.com/",
+    "goal": "Use Spotify as a normal user: search for Radiohead, open the artist page, open the OK Computer album, open Karma Police, and start playback if the public player permits it. Stop only when the selected track is visibly identified. Do not follow, like, save, add to a playlist, or change account settings.",
+    "success_all": ["radiohead", "karma police"],
+    "success_any": ["play", "pause", "now playing", "track"]
+  },
+  {
+    "id": "saucedemo-checkout-boundary",
+    "category": "extended-real-world-public",
+    "start_url": "https://www.saucedemo.com/",
+    "goal": "Complete a safe demo-commerce checkout up to the final order boundary. Log in with standard_user and secret_sauce, sort products by price high to low, add Sauce Labs Fleece Jacket, open the cart, start checkout, fill first name Ada, last name Lovelace, postal code 94025, and stop on the final order review before clicking Finish. Do not place the demo order.",
+    "success_all": ["fleece jacket"],
+    "success_any": ["checkout: overview", "finish", "payment information", "order summary"]
+  },
+  {
+    "id": "todomvc-multi-step-edit",
+    "category": "extended-real-world-public",
+    "start_url": "https://todomvc.com/examples/react/dist/",
+    "goal": "Create three todos named Buy coffee, Review Jev benchmark, and Send dinner options. Mark Buy coffee and Review Jev benchmark complete, filter to Completed, and stop with the completed list visible. Do not delete any todo.",
+    "success_all": ["buy coffee", "review jev benchmark"],
+    "success_any": ["completed"]
+  }
+]

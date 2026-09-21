@@ -1,0 +1,6 @@
+.DS_Store
+.env
+.env.*
+videos/*.mp4
+videos/*.mov
+data/*.local.json

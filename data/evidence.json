@@ -1,0 +1,38 @@
+{
+  "run_date": "2026-09-21",
+  "headline": {
+    "ranking": "success rate first, then cost per successful task",
+    "approaches": ["Hybrid", "Luna", "Jev Browser", "Jev Ultrafast"],
+    "overall": [
+      {"approach": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "cost_per_success_usd": 0.009},
+      {"approach": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "cost_per_success_usd": 0.0128},
+      {"approach": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "cost_per_success_usd": 0.0012, "note": "native desktop not measured"},
+      {"approach": "Jev Browser", "successes": 19, "total": 57, "rate": 0.333, "avg_seconds": 4.12, "cost_per_success_usd": 0.0018}
+    ]
+  },
+  "lanes": {
+    "simple_browser": {"total": 42, "results": {"Hybrid": [39, 0.929, 25.19, 0.006922], "Luna": [39, 0.929, 32.49, 0.010741], "Jev Browser": [18, 0.429, 1.77, 0.000301], "Jev Ultrafast": [18, 0.429, 0.77, 0.000453]}},
+    "real_world_browser": {"total": 10, "results": {"Hybrid": [7, 0.7, 45.3, 0.0177], "Luna": [7, 0.7, 98.7, 0.0268], "Jev Browser": [0, 0.0, 11.4, null]}, "notes": ["Hybrid is a staged recorded fallback comparison.", "Jev Ultrafast's 1/9 result is a separate public discovery lane."]},
+    "computer_use": {"total": 5, "results": {"Luna": [5, 1.0, 37.82, 0.00913], "Hybrid": [5, 1.0, 36.11, 0.012644], "Jev": [1, 0.2, 9.3, 0.0227]}}
+  },
+  "browser_tools": {
+    "deterministic_js_probe": {"successes": 14, "total": 14, "model_controlled": false},
+    "jev_plus_js_replay": {"successes": 42, "total": 42, "model_controlled": false},
+    "headline_luna_js_enabled": false,
+    "file_upload_result": "The CUA surface had no native file-picker or file-input binding, so the upload fixture could not be attached."
+  },
+  "harness": {
+    "luna_browser": "Codex visible in-app browser through CUA: screenshots, clicks, and typing; no Playwright/CDP file-upload adapter in the measured run.",
+    "jev_browser": "Structured browser-action wrapper.",
+    "jev_ultrafast": "Separate CDP browser runner with a text helper.",
+    "jev_native": "Local arc-cua runner with macOS accessibility/OCR backend and TypeSafe Jev policy.",
+    "hybrid": "Jev first, postcondition verification, then Luna fallback when needed."
+  },
+  "cost_model": {
+    "jev": "Recorded API input-token estimate.",
+    "luna": "Action/token proxy, not a product invoice.",
+    "local_tools": 0,
+    "native_hybrid_note": "Hybrid paid for Jev attempts and verification even when Luna still had to complete Keynote and Numbers."
+  },
+  "safety": "No purchase, reservation, payment, email send, calendar save, share, publish, or other external side effect was submitted."
+}

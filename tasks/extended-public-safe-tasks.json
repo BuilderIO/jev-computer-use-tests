@@ -1,0 +1,39 @@
+[
+  {
+    "id": "google-flights-fare-boundary",
+    "category": "real-world-travel",
+    "start_url": "https://www.google.com/travel/flights?hl=en&curr=USD",
+    "goal": "Search Google Flights for one adult round trip from SFO San Francisco to JFK New York, departing September 26 2026 and returning October 3 2026. Select one visible flight and one economy fare so the traveler or checkout boundary is visible. Stop before entering traveler or payment data.",
+    "success_all": ["San Francisco", "New York"],
+    "success_any": ["traveler", "passenger", "checkout", "fare"]
+  },
+  {
+    "id": "saucedemo-checkout-boundary",
+    "category": "real-world-demo-commerce",
+    "start_url": "https://www.saucedemo.com/",
+    "goal": "Log in with username standard_user and password secret_sauce. Sort products by price high to low. Add Sauce Labs Fleece Jacket to the cart. Open the cart, start checkout, enter first name Steve, last name Builder, postal code 94105, and continue to the order review page. Stop immediately before Finish. Do not place the order.",
+    "success_all": ["Sauce Labs Fleece Jacket", "Checkout: Overview"],
+    "success_any": ["Finish", "Total"]
+  },
+  {
+    "id": "todomvc-project-tracker",
+    "category": "real-world-productivity",
+    "start_url": "https://todomvc.com/examples/react/dist/",
+    "goal": "Create three todos: Draft benchmark report, Record Luna clip, and Review Jev failure. Edit the first to Draft final benchmark report. Mark the first two complete. Filter to Active and stop with Review Jev failure as the only visible active todo.",
+    "success_all": ["Draft final benchmark report", "Record Luna clip", "Review Jev failure", "Active"]
+  },
+  {
+    "id": "spotify-public-track-boundary",
+    "category": "real-world-media",
+    "start_url": "https://open.spotify.com/",
+    "goal": "Search Spotify for Radiohead, open the artist result, open the OK Computer album, open Karma Police, and start playback if the control is visible. Stop only when the track page or visible player identifies Karma Police. Do not follow, like, save, or change account settings.",
+    "success_all": ["Radiohead", "Karma Police"]
+  },
+  {
+    "id": "wikipedia-research-chain",
+    "category": "real-world-research",
+    "start_url": "https://en.wikipedia.org/wiki/Coffee",
+    "goal": "Research coffee through a multi-page workflow. Find the Espresso link on the Coffee article, open it, scroll to the preparation or history section, and stop with that section visibly readable. Do not edit or submit anything.",
+    "success_all": ["Espresso"]
+  }
+]
