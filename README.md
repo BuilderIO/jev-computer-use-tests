@@ -69,6 +69,7 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 - [`data/evidence.json`](data/evidence.json) - safe provenance, task lanes, cost model, and harness notes.
 - [`tasks/`](tasks/) - public/demo task definitions that do not require private accounts.
 - [`videos/README.md`](videos/README.md) - recording inventory and why raw clips are not committed here.
+- [`cua-driver-control/`](cua-driver-control/) - a separate TryCua Cua Driver-only native Accessibility control, with result JSON, recording, and verified screenshot; excluded from the Jev/Luna leaderboard.
 - [`report/`](report/) - report screenshots.
 
 ## Reproduce the safe snapshot

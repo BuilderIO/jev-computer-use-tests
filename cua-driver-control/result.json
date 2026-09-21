@@ -1,0 +1,127 @@
+{
+  "control": "TryCua Cua Driver native macOS control",
+  "repository": "https://github.com/trycua/cua",
+  "driver_version": "0.28.2",
+  "model": null,
+  "scope": "driver-only control; excluded from Jev/Luna leaderboard",
+  "task": "Set exact multi-line text in TextEdit through AX, then verify AX value",
+  "passed": true,
+  "status": {
+    "elapsed_ms": 537,
+    "predicates": [
+      {
+        "index": 0,
+        "observed_json": "{\"element_index\":1,\"frame\":{\"h\":382.0,\"w\":586.0,\"x\":359.0,\"y\":357.0},\"label\":\"Cua Driver control proof\\n\\nThis text was set through a fresh macOS Accessibility snapshot.\\nThe value was then read back independently.\",\"role\":\"AXTextArea\",\"value\":\"Cua Driver control proof\\n\\nThis text was set through a fresh macOS Accessibility snapshot.\\nThe value was then read back independently.\"}",
+        "status": "satisfied",
+        "unknown_reason": null
+      }
+    ],
+    "samples": 2,
+    "stable": true,
+    "status": "satisfied"
+  },
+  "elapsed_seconds": 4.322,
+  "estimated_model_cost_usd": 0,
+  "video": "/Users/steve/.codex/worktrees/f9f2256b-6475-4bd5-becd-837d0ee7422e/framework/.tmp/jev-benchmark/artifacts/cua-driver-control/textedit/recording.mp4",
+  "screenshot": "/Users/steve/.codex/worktrees/f9f2256b-6475-4bd5-becd-837d0ee7422e/framework/.tmp/jev-benchmark/artifacts/cua-driver-control/textedit/after-verified.png",
+  "events": [
+    {
+      "tool": "start_recording",
+      "result": {
+        "enabled": true,
+        "last_error": null,
+        "last_video_path": null,
+        "next_turn": 1,
+        "output_dir": "/Users/steve/.codex/worktrees/f9f2256b-6475-4bd5-becd-837d0ee7422e/framework/.tmp/jev-benchmark/artifacts/cua-driver-control/textedit",
+        "owner": "mcp-4ac28376-5a7e-4ea2-8942-bde8ffb4c8aa",
+        "recording": true,
+        "video_active": true
+      }
+    },
+    {
+      "tool": "bring_to_front",
+      "result": {
+        "activated": true,
+        "code": "bring_to_front_exact_window_verified",
+        "exact_window_effect": {
+          "focused": true,
+          "frontmost_ordinary": true,
+          "target_visible_ordinary": true,
+          "verified": true
+        },
+        "observed": {
+          "focused_window_id": 6247,
+          "front_process_matches_target": true,
+          "frontmost_ordinary_window_id": 6247,
+          "frontmost_pid": 51504,
+          "workspace_frontmost_pid": 51504
+        },
+        "path": "skylight_process_exact_cocoa_ax",
+        "pid": 51504,
+        "process_activated": true,
+        "request_accepted": true,
+        "status": "activated",
+        "window_id": 6247
+      }
+    },
+    {
+      "tool": "get_window_state",
+      "window_id": 6247,
+      "snapshot_id": "s00000001",
+      "target_role": "AXTextArea",
+      "target_label": "Cua Driver control proof\n\nThis text was set through a fresh macOS Accessibility snapshot.\nThe value was then read back independently."
+    },
+    {
+      "tool": "set_value",
+      "result": {
+        "delivery": {
+          "mode": "background"
+        },
+        "effect": "confirmed",
+        "evidence": [
+          {
+            "kind": "value_readback"
+          }
+        ],
+        "route": "accessibility"
+      }
+    },
+    {
+      "tool": "get_window_state",
+      "readback_matches": true,
+      "screenshot": "/Users/steve/.codex/worktrees/f9f2256b-6475-4bd5-becd-837d0ee7422e/framework/.tmp/jev-benchmark/artifacts/cua-driver-control/textedit/after-verified.png",
+      "snapshot_id": "s00000002"
+    },
+    {
+      "tool": "verify_state",
+      "result": {
+        "elapsed_ms": 537,
+        "predicates": [
+          {
+            "index": 0,
+            "observed_json": "{\"element_index\":1,\"frame\":{\"h\":382.0,\"w\":586.0,\"x\":359.0,\"y\":357.0},\"label\":\"Cua Driver control proof\\n\\nThis text was set through a fresh macOS Accessibility snapshot.\\nThe value was then read back independently.\",\"role\":\"AXTextArea\",\"value\":\"Cua Driver control proof\\n\\nThis text was set through a fresh macOS Accessibility snapshot.\\nThe value was then read back independently.\"}",
+            "status": "satisfied",
+            "unknown_reason": null
+          }
+        ],
+        "samples": 2,
+        "stable": true,
+        "status": "satisfied"
+      }
+    },
+    {
+      "tool": "stop_recording",
+      "result": {
+        "enabled": false,
+        "last_error": null,
+        "last_video_path": "/Users/steve/.codex/worktrees/f9f2256b-6475-4bd5-becd-837d0ee7422e/framework/.tmp/jev-benchmark/artifacts/cua-driver-control/textedit/recording.mp4",
+        "next_turn": 1,
+        "output_dir": null,
+        "owner": null,
+        "recording": false,
+        "video_active": false
+      }
+    }
+  ],
+  "note": "This isolates the native driver from the Jev decision policy. It is not a model benchmark point."
+}
