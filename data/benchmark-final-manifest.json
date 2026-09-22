@@ -283,7 +283,7 @@
         "FAIL - false completion",
         "8.88 s",
         "$0.00320",
-        "<a href=\"videos/native-desktop/jev/pages-window-scoped-native-jev-stop.mp4\">Jev window-scoped clip</a>"
+        "<a href=\"videos/native-desktop/jev/pages-window-scoped-native-jev-stop.mp4\" target=\"_blank\" rel=\"noopener\">Jev window-scoped clip</a>"
       ],
       "luna": [
         "PASS",
@@ -306,7 +306,7 @@
         "PASS",
         "5.01 s",
         "$0.00080",
-        "<a href=\"videos/native-desktop/jev/textedit-window-scoped-native-jev-stop.mp4\">Jev window-scoped clip</a>"
+        "<a href=\"videos/native-desktop/jev/textedit-window-scoped-native-jev-stop.mp4\" target=\"_blank\" rel=\"noopener\">Jev window-scoped clip</a>"
       ],
       "luna": [
         "PASS",
@@ -335,13 +335,13 @@
         "PASS - requested fields verified",
         "56.88 s",
         "$0.01352 proxy",
-        "<a href=\"videos/native-desktop/luna/keynote-two-slide-luna-stopwatch.mp4\">keynote-two-slide-luna-stopwatch.mp4</a>"
+        "<a href=\"videos/native-desktop/luna/keynote-two-slide-luna-stopwatch.mp4\" target=\"_blank\" rel=\"noopener\">keynote-two-slide-luna-stopwatch.mp4</a>"
       ],
       "hybrid": [
         "PASS - Luna recovery",
         "~83.0 s",
         "~$0.03069 proxy",
-        "<a href=\"videos/native-desktop/hybrid/keynote-hybrid-composite-stopwatch.mp4\">keynote-hybrid-composite-stopwatch.mp4</a>"
+        "<a href=\"videos/native-desktop/hybrid/keynote-hybrid-composite-stopwatch.mp4\" target=\"_blank\" rel=\"noopener\">keynote-hybrid-composite-stopwatch.mp4</a>"
       ],
       "note": "Synchronized rerun: Jev reported SUBTASK_COMPLETE, but the final presentation still showed blank placeholders; Luna then repaired and verified both slides. The hybrid clip is a labeled composite of the two continuous phases, with a 204-second stopwatch capture."
     },
@@ -358,13 +358,13 @@
         "PASS - six cells verified",
         "55.45 s",
         "$0.00676 proxy",
-        "<a href=\"videos/native-desktop/luna/numbers-two-row-luna-stopwatch.mp4\">numbers-two-row-luna-stopwatch.mp4</a>"
+        "<a href=\"videos/native-desktop/luna/numbers-two-row-luna-stopwatch.mp4\" target=\"_blank\" rel=\"noopener\">numbers-two-row-luna-stopwatch.mp4</a>"
       ],
       "hybrid": [
         "PASS - Luna recovery",
         "~22.2 s",
         "~$0.00507 proxy",
-        "<a href=\"videos/native-desktop/hybrid/numbers-hybrid-composite-stopwatch.mp4\">numbers-hybrid-composite-stopwatch.mp4</a>"
+        "<a href=\"videos/native-desktop/hybrid/numbers-hybrid-composite-stopwatch.mp4\" target=\"_blank\" rel=\"noopener\">numbers-hybrid-composite-stopwatch.mp4</a>"
       ],
       "note": "Synchronized rerun: Jev created the workbook but never entered the requested cells; Luna then entered A1:B3 in the same fresh workbook and verified all six values. The hybrid clip is a labeled composite of the two continuous phases, with a 220-second stopwatch capture."
     }
@@ -443,7 +443,7 @@
     [
       "United flight",
       "BLOCKED",
-      "PARTIAL - itinerary selected; traveler/payment boundary (not booked)<br><a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Luna boundary clip</a>",
+      "PARTIAL - itinerary selected; traveler/payment boundary (not booked)<br><a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\" target=\"_blank\" rel=\"noopener\">Luna boundary clip</a>",
       "PARTIAL - Jev short failure -> Luna traveler boundary<br>Hybrid composite",
       "No verified clip retained; the original capture was excluded after frame review."
     ],
@@ -452,14 +452,14 @@
       "DRIFTED - 0 / 1",
       "Partial search/results only",
       "Partial search/results only",
-      "<a href=\"videos/extended-e2e/jev-browser-stopwatch-v2/google-flights-fare-boundary.mp4\">google-flights-fare-boundary.mp4</a>"
+      "<a href=\"videos/extended-e2e/jev-browser-stopwatch-v2/google-flights-fare-boundary.mp4\" target=\"_blank\" rel=\"noopener\">google-flights-fare-boundary.mp4</a>"
     ],
     [
       "Thai restaurant reservation",
       "FAIL - OpenTable CDN/EdgeSuite block before app UI",
       "PARTIAL - Hed Very Thai, Mon Sep 21 8:00 PM, party 2; reached \u201cYou\u2019re almost done\u201d / Complete reservation, then released the temporary hold. Luna turn: 64.4 s, ~$0.0169 CUA-call proxy<br>Luna Chrome boundary clip",
       "PARTIAL - Jev hit the same transport boundary; Luna reached reservation details<br>Hybrid composite",
-      "<a href=\"videos/expanded-evidence/browser/jev-resy-search-boundary.mp4\">Jev Resy details clip</a>"
+      "<a href=\"videos/expanded-evidence/browser/jev-resy-search-boundary.mp4\" target=\"_blank\" rel=\"noopener\">Jev Resy details clip</a>"
     ],
     [
       "Spotify public track",
@@ -517,7 +517,7 @@
       "PASS",
       "145.0 s",
       "SFO \u2192 EWR, Oct 10\u201317, one adult; traveler/payment boundary visible; purchase untouched.",
-      "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Verified Luna clip</a>"
+      "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\" target=\"_blank\" rel=\"noopener\">Verified Luna clip</a>"
     ],
     [
       "Thai restaurant",
@@ -590,7 +590,7 @@
       "PASS",
       "PASS - recorded Luna recovery",
       "No verified clip retained; the original capture was excluded after frame review.",
-      "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Luna</a>",
+      "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\" target=\"_blank\" rel=\"noopener\">Luna</a>",
       "Recorded recovery"
     ],
     [
