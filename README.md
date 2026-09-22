@@ -1,5 +1,7 @@
 # Jev computer-use tests
 
+Test prompts and verification: see [TESTS.md](TESTS.md).
+
 This repository is a reproducibility snapshot for a benchmark comparing four approaches to browser and desktop computer use:
 
 - **Jev Browser** - fast structured browser decisions.

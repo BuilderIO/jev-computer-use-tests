@@ -1,5 +1,7 @@
 # Results
 
+Test prompts and verification: see [TESTS.md](TESTS.md).
+
 Run date: 2026-09-21
 
 The benchmark sorts by success rate first, then estimated cost per successful task. Timing is separate so a fast failure does not look like a good result.
