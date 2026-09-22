@@ -434,6 +434,18 @@
 <li><b>Agent-Native apps</b> - a separate authenticated lane covering Mail, Calendar, Design, Slides, and Content, scored at safe checkpoints and kept out of Overall.</li>
 </ul>
 
+<h2>What actually ran</h2>
+<p>This is the toolchain behind each report label. The public snapshot includes the prompts, results, traces, and driver-control evidence; private/local runners are identified rather than presented as public source code.</p>
+<div class="table-wrap"><table class=""><thead><tr><th>Report label</th><th>Runner / approach</th><th>What it could use</th><th>Source or evidence</th></tr></thead><tbody>
+<tr><td><b>Jev Browser</b></td><td>Structured browser-action wrapper.</td><td>Normalized page content, links, fields, and typed browser actions; no native desktop run.</td><td><a href="https://github.com/BuilderIO/jev-computer-use-tests/blob/main/TESTS.md#1-simple-browser-fixtures-42">browser tests</a> · local runner not bundled</td></tr>
+<tr><td><b>Jev Ultrafast</b></td><td>Separate CDP browser runner plus a small text helper.</td><td>The same browser-control family, optimized for speed; its public nine-flow discovery lane is a separate denominator.</td><td><a href="https://github.com/BuilderIO/jev-computer-use-tests/blob/main/TESTS.md#2-real-world-browser-10-tasks">test definitions</a> · local runner not bundled</td></tr>
+<tr><td><b>Jev computer use</b></td><td>Local <code>arc-cua</code> runner with a TypeSafe Jev policy.</td><td>macOS Accessibility elements plus Vision OCR candidates, then typed native actions such as click, set value, and type.</td><td><a href="https://github.com/BuilderIO/jev-computer-use-tests/blob/main/TESTS.md#3-computer-use-5-native-desktop-tasks">native test description</a> · runner is local/private</td></tr>
+<tr><td><b>Accessibility control</b></td><td><code>mac-cua</code> / TryCua Cua Driver, model-free.</td><td>macOS Accessibility tree, screenshots, AX clicks, and background typing. This is a driver control, not a Jev leaderboard system.</td><td><a href="cua-driver-control/">bundled control evidence</a> · <a href="https://github.com/trycua/cua">TryCua Cua</a></td></tr>
+<tr><td><b>Luna</b></td><td>Model-controlled normal Chrome through the desktop bridge.</td><td>Visible browser/desktop surface, screenshots, clicks, typing, and the native macOS file chooser; no page JavaScript execution.</td><td><a href="https://github.com/BuilderIO/jev-computer-use-tests/blob/main/README.md#browser-harness-and-file-upload">harness notes</a> · product bridge is not open-sourced here</td></tr>
+<tr><td><b>Hybrid</b></td><td>Jev first, verified postcondition, then Luna fallback on a verified Jev miss.</td><td>Combines the relevant Jev runner with Luna recovery; it is a policy, not a separate OSS model.</td><td><a href="https://github.com/BuilderIO/jev-computer-use-tests/blob/main/RESULTS.md#browser-tools-and-javascript">method notes</a> · <a href="data/hybrid-upload-attempts.json">recovery trace</a></td></tr>
+</tbody></table></div>
+<p class="small">Related open-source implementations and claims: <a href="https://github.com/shhivv/third-hand">Third Hand</a>, <a href="https://github.com/milind-soni/tiptour-macos">TipTour macOS</a>, and <a href="https://github.com/trycua/cua">Cua</a>. The exact Jev Browser, Jev Ultrafast, and <code>arc-cua</code> runner sources are not included in this public snapshot.</p>
+
 <h2>How the approaches work</h2>
 <ul>
 <li><b>Browser path:</b> the wrapper exposes normalized page content plus structured controls and text to the Jev decision model. The retained trace is Markdown-like content rather than a byte-for-byte raw HTML dump; no page JavaScript execution was used.</li>
