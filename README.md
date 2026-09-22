@@ -61,14 +61,14 @@ The Luna browser runs used Codex's visible in-app browser through CUA. The surfa
 
 That is why the three repeated 42-task Luna misses were file-upload fixtures. It is a limitation of that harness configuration, not evidence that Luna or Codex can never upload files. A different browser adapter can expose a native chooser or bind directly to a file input.
 
-A separate model-controlled Luna turn in the normal Chrome bridge then ran the upload fixture once. Luna opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and reached the visible success state: **1/1 targeted upload**. The bridge still exposed no usable DOM/JavaScript handle, so this is an upload-only targeted result, not a JS-enabled rerun and not an edit to the 42-task headline score. The action trace is [`data/luna-upload-trace.json`](data/luna-upload-trace.json).
+Three model-controlled Luna turns in the normal Chrome bridge ran the upload fixture. All three opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and reached the visible success state: **3/3 targeted uploads**. Combined with the original 39/39 non-upload passes, this supports an explicitly inferred connected-Chrome result of 42/42; the headline table retains 39/42 for the original in-app-browser setup. The bridge still exposed no usable DOM/JavaScript handle, so this is not a JS-enabled rerun. Traces are [`data/luna-upload-trace.json`](data/luna-upload-trace.json), [`data/luna-upload-attempt-2.json`](data/luna-upload-attempt-2.json), and [`data/luna-upload-attempt-3.json`](data/luna-upload-attempt-3.json).
 
 The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The old Jev native screen captures were excluded after review because they showed the wrong window or were not paired with their traces; the 1/5 Jev native result is trace-verified, but this snapshot does not present those captures as video evidence.
 
 ## Repository contents
 
 - [`report.html`](report.html) - standalone interactive report.
-- [`EXPANDED_EVIDENCE.md`](EXPANDED_EVIDENCE.md) - per-run notes for the expanded 28-clip evidence library, including every stopping point and failure reason.
+- [`EXPANDED_EVIDENCE.md`](EXPANDED_EVIDENCE.md) - per-run notes for the expanded evidence library, including every stopping point and failure reason.
 - [`RESULTS.md`](RESULTS.md) - concise methodology and result tables.
 - [`data/results.json`](data/results.json) - machine-readable headline results.
 - [`data/evidence.json`](data/evidence.json) - safe provenance, task lanes, cost model, and harness notes.

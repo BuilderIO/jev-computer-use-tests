@@ -13,7 +13,7 @@
     },
     {
       "path": "cua-driver-control/textedit/recording.mp4",
-      "approach": "mac-cua AX driver",
+      "approach": "Jev, accessibility driver",
       "lane": "computer-use control",
       "duration_seconds": null,
       "scored": false,
@@ -57,6 +57,14 @@
       "outcome": "Success",
       "duration_seconds": 64.81,
       "note": "Window-scoped TextEdit recording: Jev entered three exact lines and the app window stays visible while the label and timer sit below it."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/native-desktop/jev/pages-window-scoped-native-jev-stopwatch.mp4",
+      "approach": "Jev",
+      "lane": "computer use",
+      "outcome": "Not a success - false completion",
+      "duration_seconds": 65.01,
+      "note": "Window-scoped Pages recording: Jev reported completion, but the final Body remained empty; the label and timer sit below the app window."
     },
     {
       "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-flights-attempt-observation-60s.mp4",
