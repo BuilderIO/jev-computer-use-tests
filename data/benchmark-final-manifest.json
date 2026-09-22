@@ -60,18 +60,18 @@
       "Real-world browser - exact 10",
       "7 / 10",
       "70%",
-      "~98.7 s*",
-      "~$0.1876*",
-      "~$0.0268*"
+      "~98.7 s",
+      "~$0.1876",
+      "~$0.0268"
     ],
     [
       "Hybrid",
       "Real-world browser - exact 10 recorded run",
       "7 / 10",
       "70%",
-      "~45.3 s*",
-      "~$0.1241*",
-      "~$0.0177*"
+      "~45.3 s",
+      "~$0.1241",
+      "~$0.0177"
     ],
     [
       "Luna",
@@ -123,7 +123,7 @@
     [
       "Jev Ultrafast",
       "Overall",
-      "19 / 51*",
+      "19 / 51",
       "37.3%",
       "1.07 s",
       "$0.02241",
@@ -181,8 +181,8 @@
       "Exact extended real-world browser",
       "7 / 10",
       "70%",
-      "~98.7 s*",
-      "~$0.1876*",
+      "~98.7 s",
+      "~$0.1876",
       "Nine tasks completed; Drive remained on a non-matching result and hung past 20 minutes."
     ],
     [
@@ -190,8 +190,8 @@
       "Exact extended real-world browser recorded run",
       "7 / 10",
       "70%",
-      "~45.3 s*",
-      "~$0.1241*",
+      "~45.3 s",
+      "~$0.1241",
       "Jev 0/10 plus a fresh recorded Luna recovery run; staged, not one interleaved live turn."
     ],
     [
@@ -760,16 +760,16 @@
       "Luna",
       "7 / 10",
       "70%",
-      "~98.7 s*",
-      "~$0.1876* known proxy",
+      "~98.7 s",
+      "~$0.1876 known proxy",
       "United, Notion, Spotify, Mail, Calendar, SauceDemo, and TodoMVC passed; OpenTable was results-only, Drive did not find the private target, and Figma hit passkey."
     ],
     [
       "Hybrid",
       "7 / 10",
       "70%",
-      "~45.3 s*",
-      "~$0.1241* proxy",
+      "~45.3 s",
+      "~$0.1241 proxy",
       "Recorded Jev-first plus Luna recovery run. Not one interleaved live turn."
     ]
   ],
@@ -808,7 +808,7 @@
           "lane": "real-world",
           "duration": "30s",
           "title": "Spotify stopped",
-          "note": "Fail: Jev reached the public Spotify account wall and stopped. The Chrome URL bar is visible and there is no frozen tail.",
+          "note": "Fail: Jev stops at the Spotify sign-up wall at ~12s; the remaining frames are static and the caption band drops at the end.",
           "path": "videos/extended-e2e/jev-browser-stopwatch-v2/jev-spotify-window-scoped-stopwatch.mp4",
           "tone": "jev",
           "outcome": "Fail"
@@ -862,7 +862,7 @@
           "system": "Luna",
           "duration": "2m 29s",
           "title": "Keynote two-slide edit",
-          "note": "Success: both slide titles and the body text are visible at the end.",
+          "note": "Success: the recorded slide's title and bullets are filled on camera.",
           "path": "videos/native-desktop/luna/keynote-two-slide-luna-stopwatch.mp4",
           "tone": "luna",
           "outcome": "Success"
@@ -1177,31 +1177,31 @@
       "Mail",
       "FAIL - 0 / 3 Jev tasks",
       "PASS - searched and edited an unsent draft",
-      "<a href=\"videos/luna-native-chrome/mail-draft.mp4\">mail-draft.mp4</a>"
+      "no screen recording retained (the earlier capture was a generated title card, not a recording)"
     ],
     [
       "Calendar",
       "FAIL - 0 / 2 Jev tasks",
       "PASS - week/search boundary; no event saved",
-      "<a href=\"videos/luna-native-chrome/calendar-edit-boundary.mp4\">calendar-edit-boundary.mp4</a>"
+      "no screen recording retained (the earlier capture was a generated title card, not a recording)"
     ],
     [
       "Design",
       "FAIL - target error",
       "PASS - visible design artifact and edit",
-      "<a href=\"videos/luna-native-chrome/design-edit.mp4\">design-edit.mp4</a>"
+      "no screen recording retained (the earlier capture was a generated title card, not a recording)"
     ],
     [
       "Slides",
       "PASS - create/edit",
       "PASS - visible deck edit; generation caveat",
-      "<a href=\"videos/luna-native-chrome/slides-edit.mp4\">slides-edit.mp4</a>"
+      "no screen recording retained (the earlier capture was a generated title card, not a recording)"
     ],
     [
       "Content",
       "FAIL - remained Churning",
       "PASS - visible document create/edit",
-      "<a href=\"videos/luna-native-chrome/content-edit.mp4\">content-edit.mp4</a>"
+      "no screen recording retained (the earlier capture was a generated title card, not a recording)"
     ]
   ],
   "supplemental_agent_native_walkthrough": "videos/agent-native-apps/curated/chrome-window-agent-native-five-app-flow.mp4",
