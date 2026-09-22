@@ -20,8 +20,11 @@ def main() -> None:
     overall = {item["system"]: item for item in results["overall"]["results"]}
     assert overall["Jev Browser"]["successes"] == 18
     assert overall["Jev Browser"]["total"] == 52
-    assert overall["Hybrid"]["successes"] == 54
+    assert overall["Hybrid"]["successes"] == 55
     assert overall["Hybrid"]["total"] == 57
+    longer_browser = {item["system"]: item for item in results["lanes"]["longer_browser"]["results"]}
+    assert longer_browser["Hybrid"]["successes"] == 8
+    assert longer_browser["Luna"]["successes"] == 8
     assert results["lanes"]["simple_browser"]["results"][0]["successes"] == 42
     assert results["browser_tools_probe"]["supported_upload_control"]["successes"] == 3
     assert results["browser_tools_probe"]["supported_upload_control"]["total"] == 3

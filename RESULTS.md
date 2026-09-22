@@ -10,25 +10,23 @@ The benchmark sorts by success rate first, then estimated cost per successful ta
 
 | Rank | Approach | Successes | Rate | Average time | Cost / success |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 1 | Hybrid | 54/57 | 94.7% | 29.68 s | $0.4573 total / $0.0090 per success |
-| 2 | Luna | 54/57 | 94.7% | 44.57 s | $0.6521 total / $0.0128 per success |
-| 3 | Jev Ultrafast | 19/51* | 37.3% | 1.07 s | $0.0224 total / $0.0012 per success |
+| 1 | Hybrid | 55/57 | 96.5% | 29.68 s | $0.4573 known total / $0.0090 known per success |
+| 2 | Luna | 55/57 | 96.5% | 44.57 s | $0.6521 known total / $0.0128 known per success |
+| 3 | Jev Ultrafast | 19/51 | 37.3% | 1.07 s | $0.0224 total / $0.0012 per success |
 | 4 | Jev Browser | 18/52 | 34.6% | 3.62 s | $0.01125 total / $0.000625 per success |
 
-\* Jev Ultrafast was not measured on native desktop computer use.
+Jev Ultrafast was not measured on native desktop computer use.
 
 ## Per-lane results
 
 | Approach | Simple browser | Real-world browser | Computer use |
 | --- | ---: | ---: | ---: |
-| Hybrid | 42/42 - 100% | 7/10 - 70%* | 5/5 - 100% |
-| Luna | 42/42 - 100% | 7/10 - 70% | 5/5 - 100% |
+| Hybrid | 42/42 - 100% | 8/10 - 80% | 5/5 - 100% |
+| Luna | 42/42 - 100% | 8/10 - 80% | 5/5 - 100% |
 | Jev Browser | 18/42 - 42.9% | 0/10 - 0% | 1/5 - 20% |
-| Jev Ultrafast | 18/42 - 42.9% | 1/9 - 11.1%** | not measured |
+| Jev Ultrafast | 18/42 - 42.9% | 1/9 - 11.1% | not measured |
 
-\* Staged recorded fallback comparison.
-
-\*\* Separate public nine-flow discovery lane.
+Hybrid's ten-task browser result is a staged recorded fallback comparison, not one uninterrupted live interleaved turn. Jev Ultrafast's real-world number is a separate public nine-flow discovery lane.
 
 ## Native computer use detail
 

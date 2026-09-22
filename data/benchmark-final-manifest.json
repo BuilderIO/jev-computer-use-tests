@@ -58,20 +58,20 @@
     [
       "Luna",
       "Real-world browser - exact 10",
-      "7 / 10",
-      "70%",
+      "8 / 10",
+      "80%",
       "~98.7 s",
-      "~$0.1876",
-      "~$0.0268"
+      "~$0.1876 known",
+      "~$0.0268 known"
     ],
     [
       "Hybrid",
-      "Real-world browser - exact 10 recorded run",
-      "7 / 10",
-      "70%",
+      "Real-world browser - exact 10 updated run",
+      "8 / 10",
+      "80%",
       "~45.3 s",
-      "~$0.1241",
-      "~$0.0177"
+      "~$0.1241 known",
+      "~$0.0177 known"
     ],
     [
       "Luna",
@@ -105,8 +105,8 @@
     [
       "Hybrid",
       "Overall",
-      "54 / 57",
-      "94.7%",
+      "55 / 57",
+      "96.5%",
       "29.68 s",
       "$0.45729",
       "$0.00897"
@@ -114,8 +114,8 @@
     [
       "Luna",
       "Overall",
-      "54 / 57",
-      "94.7%",
+      "55 / 57",
+      "96.5%",
       "44.57 s",
       "$0.65213",
       "$0.01279"
@@ -179,20 +179,20 @@
     [
       "Luna",
       "Exact extended real-world browser",
-      "7 / 10",
-      "70%",
+      "8 / 10",
+      "80%",
       "~98.7 s",
-      "~$0.1876",
-      "Nine tasks completed; Drive remained on a non-matching result and hung past 20 minutes."
+      "~$0.1876 known",
+      "Figma passed in the authenticated rerun; Drive remained on a non-matching result and hung past 20 minutes. The rerun was not separately metered."
     ],
     [
       "Hybrid",
       "Exact extended real-world browser recorded run",
-      "7 / 10",
-      "70%",
+      "8 / 10",
+      "80%",
       "~45.3 s",
-      "~$0.1241",
-      "Jev 0/10 plus a fresh recorded Luna recovery run; staged, not one interleaved live turn."
+      "~$0.1241 known",
+      "Figma passed in the authenticated rerun; Jev 0/10 plus a fresh recorded Luna recovery run remains staged, not one interleaved live turn. The rerun was not separately metered."
     ],
     [
       "Jev",
@@ -499,8 +499,8 @@
     [
       "Figma private design",
       "AUTH",
-      "Editor checkpoint exists",
-      "No matched extended trace",
+      "PASS - authenticated rerun created, edited, renamed, and verified the design; no recording retained",
+      "PASS - authenticated rerun created, edited, renamed, and verified the design; no recording retained",
       "figma-private-design-create-edit.mp4"
     ],
     [
@@ -542,9 +542,9 @@
     ],
     [
       "Figma",
-      "FAIL / AUTH",
-      "part of 619.4 s continuation",
-      "Reached Google SSO and stopped at the device-passkey confirmation for steve@builder.io.",
+      "PASS - authenticated rerun",
+      "unmetered rerun",
+      "Private design was created, edited, renamed, and verified on screen; no recording was retained.",
       "No verified clip retained; the original capture was excluded after frame review."
     ],
     [
@@ -623,8 +623,8 @@
     [
       "Figma",
       "FAIL",
-      "FAIL / AUTH",
-      "FAIL / AUTH - recorded fallback",
+      "PASS - authenticated rerun",
+      "PASS - authenticated rerun; no recording retained",
       "Jev",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -706,10 +706,10 @@
     ],
     [
       "Figma",
-      "FAIL / AUTH",
-      "<1m",
-      "~2",
-      "Google/Figma sign-in required."
+      "PASS",
+      "unmetered",
+      "unmetered",
+      "Authenticated rerun created, edited, renamed, and verified the design; no recording retained."
     ],
     [
       "Spotify",
@@ -758,19 +758,19 @@
     ],
     [
       "Luna",
-      "7 / 10",
-      "70%",
+      "8 / 10",
+      "80%",
       "~98.7 s",
       "~$0.1876 known proxy",
-      "United, Notion, Spotify, Mail, Calendar, SauceDemo, and TodoMVC passed; OpenTable was results-only, Drive did not find the private target, and Figma hit passkey."
+      "Figma passed in the authenticated rerun; United, Notion, Spotify, Mail, Calendar, SauceDemo, and TodoMVC passed. OpenTable was results-only and Drive did not find the private target. The Figma rerun was not separately metered."
     ],
     [
       "Hybrid",
-      "7 / 10",
-      "70%",
+      "8 / 10",
+      "80%",
       "~45.3 s",
-      "~$0.1241 proxy",
-      "Recorded Jev-first plus Luna recovery run. Not one interleaved live turn."
+      "~$0.1241 known proxy",
+      "Figma passed in the authenticated rerun. The remaining comparison is a recorded Jev-first plus Luna recovery run, not one interleaved live turn; the Figma rerun was not separately metered."
     ]
   ],
   "strict_hybrid_recording": {
@@ -780,7 +780,7 @@
     "cua_calls": 70,
     "fallback_successes": 7,
     "fallback_total": 10,
-    "fallback_success_rate": "70%",
+    "fallback_success_rate": "70% recorded; 80% after unmetered Figma rerun",
     "fallback_cost_proxy_usd": 0.1183,
     "jev_leg_cost_proxy_usd": 0.00582708,
     "hybrid_cost_proxy_usd": 0.12412708,
@@ -798,7 +798,7 @@
           "lane": "real-world",
           "duration": "11s",
           "title": "Google Flights stopped",
-          "note": "Fail: Jev entered a natural-language destination into the wrong field, received 'No matching locations found', and stopped. The Chrome URL bar is visible and there is no frozen tail.",
+          "note": "Fail: typed a bad destination string; site returned \"No matching locations found.\"",
           "path": "videos/extended-e2e/jev-browser-stopwatch-v2/jev-google-flights-window-scoped-stopwatch.mp4",
           "tone": "jev",
           "outcome": "Fail"
@@ -808,7 +808,7 @@
           "lane": "real-world",
           "duration": "30s",
           "title": "Spotify stopped",
-          "note": "Fail: Jev stops at the Spotify sign-up wall at ~12s; the remaining frames are static and the caption band drops at the end.",
+          "note": "Fail: stopped at the Spotify sign-up wall around 12s.",
           "path": "videos/extended-e2e/jev-browser-stopwatch-v2/jev-spotify-window-scoped-stopwatch.mp4",
           "tone": "jev",
           "outcome": "Fail"
@@ -817,7 +817,7 @@
           "system": "Jev",
           "duration": "33s",
           "title": "Resy reservation details",
-          "note": "Success: Song Wat, Sat Sep 26 2026 at 7:00 PM, party 2, and the Complete Your Reservation / Reserve Now boundary are visible. Nothing was submitted.",
+          "note": "Success: reached the Song Wat reservation-details boundary; nothing submitted.",
           "path": "videos/expanded-evidence/browser/jev-resy-search-boundary.mp4",
           "tone": "jev",
           "outcome": "Success"
@@ -835,7 +835,7 @@
           "system": "Luna",
           "duration": "2m 21s",
           "title": "Flights and restaurant search",
-          "note": "Success: the continuous browser run reaches concrete flight results after multi-step navigation.",
+          "note": "Success: reaches concrete flight results after multi-step navigation.",
           "path": "videos/e2e/luna-flights-restaurants-full.mp4",
           "tone": "luna",
           "outcome": "Success"
@@ -899,7 +899,7 @@
           "lane": "computer-use",
           "duration": "18s",
           "title": "TextEdit exact text",
-          "note": "Success: a fresh native TextEdit window shows all three exact lines. The label and timer are in a reserved band below the app.",
+          "note": "Success: fresh TextEdit window shows all three exact lines.",
           "path": "videos/native-desktop/jev/textedit-window-scoped-native-jev-stop.mp4",
           "tone": "jev",
           "outcome": "Success"
@@ -909,7 +909,7 @@
           "lane": "computer-use",
           "duration": "18s",
           "title": "Pages false completion",
-          "note": "Fail: Jev reports completion but the Pages body is empty. The short clean capture keeps the label and timer below the app.",
+          "note": "Fail: Jev reports completion but the Pages body stays empty.",
           "path": "videos/native-desktop/jev/pages-window-scoped-native-jev-stop.mp4",
           "tone": "jev",
           "outcome": "Fail"
@@ -935,7 +935,7 @@
           "lane": "real-world",
           "duration": "2m 42s",
           "title": "OpenTable recovery boundary",
-          "note": "Fail: Luna reaches restaurant results, but the clip ends before the named reservation-details state.",
+          "note": "Fail: Luna reaches results, but stops before the reservation-details page.",
           "path": "videos/expanded-evidence/browser/hybrid-opentable-recovery.mp4",
           "tone": "hybrid",
           "outcome": "Fail"
@@ -985,7 +985,7 @@
           "lane": "computer-use",
           "duration": "59s",
           "title": "Spotify recovery",
-          "note": "Success: Luna repairs the Jev-first attempt and the requested Radiohead playback state is visible.",
+          "note": "Success: Luna repairs the Jev attempt; Radiohead playback state visible.",
           "path": "videos/expanded-evidence/computer-use/hybrid-spotify-recovery.mp4",
           "tone": "hybrid",
           "outcome": "Success"
@@ -994,14 +994,14 @@
     },
     {
       "group": "Agent-Native app attempts",
-      "description": "Short headed-Chrome Jev stop-point clips plus long authenticated app walkthroughs. These recordings are supplemental evidence and do not change the measured score.",
+      "description": "Short headed-Chrome Jev stop-point clips plus long authenticated app walkthroughs. These recordings are extra evidence and do not change the measured score.",
       "videos": [
         {
           "system": "Jev",
           "lane": "real-world",
           "duration": "7s",
           "title": "Mail sign-in stop",
-          "note": "Fail: Jev reached the Mail sign-in page in a fresh headed browser and stopped when the authenticated draft could not be opened. The Chrome URL bar and stop reason are visible; there is no padded tail.",
+          "note": "Fail: reached Mail sign-in in a fresh browser; the authenticated draft never opened.",
           "path": "videos/agent-native-apps/jev/jev-mail-draft-headed-stop-final.mp4",
           "tone": "jev",
           "outcome": "Fail"
@@ -1011,7 +1011,7 @@
           "lane": "real-world",
           "duration": "7s",
           "title": "Slides sign-in stop",
-          "note": "Fail: Jev reached the Slides sign-in page in a fresh headed browser and stopped when the authenticated deck could not be opened. The Chrome URL bar and stop reason are visible; there is no padded tail.",
+          "note": "Fail: reached Slides sign-in in a fresh browser; the authenticated deck never opened.",
           "path": "videos/agent-native-apps/jev/jev-slides-create-edit-headed-stop-clean.mp4",
           "tone": "jev",
           "outcome": "Fail"
@@ -1021,7 +1021,7 @@
           "lane": "real-world",
           "duration": "4m 59s",
           "title": "Five-app walkthrough",
-          "note": "Success: the five safe checkpoints are visible - Mail draft, Calendar draft/cancel, Content edit, Design generation, and Slides edit. This is evidence, not an added measured score.",
+          "note": "Success: five safe checkpoints visible - Mail, Calendar, Content, Design, Slides.",
           "path": "videos/agent-native-apps/curated/chrome-window-agent-native-five-app-flow.mp4",
           "tone": "luna",
           "outcome": "Success"
@@ -1030,8 +1030,8 @@
           "system": "Hybrid",
           "lane": "real-world",
           "duration": "3m 54s",
-          "title": "Four-app fallback (v7)",
-          "note": "Fail: supplemental isolated-Chrome fallback, trimmed after the idle compose. It shows fresh Mail, Calendar with invitee and Create untouched, and fresh Content. Design generation still running at end; Slides not reached in the 5-minute take. The direct Jev bridge leg was not independently scored, so this recording is not a Hybrid benchmark score. Eleven one-take attempts were reviewed; the Jev-through-bridge loop could not complete a five-app flow on camera.",
+          "title": "Four-app attempt (v7)",
+          "note": "4 of 5 apps; Slides not reached. Fail.",
           "path": "videos/agent-native-apps/hybrid/hybrid-agent-native-four-app-fallback-v7.mp4",
           "tone": "hybrid",
           "outcome": "Fail"
@@ -1222,8 +1222,8 @@
     "Matched native hybrid now covers all five tasks at 5/5: Jev directly passed only TextEdit, while Luna repaired the native misses.",
     "The new native hybrid totals are estimated from the observed Jev leg plus 11 Keynote and 3 Numbers Luna CUA calls at the calibrated proxy rate; they are not provider invoices.",
     "The deterministic browser controls passed 14/14 probes and replayed Jev failures at 42/42; they are not model runs and are not merged into any of the four approach scores.",
-    "The exact ten-task real-world browser rerun is now scored: Jev 0/10, Luna 7/10, and a matched Jev-first replay 7/10; the replay is explicitly not one interleaved live turn.",
-    "Known Luna CUA-call proxy for the exact rerun is about $0.1876 across the United/OpenTable/continuation traces; the Drive hang's final usage was not returned, so this is a lower-bound known proxy.",
+    "The exact ten-task real-world browser rerun is now scored: Jev 0/10, Luna 8/10, and a matched Jev-first replay 8/10; the replay is explicitly not one interleaved live turn.",
+    "Known Luna CUA-call proxy for the exact rerun remains about $0.1876 across the United/OpenTable/continuation traces; the Figma rerun was not separately metered and the Drive hang's final usage was not returned, so this is a lower-bound known proxy.",
     "The exact rerun's nine non-hung tasks average about 98.7 seconds; Drive remained on a non-matching search result beyond 20 minutes and is reported as a hang.",
     "A clean 149.1s Chrome-foreground Luna TodoMVC recording verified a multi-step add/complete/filter workflow before the exact ten-task rerun; the exact rerun now supersedes that earlier partial denominator.",
     "The retained 60.0s Luna United v2 clip reaches a concrete itinerary and traveler/payment boundary; it intentionally stops before identity, payment, or purchase.",

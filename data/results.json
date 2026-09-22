@@ -6,8 +6,8 @@
   "overall": {
     "definition": "All measured tasks for each system, ranked by success rate then estimated cost per successful task.",
     "results": [
-      {"system": "Hybrid", "successes": 54, "total": 57, "rate": 0.947, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.0090, "note": "Connected-Chrome upload recovery raises the headline from the original in-app-browser 51/57; recovery time and cost were not separately metered."},
-      {"system": "Luna", "successes": 54, "total": 57, "rate": 0.947, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128, "note": "Connected-Chrome headline includes three targeted upload reruns; original in-app-browser score was 51/57."},
+      {"system": "Hybrid", "successes": 55, "total": 57, "rate": 0.965, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.0090, "note": "Connected-Chrome upload recovery plus the authenticated Figma rerun raises the headline to 55/57; the Figma rerun time and cost were not separately metered."},
+      {"system": "Luna", "successes": 55, "total": 57, "rate": 0.965, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128, "note": "Connected-Chrome upload recovery plus the authenticated Figma rerun raises the headline to 55/57; the Figma rerun time and cost were not separately metered."},
       {"system": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "total_cost_usd": 0.0224, "cost_per_success_usd": 0.0012, "note": "Native desktop computer use was not measured."},
       {"system": "Jev Browser", "successes": 18, "total": 52, "rate": 0.346, "avg_seconds": 3.62, "total_cost_usd": 0.01125, "cost_per_success_usd": 0.000625, "note": "Simple browser 18/42 plus strict real-world browser 0/10; no native desktop run."}
     ]
@@ -25,8 +25,8 @@
     "longer_browser": {
       "total": 10,
       "results": [
-        {"system": "Hybrid", "successes": 7, "rate": 0.7, "avg_seconds": 45.3, "total_cost_usd": 0.1241, "cost_per_success_usd": 0.0177, "note": "Staged recorded fallback comparison."},
-        {"system": "Luna", "successes": 7, "rate": 0.7, "avg_seconds": 98.7, "total_cost_usd": 0.1876, "cost_per_success_usd": 0.0268},
+        {"system": "Hybrid", "successes": 8, "rate": 0.8, "avg_seconds": 45.3, "total_cost_usd": 0.1241, "cost_per_success_usd": 0.0177, "note": "Figma authenticated rerun passed; time and cost remain the known staged-run values."},
+        {"system": "Luna", "successes": 8, "rate": 0.8, "avg_seconds": 98.7, "total_cost_usd": 0.1876, "cost_per_success_usd": 0.0268, "note": "Figma authenticated rerun passed; time and cost remain the known original-run values."},
         {"system": "Jev Browser", "successes": 0, "rate": 0.0, "avg_seconds": 11.4, "total_cost_usd": 0.00583, "cost_per_success_usd": null},
         {"system": "Jev Ultrafast", "successes": 1, "total": 9, "rate": 0.111, "avg_seconds": 2.45, "total_cost_usd": 0.014248, "cost_per_success_usd": 0.014248, "note": "Separate public nine-flow lane."}
       ]

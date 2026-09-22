@@ -15,14 +15,12 @@ The ranking rule is success rate first, then estimated cost per successful task.
 
 | Approach | Overall | Simple browser | Real-world browser | Computer use |
 | --- | ---: | ---: | ---: | ---: |
-| Hybrid | 54/57 - 94.7% | 42/42 - 100% | 7/10 - 70%† | 5/5 - 100% |
-| Luna | 54/57 - 94.7% | 42/42 - 100% | 7/10 - 70% | 5/5 - 100% |
-| Jev Ultrafast | 19/51 - 37.3% | 18/42 - 42.9% | 1/9 - 11.1%** | not measured |
+| Hybrid | 55/57 - 96.5% | 42/42 - 100% | 8/10 - 80% | 5/5 - 100% |
+| Luna | 55/57 - 96.5% | 42/42 - 100% | 8/10 - 80% | 5/5 - 100% |
+| Jev Ultrafast | 19/51 - 37.3% | 18/42 - 42.9% | 1/9 - 11.1% | not measured |
 | Jev Browser | 18/52 - 34.6% | 18/42 - 42.9% | 0/10 - 0% | not measured |
 
-† Hybrid's ten-task browser result is a staged recorded fallback comparison, not one uninterrupted live interleaved turn.
-
-\*\* Jev Ultrafast's real-world number is a separate public nine-flow discovery lane.
+Hybrid's ten-task browser result is a staged recorded fallback comparison, not one uninterrupted live interleaved turn. Jev Ultrafast's real-world number is a separate public nine-flow discovery lane.
 
 The complete interactive report is [`report.html`](report.html). It has light/dark mode, a pass-rate-versus-cost chart, lane filters, approach filters for recorded runs, and links to the locally retained clips when those clips are present. [`data/benchmark-final-manifest.json`](data/benchmark-final-manifest.json) is the generated machine-readable report snapshot.
 
@@ -50,6 +48,8 @@ Costs are comparison estimates, not invoices. Jev uses the recorded API input-to
 ### Real-world browser
 
 Ten longer workflows included flight search and fare selection, a Thai restaurant reservation up to a safe confirmation boundary, TodoMVC project tracking, Drive, Notion, Figma, mail, Calendar, Spotify, and SauceDemo. No purchase, reservation, payment, message send, or publish action was submitted.
+
+The authenticated Figma rerun succeeded for both Luna and Hybrid. Its time and cost were not separately metered, so the published time and cost columns remain the known-run estimates.
 
 Jev Browser reached partial pages and controls but passed 0/10 strict postconditions. A separate Jev Ultrafast public lane covered nine read-only discovery flows and is not the same denominator.
 

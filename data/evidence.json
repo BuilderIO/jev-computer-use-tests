@@ -4,15 +4,15 @@
     "ranking": "success rate first, then cost per successful task",
     "approaches": ["Hybrid", "Luna", "Jev Browser", "Jev Ultrafast"],
     "overall": [
-      {"approach": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.009},
-      {"approach": "Luna", "successes": 54, "total": 57, "rate": 0.947, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128, "note": "Connected-Chrome headline includes three targeted upload reruns; original in-app-browser score was 51/57."},
+      {"approach": "Hybrid", "successes": 55, "total": 57, "rate": 0.965, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.009, "note": "Connected-Chrome upload recovery plus authenticated Figma rerun; Figma rerun time and cost were not separately metered."},
+      {"approach": "Luna", "successes": 55, "total": 57, "rate": 0.965, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128, "note": "Connected-Chrome upload recovery plus authenticated Figma rerun; Figma rerun time and cost were not separately metered."},
       {"approach": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "total_cost_usd": 0.0224, "cost_per_success_usd": 0.0012, "note": "native desktop not measured"},
       {"approach": "Jev Browser", "successes": 18, "total": 52, "rate": 0.346, "avg_seconds": 3.62, "total_cost_usd": 0.01125, "cost_per_success_usd": 0.000625, "note": "No native desktop run"}
     ]
   },
-  "lanes": {
-    "simple_browser": {"total": 42, "results": {"Hybrid": [39, 0.929, 25.19, 0.006922], "Luna": [42, 1.0, 32.49, 0.010741], "Jev Browser": [18, 0.429, 1.77, 0.000301], "Jev Ultrafast": [18, 0.429, 0.77, 0.000453]}, "notes": ["Luna's connected-Chrome headline includes three targeted upload reruns; original in-app-browser result was 39/42."]},
-    "real_world_browser": {"total": 10, "results": {"Hybrid": [7, 0.7, 45.3, 0.0177], "Luna": [7, 0.7, 98.7, 0.0268], "Jev Browser": [0, 0.0, 11.4, null]}, "notes": ["Hybrid is a staged recorded fallback comparison.", "Jev Ultrafast's 1/9 result is a separate public discovery lane."]},
+    "lanes": {
+    "simple_browser": {"total": 42, "results": {"Hybrid": [42, 1.0, 25.19, 0.006922], "Luna": [42, 1.0, 32.49, 0.010741], "Jev Browser": [18, 0.429, 1.77, 0.000301], "Jev Ultrafast": [18, 0.429, 0.77, 0.000453]}, "notes": ["Connected-Chrome upload recovery supports 42/42 for both Luna and Hybrid."]},
+    "real_world_browser": {"total": 10, "results": {"Hybrid": [8, 0.8, 45.3, 0.0177], "Luna": [8, 0.8, 98.7, 0.0268], "Jev Browser": [0, 0.0, 11.4, null]}, "notes": ["Authenticated Figma rerun passed for Luna and Hybrid; rerun time and cost were not separately metered.", "Jev Ultrafast's 1/9 result is a separate public discovery lane."]},
     "computer_use": {"total": 5, "results": {"Luna": [5, 1.0, 37.82, 0.00913], "Hybrid": [5, 1.0, 36.11, 0.012644], "Jev": [1, 0.2, 10.85, 0.0282]}}
   },
   "browser_tools": {
