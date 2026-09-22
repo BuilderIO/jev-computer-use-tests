@@ -13,8 +13,8 @@ The ranking rule is success rate first, then estimated cost per successful task.
 
 | Approach | Overall | Simple browser | Real-world browser | Computer use |
 | --- | ---: | ---: | ---: | ---: |
+| Hybrid | 54/57 - 94.7% | 42/42 - 100% | 7/10 - 70%† | 5/5 - 100% |
 | Luna | 54/57 - 94.7% | 42/42 - 100% | 7/10 - 70% | 5/5 - 100% |
-| Hybrid | 51/57 - 89.5% | 39/42 - 92.9% | 7/10 - 70%† | 5/5 - 100% |
 | Jev Ultrafast | 19/51 - 37.3% | 18/42 - 42.9% | 1/9 - 11.1%** | not measured |
 | Jev Browser | 18/52 - 34.6% | 18/42 - 42.9% | 0/10 - 0% | not measured |
 
@@ -63,7 +63,7 @@ That is why the three repeated 42-task Luna misses were file-upload fixtures. It
 
 Three model-controlled Luna turns in the normal Chrome bridge ran the upload fixture. All three opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and reached the visible success state: **3/3 targeted uploads**. Combined with the original 39/39 non-upload passes, this supports a connected-Chrome result of 42/42. Traces are [`data/luna-upload-trace.json`](data/luna-upload-trace.json), [`data/luna-upload-attempt-2.json`](data/luna-upload-attempt-2.json), and [`data/luna-upload-attempt-3.json`](data/luna-upload-attempt-3.json).
 
-Hybrid was not rerun through the model-controlled normal-Chrome upload path, so its headline remains 39/42 rather than being silently changed.
+Hybrid was also rerun through the model-controlled normal-Chrome upload path: three Jev-first attempts stopped at the unsupported file input, and connected-Chrome native-chooser recovery reached the visible success state on all three (**3/3**). Combined with the original 39/39 non-upload passes, this supports a connected-Chrome result of 42/42. Trace is [`data/hybrid-upload-attempts.json`](data/hybrid-upload-attempts.json).
 
 The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The local report includes short window-scoped Jev browser/app stop clips, a window-scoped TextEdit success, and a Pages false-completion recording. Long frozen tails were excluded after frame review; the long Luna walkthrough and staged Hybrid app walkthrough remain supplemental evidence rather than new scores.
 
@@ -77,6 +77,7 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 - [`data/benchmark-final-manifest.json`](data/benchmark-final-manifest.json) - generated report data and retained-video inventory.
 - [`data/luna-upload-trace.json`](data/luna-upload-trace.json) - sanitized model-controlled normal-Chrome upload trace.
 - [`data/luna-upload-attempts.json`](data/luna-upload-attempts.json) - sanitized 3/3 normal-Chrome upload rerun summary.
+- [`data/hybrid-upload-attempts.json`](data/hybrid-upload-attempts.json) - sanitized 3/3 Hybrid normal-Chrome upload recovery summary.
 - [`videos/manifest.json`](videos/manifest.json) - bundled versus local-only recording inventory and audit exclusions.
 - [`scripts/verify_results.py`](scripts/verify_results.py) - dependency-free snapshot integrity check.
 - [`tasks/`](tasks/) - public/demo task definitions that do not require private accounts.

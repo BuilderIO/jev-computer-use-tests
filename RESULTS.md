@@ -8,8 +8,8 @@ The benchmark sorts by success rate first, then estimated cost per successful ta
 
 | Rank | Approach | Successes | Rate | Average time | Cost / success |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 1 | Hybrid | 51/57 | 89.5% | 29.68 s | $0.4573 total / $0.0090 per success |
-| 2 | Luna | 51/57 | 89.5% | 44.57 s | $0.6521 total / $0.0128 per success |
+| 1 | Hybrid | 54/57 | 94.7% | 29.68 s | $0.4573 total / $0.0090 per success |
+| 2 | Luna | 54/57 | 94.7% | 44.57 s | $0.6521 total / $0.0128 per success |
 | 3 | Jev Ultrafast | 19/51* | 37.3% | 1.07 s | $0.0224 total / $0.0012 per success |
 | 4 | Jev Browser | 18/52 | 34.6% | 3.62 s | $0.01125 total / $0.000625 per success |
 
@@ -19,8 +19,8 @@ The benchmark sorts by success rate first, then estimated cost per successful ta
 
 | Approach | Simple browser | Real-world browser | Computer use |
 | --- | ---: | ---: | ---: |
-| Hybrid | 39/42 - 92.9% | 7/10 - 70%* | 5/5 - 100% |
-| Luna | 39/42 - 92.9% | 7/10 - 70% | 5/5 - 100% |
+| Hybrid | 42/42 - 100% | 7/10 - 70%* | 5/5 - 100% |
+| Luna | 42/42 - 100% | 7/10 - 70% | 5/5 - 100% |
 | Jev Browser | 18/42 - 42.9% | 0/10 - 0% | 1/5 - 20% |
 | Jev Ultrafast | 18/42 - 42.9% | 1/9 - 11.1%** | not measured |
 
@@ -64,6 +64,8 @@ A deterministic browser-tools probe passed 14/14, and a Jev-plus-JS replay passe
 Luna and Hybrid drove the normal Chrome browser through the ChatGPT desktop bridge; an earlier in-app-browser pass scored 39/42 because that browser has no file-picker and is not the intended setup. This is a harness limitation, not a general claim that Luna or Codex cannot upload files. A separate local file-input control rerun passed 3/3 in 0.31 seconds average at $0 local tool cost, but it is not a Luna score because no model turn chose the upload action.
 
 Three model-controlled Luna turns using the normal Chrome bridge passed the same upload fixture **3/3**: each opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and verified the visible success state. Combined with the original 39/39 non-upload passes, this supports a connected-Chrome result of 42/42. See [`data/luna-upload-trace.json`](data/luna-upload-trace.json), [`data/luna-upload-attempt-2.json`](data/luna-upload-attempt-2.json), and [`data/luna-upload-attempt-3.json`](data/luna-upload-attempt-3.json).
+
+Hybrid was also rerun through the same model-controlled normal-Chrome path: three Jev-first attempts stopped at the unsupported file input, then connected-Chrome native-chooser recovery reached the visible success state on all three (**3/3**). This likewise supports a connected-Chrome result of 42/42 for Hybrid. See [`data/hybrid-upload-attempts.json`](data/hybrid-upload-attempts.json).
 
 ## Safety boundary
 
