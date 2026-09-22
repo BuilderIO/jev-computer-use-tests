@@ -1,4 +1,19 @@
-# Jev computer-use tests
+# Jev Computer Use Bench
+
+<p>
+  <a href="https://builderio.github.io/jev-computer-use-tests/">View the live report on GitHub Pages</a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="report/pass-rate-cost-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="report/pass-rate-cost-light.png">
+  <img src="report/pass-rate-cost-light.png" alt="Pass rate versus cost per success chart for the Jev Computer Use Bench">
+</picture>
+
+<p>
+  <a href="report/pass-rate-cost-light.png">Light mode screenshot</a> ·
+  <a href="report/pass-rate-cost-dark.png">Dark mode screenshot</a>
+</p>
 
 Test prompts and verification: see [TESTS.md](TESTS.md).
 
