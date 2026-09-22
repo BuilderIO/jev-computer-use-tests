@@ -81,6 +81,22 @@
       "outcome": "Incomplete",
       "duration_seconds": 59.84,
       "note": "Jev reaches Spotify search/account gating but does not complete the task; the final portion is an explicitly labeled observation hold."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-mail-draft-attempt-60s.mp4",
+      "approach": "Jev",
+      "lane": "real-world browser",
+      "outcome": "Not a success",
+      "duration_seconds": 60.0,
+      "note": "Authenticated Mail draft attempt held at its stopping state: the composer opened, but the recipient and requested body were not verified."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-slides-attempt-60s.mp4",
+      "approach": "Jev",
+      "lane": "real-world browser",
+      "outcome": "Not a success",
+      "duration_seconds": 60.0,
+      "note": "Authenticated Slides attempt held at its stopping state: visible chrome text appeared, but the canvas remained in a loading/placeholder state."
     }
   ],
   "excluded": [

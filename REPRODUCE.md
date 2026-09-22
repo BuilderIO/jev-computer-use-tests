@@ -8,8 +8,13 @@ This repository contains the safe, inspectable result snapshot. It does not cont
 python3 -m json.tool data/results.json
 python3 -m json.tool data/evidence.json
 python3 scripts/verify_results.py
-open report.html
+python3 -m http.server 8000 --directory .
+# then open http://127.0.0.1:8000/report.html in another terminal or browser
 ```
+
+The first three commands are the complete dependency-free verification. The
+HTTP server is only needed when viewing the standalone report with relative
+links. Stop it with Ctrl-C.
 
 ## What a full rerun needs
 
@@ -31,6 +36,11 @@ The original private runner used separate adapters for browser Jev, the Jev Ultr
 - Report public discovery flows separately from the strict ten-task real-world denominator.
 - Report token/API estimates as estimates, not provider invoices.
 - Review sampled frames before linking a recording as evidence.
+
+The private local report also contains two 60-second Jev authenticated-app
+attempts and additional native/browser clips. They are listed in the local
+report and local manifest, but are intentionally not copied into this public
+snapshot because they contain private account state.
 
 The headline Jev Browser denominator is 52: 42 simple tasks plus 10 strict
 real-world browser tasks. It does not include native desktop tasks. Jev

@@ -63,7 +63,9 @@ That is why the three repeated 42-task Luna misses were file-upload fixtures. It
 
 Three model-controlled Luna turns in the normal Chrome bridge ran the upload fixture. All three opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and reached the visible success state: **3/3 targeted uploads**. Combined with the original 39/39 non-upload passes, this supports an explicitly inferred connected-Chrome result of 42/42; the headline table retains 39/42 for the original in-app-browser setup. The bridge still exposed no usable DOM/JavaScript handle, so this is not a JS-enabled rerun. Traces are [`data/luna-upload-trace.json`](data/luna-upload-trace.json), [`data/luna-upload-attempt-2.json`](data/luna-upload-attempt-2.json), and [`data/luna-upload-attempt-3.json`](data/luna-upload-attempt-3.json).
 
-The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The old Jev native screen captures were excluded after review because they showed the wrong window or were not paired with their traces; the 1/5 Jev native result is trace-verified, but this snapshot does not present those captures as video evidence.
+Hybrid was not rerun through the model-controlled normal-Chrome upload path, so its headline remains 39/42 rather than being silently changed.
+
+The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The local report includes frame-reviewed 60-second Jev browser/app attempts, a window-scoped TextEdit success, and a Pages false-completion recording. The old Jev native screen captures were excluded after review because they showed the wrong window or were not paired with their traces.
 
 ## Repository contents
 
