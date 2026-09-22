@@ -1,0 +1,28 @@
+{
+  "benchmark": "jev-vs-luna",
+  "lane": "targeted normal Chrome upload",
+  "fixture_url": "http://127.0.0.1:8768/?task=upload",
+  "bridge": "normal Chrome extension bridge",
+  "model_controlled": true,
+  "page_inspection": false,
+  "javascript_evaluation": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "result": "passed",
+      "actions": "Model navigated the existing tab, opened the native chooser, selected benchmark.txt, submitted, and visually verified SUCCESS."
+    },
+    {
+      "attempt": 2,
+      "result": "passed",
+      "actions": "Model corrected an address-bar input glitch, opened the native chooser, selected benchmark.txt, submitted, and visually verified SUCCESS."
+    },
+    {
+      "attempt": 3,
+      "result": "passed",
+      "actions": "Model reopened the chooser after the first return did not attach the file, used the native path entry, selected benchmark.txt, submitted, and visually verified SUCCESS."
+    }
+  ],
+  "result": "3/3 upload attempts passed",
+  "interpretation": "Together with the original 39/39 non-upload passes, this supports an inferred 42/42 connected-Chrome result. It is not a fresh 42-task rerun; the retained in-app-browser headline remains 39/42."
+}

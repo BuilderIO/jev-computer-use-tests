@@ -49,6 +49,30 @@
       "lane": "real-world browser",
       "outcome": "Success at named reservation-details boundary",
       "note": "The clip shows Song Wat, Sat Sep 26 2026 at 7:00 PM, party 2, and Reserve Now; nothing was submitted."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/native-desktop/jev/textedit-window-scoped-native-jev-stopwatch.mp4",
+      "approach": "Jev",
+      "lane": "computer use",
+      "outcome": "Success",
+      "duration_seconds": 64.81,
+      "note": "Window-scoped TextEdit recording: Jev entered three exact lines and the app window stays visible while the label and timer sit below it."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-flights-attempt-observation-60s.mp4",
+      "approach": "Jev Browser",
+      "lane": "real-world browser",
+      "outcome": "Incomplete",
+      "duration_seconds": 59.84,
+      "note": "Jev reaches Google Flights results and stops before a verified selection; the final portion is an explicitly labeled observation hold."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-spotify-attempt-observation-60s.mp4",
+      "approach": "Jev Browser",
+      "lane": "real-world browser",
+      "outcome": "Incomplete",
+      "duration_seconds": 59.84,
+      "note": "Jev reaches Spotify search/account gating but does not complete the task; the final portion is an explicitly labeled observation hold."
     }
   ],
   "excluded": [

@@ -73,6 +73,7 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 - [`data/results.json`](data/results.json) - machine-readable headline results.
 - [`data/evidence.json`](data/evidence.json) - safe provenance, task lanes, cost model, and harness notes.
 - [`data/luna-upload-trace.json`](data/luna-upload-trace.json) - sanitized model-controlled normal-Chrome upload trace.
+- [`data/luna-upload-attempts.json`](data/luna-upload-attempts.json) - sanitized 3/3 normal-Chrome upload rerun summary.
 - [`videos/manifest.json`](videos/manifest.json) - bundled versus local-only recording inventory and audit exclusions.
 - [`scripts/verify_results.py`](scripts/verify_results.py) - dependency-free snapshot integrity check.
 - [`tasks/`](tasks/) - public/demo task definitions that do not require private accounts.
