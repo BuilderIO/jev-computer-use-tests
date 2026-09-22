@@ -24,6 +24,8 @@ The ranking rule is success rate first, then estimated cost per successful task.
 
 The complete interactive report is [`report.html`](report.html). It has light/dark mode, a pass-rate-versus-cost chart, lane filters, approach filters for recorded runs, and links to the locally retained clips when those clips are present. [`data/benchmark-final-manifest.json`](data/benchmark-final-manifest.json) is the generated machine-readable report snapshot.
 
+When GitHub Pages is enabled for this repository, the same report and bundled videos are available at `https://builderio.github.io/jev-computer-use-tests/`.
+
 ## Cost and speed
 
 | Approach | Overall cost / success | Overall average time | Native computer-use cost / success | Native average time |
