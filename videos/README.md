@@ -14,7 +14,7 @@ The local library is organized by:
 - `videos/native-desktop/luna/` - verified Luna desktop clips.
 - `videos/native-desktop/hybrid/` - verified Hybrid desktop clips.
 - `videos/native-desktop/jev/` - local-only Jev desktop traces; old screen captures are not featured unless window-reviewed.
-- `videos/agent-native-apps/` - the bundled supplemental Chrome bridge walkthrough.
+- `videos/agent-native-apps/` - the bundled supplemental Chrome bridge walkthrough and headed Jev sign-in-stop captures.
 
 The local report links only to recordings that were sampled at multiple timestamps. The earlier 16-minute Luna browser capture and other blank-window or wrong-app captures were removed after review.
 
