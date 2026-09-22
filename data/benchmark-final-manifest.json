@@ -994,7 +994,7 @@
     },
     {
       "group": "Agent-Native app attempts",
-      "description": "Short headed-Chrome Jev stop-point clips plus the long Luna app walkthrough and a clearly marked composite. The walkthroughs are supplemental evidence and do not change the measured score.",
+      "description": "Short headed-Chrome Jev stop-point clips plus long authenticated app walkthroughs. These recordings are supplemental evidence and do not change the measured score.",
       "videos": [
         {
           "system": "Jev",
@@ -1029,12 +1029,12 @@
         {
           "system": "Hybrid",
           "lane": "real-world",
-          "duration": "5m 21s",
-          "title": "Five-app composite: Jev attempts + Luna recovery",
-          "note": "Composite only: the app order is stitched from separate Jev and Luna footage, so it is not a live Hybrid turn and is not used in the Hybrid score. It is listed under Hybrid so the approach filter does not hide the evidence.",
-          "path": "videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
+          "duration": "3m 54s",
+          "title": "Four-app fallback (v7)",
+          "note": "Fail: supplemental isolated-Chrome fallback, trimmed after the idle compose. It shows fresh Mail, Calendar with invitee and Create untouched, fresh Content, and fresh Design generation; Slides was not reached. The direct Jev bridge leg was not independently scored, so this recording is not a Hybrid benchmark score.",
+          "path": "videos/agent-native-apps/hybrid/hybrid-agent-native-four-app-fallback-v7.mp4",
           "tone": "hybrid",
-          "outcome": "Composite"
+          "outcome": "Fail"
         }
       ]
     }
@@ -1239,7 +1239,8 @@
     "A fresh file-upload-capable Playwright control passed the upload fixture 3/3 at 320, 310, and 298 ms ($0 local cost); three model-directed normal-Chrome Luna reruns and three Jev-first Hybrid recovery reruns also passed the upload fixture, supporting connected-Chrome 42/42 for both alongside each original in-app-browser 39/42.",
     "Captioned retained videos were rebuilt with labels and timers in a reserved bottom band outside the recorded app surface.",
     "The new 4m59s Luna Chrome-window recording succeeds at five visible safe checkpoints: Mail draft, Calendar draft/cancel, Content editing, Design generation, and Slides editing; it is supplemental evidence, not a new benchmark score.",
-    "The 5m21s companion is a stitched composite of Jev and Luna footage. It is listed under Hybrid for video filtering, labeled Composite, and excluded from the Hybrid score.",
-    "Two short Jev authenticated-app clips end shortly after the final action with the stopping state in a reserved bottom band; both are marked Fail and do not change the score."
+    "The prior 5m21s companion was a stitched composite and is excluded from the video library. The retained Hybrid-filtered fallback is a 3m54s trimmed v7 capture covering fresh Mail, Calendar, Content, and Design generation; Slides was not reached and the direct Jev bridge leg was not independently scored, so it is marked Fail and excluded from the Hybrid score.",
+    "Two short Jev authenticated-app clips end shortly after the final action with the stopping state in a reserved bottom band; both are marked Fail and do not change the score.",
+    "The preferred v8 one-take was rejected after frame review because its eight-minute cap ended during fresh Design generation before Slides; it remains in attempts, not the curated library."
   ]
 }

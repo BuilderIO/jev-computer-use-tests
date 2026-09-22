@@ -101,12 +101,12 @@
       "note": "Jev reached Spotify's sign-up wall and stopped. The frozen observation tail was removed."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/hybrid/hybrid-agent-native-four-app-fallback-v7.mp4",
       "approach": "Hybrid",
       "lane": "agent-native apps",
-      "outcome": "N/A",
-      "duration_seconds": 320.833332,
-      "note": "Stitched Jev and Luna footage; listed under Hybrid for filtering, but not one live run and not scored as Hybrid evidence."
+      "outcome": "Fail",
+      "duration_seconds": 233.808333,
+      "note": "Trimmed isolated-Chrome fallback: fresh Mail, Calendar with Create untouched, Content, and Design generation; Slides was not reached. Direct Jev bridge control was not independently scored, so this is supplemental and excluded from the Hybrid score."
     }
   ],
   "excluded": [

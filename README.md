@@ -97,7 +97,7 @@ python3 -m http.server 8000
 # then open http://127.0.0.1:8000/report.html
 ```
 
-The full authenticated run requires private test accounts, local browser profiles, a Jev API key supplied through an environment variable, and native macOS applications. Those credentials and profiles are intentionally not part of this repository. The long Luna five-app clip is a successful supplemental walkthrough; the similarly named Hybrid companion is a stitched Composite/N/A clip, not one Hybrid run. See [`REPRODUCE.md`](REPRODUCE.md) for the boundary between the safe snapshot and the private local rerun.
+The full authenticated run requires private test accounts, local browser profiles, a Jev API key supplied through an environment variable, and native macOS applications. Those credentials and profiles are intentionally not part of this repository. The long Luna five-app clip is a successful supplemental walkthrough. The bundled Hybrid companion is an honest four-app fallback marked Fail: it does not reach Slides and is not a Hybrid score. See [`REPRODUCE.md`](REPRODUCE.md) for the boundary between the safe snapshot and the private local rerun.
 
 ## Recording policy
 
