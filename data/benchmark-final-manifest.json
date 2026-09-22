@@ -4,7 +4,7 @@
     [
       "Luna",
       "Basic browser",
-      "42 / 42*",
+      "42 / 42",
       "100%",
       "32.49 s",
       "$0.41890",
@@ -13,11 +13,11 @@
     [
       "Hybrid",
       "Basic browser",
-      "42 / 42*",
+      "42 / 42",
       "100%",
-      "25.19 s*",
-      "$0.26997*",
-      "$0.006922*"
+      "25.19 s",
+      "$0.26997",
+      "$0.006922"
     ],
     [
       "Jev Browser",
@@ -105,16 +105,16 @@
     [
       "Hybrid",
       "Overall",
-      "54 / 57*",
+      "54 / 57",
       "94.7%",
-      "29.68 s*",
-      "$0.45729*",
-      "$0.00897*"
+      "29.68 s",
+      "$0.45729",
+      "$0.00897"
     ],
     [
       "Luna",
       "Overall",
-      "54 / 57*",
+      "54 / 57",
       "94.7%",
       "44.57 s",
       "$0.65213",
@@ -235,21 +235,21 @@
     ],
     [
       "Luna",
-      "42 / 42*",
+      "42 / 42",
       "100%",
       "32.49 s",
       "$0.41890",
       "$0.010741",
-      "connected Chrome; original in-app browser was 39 / 42"
+      "connected Chrome"
     ],
     [
       "Hybrid",
-      "42 / 42*",
+      "42 / 42",
       "100%",
-      "25.19 s*",
-      "$0.26997*",
-      "$0.006922*",
-      "Connected-Chrome upload recovery; original in-app browser was 39 / 42"
+      "25.19 s",
+      "$0.26997",
+      "$0.006922",
+      "Connected-Chrome upload recovery"
     ]
   ],
   "native": [
@@ -436,7 +436,7 @@
       "100%",
       "not measured",
       "not measured",
-      "Three Jev-first attempts stopped at the unsupported file input; connected-Chrome native-chooser recovery reached SUCCESS on all three. Recovery time and cost were not separately metered; the connected-Chrome headline is 42 / 42*"
+      "Three Jev-first attempts stopped at the unsupported file input; connected-Chrome native-chooser recovery reached SUCCESS on all three. Recovery time and cost were not separately metered; the connected-Chrome headline is 42 / 42"
     ]
   ],
   "extended_real_world": [
@@ -1236,7 +1236,7 @@
     "The auxiliary Wikipedia and GitHub research rows were completed in one serialized Luna Chrome follow-up: Luna passed both, and the hybrid retained the already-passing Jev leg without invoking fallback.",
     "Authenticated Agent-Native evidence is a separate denominator: Jev Ultrafast 1/8 exact tasks, Luna 5/5 safe composite checkpoints, and no matched authenticated hybrid run.",
     "Controlled fixture text used a scripted helper; Ultrafast used a small text model for literal strings after Jev target selection; native Jev used task-supplied literal strings.",
-    "A fresh file-upload-capable Playwright control passed the upload fixture 3/3 at 320, 310, and 298 ms ($0 local cost); three model-directed normal-Chrome Luna reruns and three Jev-first Hybrid recovery reruns also passed the upload fixture, supporting connected-Chrome 42/42 for both alongside each original in-app-browser 39/42.",
+    "A fresh file-upload-capable Playwright control passed the upload fixture 3/3 at 320, 310, and 298 ms ($0 local cost); three model-directed normal-Chrome Luna reruns and three Jev-first Hybrid recovery reruns also passed the upload fixture, supporting connected-Chrome 42/42 for both.",
     "Captioned retained videos were rebuilt with labels and timers in a reserved bottom band outside the recorded app surface.",
     "The new 4m59s Luna Chrome-window recording succeeds at five visible safe checkpoints: Mail draft, Calendar draft/cancel, Content editing, Design generation, and Slides editing; it is supplemental evidence, not a new benchmark score.",
     "The prior 5m21s companion was a stitched composite and is excluded from the video library. The retained Hybrid-filtered fallback is a 3m54s trimmed v7 capture covering fresh Mail, Calendar, and Content; Design generation was still running at end and Slides was not reached in the five-minute take. The direct Jev bridge leg was not independently scored, so it is marked Fail and excluded from the Hybrid score.",

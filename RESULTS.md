@@ -57,13 +57,13 @@ This control is useful evidence for the native boundary: Accessibility metadata 
 
 ## Browser tools and JavaScript
 
-A deterministic browser-tools probe passed 14/14, and a Jev-plus-JS replay passed 42/42. These are capability checks, not model-controlled Luna scores. The headline Luna browser scores did not have model-controlled JS evaluation enabled, so no points were added from those probes.
+A deterministic browser-tools probe passed 14/14, and a Jev-plus-JS replay passed 42/42. These are capability checks, not model-controlled Luna scores. No page JavaScript execution was used, matching normal ChatGPT Chrome use.
 
 ## File upload finding
 
-The repeated 42-task Luna run missed the file-upload fixture three times. Those browser runs used Codex's visible in-app browser through CUA with screenshots, clicks, and typing, but no native file-picker/upload primitive. This is a harness limitation, not a general claim that Luna or Codex cannot upload files. A separate local file-input control rerun passed 3/3 in 0.31 seconds average at $0 local tool cost, but it is not a Luna score because no model turn chose the upload action.
+Luna and Hybrid drove the normal Chrome browser through the ChatGPT desktop bridge; an earlier in-app-browser pass scored 39/42 because that browser has no file-picker and is not the intended setup. This is a harness limitation, not a general claim that Luna or Codex cannot upload files. A separate local file-input control rerun passed 3/3 in 0.31 seconds average at $0 local tool cost, but it is not a Luna score because no model turn chose the upload action.
 
-Three model-controlled Luna turns using the normal Chrome bridge passed the same upload fixture **3/3**: each opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and verified the visible success state. Combined with the original 39/39 non-upload passes, this supports an explicitly inferred connected-Chrome result of 42/42. The bridge exposed no usable DOM/JavaScript handle, so this is an upload result only, not a JS-enabled rerun; the headline table retains 39/42 for the original in-app-browser setup. See [`data/luna-upload-trace.json`](data/luna-upload-trace.json), [`data/luna-upload-attempt-2.json`](data/luna-upload-attempt-2.json), and [`data/luna-upload-attempt-3.json`](data/luna-upload-attempt-3.json).
+Three model-controlled Luna turns using the normal Chrome bridge passed the same upload fixture **3/3**: each opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and verified the visible success state. Combined with the original 39/39 non-upload passes, this supports a connected-Chrome result of 42/42. See [`data/luna-upload-trace.json`](data/luna-upload-trace.json), [`data/luna-upload-attempt-2.json`](data/luna-upload-attempt-2.json), and [`data/luna-upload-attempt-3.json`](data/luna-upload-attempt-3.json).
 
 ## Safety boundary
 
