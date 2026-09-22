@@ -300,17 +300,17 @@
 </tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
 <td><strong>Jev</strong></td>
 <td><span class="run-lane jev">Real-world</span></td>
-<td class="run-title"><strong>Mail draft stopped</strong><span>Fail: the composer opened, but the recipient and body were not verified. The clip ends shortly after Jev&#x27;s last action.</span></td>
+<td class="run-title"><strong>Mail sign-in stop</strong><span>Fail: Jev reached the Mail sign-in page in a fresh headed browser and stopped when the authenticated draft could not be opened. The Chrome URL bar and stop reason are visible; there is no padded tail.</span></td>
 <td><span class="run-outcome bad">Fail</span></td>
-<td>14s</td>
-<td><a href="videos/agent-native-apps/jev/jev-mail-draft-attempt-stop.mp4">Open video</a></td>
+<td>7s</td>
+<td><a href="videos/agent-native-apps/jev/jev-mail-draft-headed-stop-final.mp4">Open video</a></td>
 </tr><tr class="run-row" data-run-lane="real-world" data-run-approach="jev">
 <td><strong>Jev</strong></td>
 <td><span class="run-lane jev">Real-world</span></td>
-<td class="run-title"><strong>Slides stopped</strong><span>Fail: Jev stopped while the slide remained in a loading state. The clip ends shortly after the last action.</span></td>
+<td class="run-title"><strong>Slides sign-in stop</strong><span>Fail: Jev reached the Slides sign-in page in a fresh headed browser and stopped when the authenticated deck could not be opened. The Chrome URL bar and stop reason are visible; there is no padded tail.</span></td>
 <td><span class="run-outcome bad">Fail</span></td>
 <td>7s</td>
-<td><a href="videos/agent-native-apps/jev/jev-slides-attempt-stop.mp4">Open video</a></td>
+<td><a href="videos/agent-native-apps/jev/jev-slides-create-edit-headed-stop-clean.mp4">Open video</a></td>
 </tr><tr class="run-row" data-run-lane="real-world" data-run-approach="luna">
 <td><strong>Luna</strong></td>
 <td><span class="run-lane luna">Real-world</span></td>
@@ -367,7 +367,7 @@
 <div class="table-wrap"><table class=""><thead><tr><th>Approach</th><th>Successes / total</th><th>Success rate</th><th>Avg time / task</th><th>Cost</th><th>Cost / success</th><th>Cost basis</th></tr></thead><tbody><tr><td>Jev Browser</td><td>18 / 42</td><td>42.9%</td><td>1.77 s</td><td>$0.00542</td><td>$0.000301</td><td>Jev API estimate</td></tr><tr><td>Jev Ultrafast</td><td>18 / 42</td><td>42.9%</td><td>0.77 s</td><td>$0.00816</td><td>$0.000453</td><td>Jev API estimate</td></tr><tr><td>Luna</td><td>42 / 42*</td><td>100%</td><td>32.49 s</td><td>$0.41890</td><td>$0.010741</td><td>connected Chrome; original in-app browser was 39 / 42</td></tr><tr><td>Hybrid</td><td>39 / 42</td><td>92.9%</td><td>25.19 s</td><td>$0.26997</td><td>$0.006922</td><td>Jev first, Luna recovery after a failed postcondition</td></tr></tbody></table></div>
 <p class="small">Luna cost is a token-based estimate, not a subscription invoice. Jev cost is the tested input-token estimate. No separate local browser-tool fee is included.</p>
 
-<h3>Controlled browser capability breakdown</h3>
+<h3>Measured browser capability breakdown</h3>
 <div class="table-wrap"><table class=""><thead><tr><th>Category</th><th>Jev Browser</th><th>Jev Ultrafast</th></tr></thead><tbody><tr><td>Download</td><td>3 / 3</td><td>3 / 3</td></tr><tr><td>Filter/sort table</td><td>3 / 3</td><td>3 / 3</td></tr><tr><td>Navigation</td><td>3 / 3</td><td>3 / 3</td></tr><tr><td>Native select</td><td>3 / 3</td><td>3 / 3</td></tr><tr><td>Search and type</td><td>3 / 3</td><td>3 / 3</td></tr><tr><td>Scrolling</td><td>3 / 3</td><td>0 / 3</td></tr><tr><td>Modal and checkboxes</td><td>0 / 3</td><td>3 / 3</td></tr><tr><td>Drag and drop</td><td>0 / 3</td><td>0 / 3</td></tr><tr><td>File upload</td><td>0 / 3</td><td>0 / 3</td></tr><tr><td>Iframe / shadow DOM</td><td>0 / 6</td><td>0 / 6</td></tr><tr><td>Multi-field form</td><td>0 / 3</td><td>0 / 3</td></tr><tr><td>Rich text / spreadsheet</td><td>0 / 6</td><td>0 / 6</td></tr></tbody></table></div>
 
 <h2>Computer-use task details</h2>
@@ -397,7 +397,7 @@
 <div class="table-wrap"><table class=""><thead><tr><th>Workflow</th><th>Recorded outcome</th><th>Wall time</th><th>Luna actions</th><th>Verified stop point</th></tr></thead><tbody><tr><td>United flight</td><td>Success</td><td>~4m</td><td>~22</td><td>Traveler Info/payment stop point; Continue untouched.</td></tr><tr><td>Thai restaurant</td><td>Success</td><td>~2m</td><td>~12</td><td>Named OpenTable slot and reservation-details stop point; reservation untouched.</td></tr><tr><td>Google Drive</td><td>Fail</td><td>~1m</td><td>~9</td><td>No matching private benchmark file found.</td></tr><tr><td>Notion</td><td>Success</td><td>~1m</td><td>~10</td><td>Fallback note added and verified on the private page.</td></tr><tr><td>Figma</td><td>Fail / Fail</td><td><1m</td><td>~2</td><td>Google/Figma sign-in required.</td></tr><tr><td>Spotify</td><td>Success*</td><td>~2m</td><td>~5</td><td>Texas Sun selected; signup gate blocked playback.</td></tr><tr><td>Mail</td><td>Fail / Fail</td><td><1m</td><td>~2</td><td>Google re-verification required before draft access.</td></tr><tr><td>Calendar</td><td>Success</td><td>~2m</td><td>~6</td><td>Oct 20, 10:00–10:30 form filled; event not saved.</td></tr><tr><td>SauceDemo</td><td>Success*</td><td>~2m</td><td>~8</td><td>Final overview visible; Finish untouched.</td></tr><tr><td>TodoMVC</td><td>Success</td><td>~1m</td><td>~7</td><td>Three items added, first two completed, Completed filter visible.</td></tr></tbody></table></div>
 <p>All retained video evidence is listed once in the Recorded runs table above.</p>
 
-<h3>Exploratory public computer-use lane - a separate real-world result</h3>
+<h3>Additional public computer-use lane - a separate real-world result</h3>
 <p>This is the missing context behind “Luna did more than text editing.” It is a different, fully repeated public lane: three fresh starts each for Google Flights, OpenTable, and Resy, stopping at read-only search/results states. It is not the exact ten-task denominator above, and it does not claim a booking.</p>
 <div class="table-wrap"><table class=""><thead><tr><th>Approach</th><th>Successes / total</th><th>Success rate</th><th>Avg time / flow</th><th>Cost / 9 flows</th><th>Cost / success</th><th>Scope</th></tr></thead><tbody><tr><td>Jev Browser</td><td>3 / 9</td><td>33.3%</td><td>5.160 s</td><td>~$0.012997</td><td>~$0.004332</td><td>Three fresh starts each for Flights, OpenTable, and Resy; stop at discovery/results.</td></tr><tr><td>Jev Ultrafast</td><td>1 / 9</td><td>11.1%</td><td>2.449 s</td><td>~$0.014248</td><td>~$0.014248</td><td>Same repeated public lane; three OpenTable attempts were transport-blocked.</td></tr><tr><td>Luna</td><td>9 / 9</td><td>100%</td><td>35.253 s</td><td>~$0.0828 estimate</td><td>~$0.00920 estimate</td><td>Same nine read-only discovery/results flows; not bookings.</td></tr><tr><td>Hybrid</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>No comparable repeated public hybrid run was retained.</td></tr></tbody></table></div>
 <div class="table-wrap"><table class=""><thead><tr><th>Flow</th><th>Jev Browser</th><th>Jev Ultrafast</th><th>Luna</th><th>What the pass means</th></tr></thead><tbody><tr><td>Google Flights</td><td>0 / 3</td><td>1 / 3</td><td>3 / 3</td><td>Search/results only; Luna reached 18 results each run.</td></tr><tr><td>OpenTable</td><td>0 / 3</td><td>0 / 3</td><td>3 / 3</td><td>Jev contexts hit transport errors; visible Luna Chrome showed cards and 7:00 PM slots.</td></tr><tr><td>Resy</td><td>3 / 3</td><td>0 / 3</td><td>3 / 3</td><td>Party/date/time search; Jev Browser reached the 19:00 slot state.</td></tr></tbody></table></div>

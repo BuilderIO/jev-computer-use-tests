@@ -994,15 +994,15 @@
     },
     {
       "group": "Agent-Native app attempts",
-      "description": "Short Jev stop-point clips plus the long Luna app walkthrough and a clearly marked composite. The walkthroughs are supplemental evidence and do not change the measured score.",
+      "description": "Short headed-Chrome Jev stop-point clips plus the long Luna app walkthrough and a clearly marked composite. The walkthroughs are supplemental evidence and do not change the measured score.",
       "videos": [
         {
           "system": "Jev",
           "lane": "real-world",
-          "duration": "14s",
-          "title": "Mail draft stopped",
-          "note": "Fail: the composer opened, but the recipient and body were not verified. The clip ends shortly after Jev's last action.",
-          "path": "videos/agent-native-apps/jev/jev-mail-draft-attempt-stop.mp4",
+          "duration": "7s",
+          "title": "Mail sign-in stop",
+          "note": "Fail: Jev reached the Mail sign-in page in a fresh headed browser and stopped when the authenticated draft could not be opened. The Chrome URL bar and stop reason are visible; there is no padded tail.",
+          "path": "videos/agent-native-apps/jev/jev-mail-draft-headed-stop-final.mp4",
           "tone": "jev",
           "outcome": "Fail"
         },
@@ -1010,9 +1010,9 @@
           "system": "Jev",
           "lane": "real-world",
           "duration": "7s",
-          "title": "Slides stopped",
-          "note": "Fail: Jev stopped while the slide remained in a loading state. The clip ends shortly after the last action.",
-          "path": "videos/agent-native-apps/jev/jev-slides-attempt-stop.mp4",
+          "title": "Slides sign-in stop",
+          "note": "Fail: Jev reached the Slides sign-in page in a fresh headed browser and stopped when the authenticated deck could not be opened. The Chrome URL bar and stop reason are visible; there is no padded tail.",
+          "path": "videos/agent-native-apps/jev/jev-slides-create-edit-headed-stop-clean.mp4",
           "tone": "jev",
           "outcome": "Fail"
         },

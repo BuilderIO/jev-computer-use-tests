@@ -12,6 +12,24 @@
       "note": "Authenticated Mail draft, Calendar draft/cancel, Content edit, Design generation, and Slides edit. No send, event creation, publish, share, or payment."
     },
     {
+      "path": "videos/agent-native-apps/jev-mail-draft-headed-stop-final.mp4",
+      "approach": "Jev Browser",
+      "lane": "real-world browser",
+      "duration_seconds": 7.333008,
+      "scored": false,
+      "outcome": "Fail - sign-in required",
+      "note": "Fresh headed Chrome reached mail.agent-native.com/sign-in and stopped because the authenticated draft was unavailable. The URL bar and stop reason are visible; no padded tail."
+    },
+    {
+      "path": "videos/agent-native-apps/jev-slides-create-edit-headed-stop-clean.mp4",
+      "approach": "Jev Browser",
+      "lane": "real-world browser",
+      "duration_seconds": 6.666667,
+      "scored": false,
+      "outcome": "Fail - sign-in required",
+      "note": "Fresh headed Chrome reached slides.agent-native.com/sign-in and stopped because the authenticated deck was unavailable. The URL bar and stop reason are visible; no padded tail."
+    },
+    {
       "path": "cua-driver-control/textedit/recording.mp4",
       "approach": "Jev, accessibility driver",
       "lane": "computer-use control",
@@ -81,22 +99,6 @@
       "outcome": "Fail",
       "duration_seconds": 30.008333,
       "note": "Jev reached Spotify's sign-up wall and stopped. The frozen observation tail was removed."
-    },
-    {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-mail-draft-attempt-stop.mp4",
-      "approach": "Jev",
-      "lane": "real-world browser",
-      "outcome": "Fail",
-      "duration_seconds": 13.666667,
-      "note": "Authenticated Mail attempt stopped after the composer opened; recipient and requested body were not verified. The static tail was removed."
-    },
-    {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-slides-attempt-stop.mp4",
-      "approach": "Jev",
-      "lane": "real-world browser",
-      "outcome": "Fail",
-      "duration_seconds": 7.333008,
-      "note": "Authenticated Slides attempt stopped while the canvas remained in a loading/placeholder state. The static tail was removed."
     },
     {
       "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
