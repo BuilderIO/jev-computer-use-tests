@@ -315,7 +315,7 @@
         "textedit-notes-timer.mp4"
       ],
       "hybrid": [
-        "PASS - Jev leg; no fallback",
+        "PASS - Jev leg; no recovery needed",
         "5.01 s",
         "$0.00080",
         "textedit-notes-frontmost-timer.mp4"
@@ -338,7 +338,7 @@
         "<a href=\"videos/native-desktop/luna/keynote-two-slide-luna-stopwatch.mp4\">keynote-two-slide-luna-stopwatch.mp4</a>"
       ],
       "hybrid": [
-        "PASS - Luna fallback",
+        "PASS - Luna recovery",
         "~83.0 s",
         "~$0.03069 proxy",
         "<a href=\"videos/native-desktop/hybrid/keynote-hybrid-composite-stopwatch.mp4\">keynote-hybrid-composite-stopwatch.mp4</a>"
@@ -361,7 +361,7 @@
         "<a href=\"videos/native-desktop/luna/numbers-two-row-luna-stopwatch.mp4\">numbers-two-row-luna-stopwatch.mp4</a>"
       ],
       "hybrid": [
-        "PASS - Luna fallback",
+        "PASS - Luna recovery",
         "~22.2 s",
         "~$0.00507 proxy",
         "<a href=\"videos/native-desktop/hybrid/numbers-hybrid-composite-stopwatch.mp4\">numbers-hybrid-composite-stopwatch.mp4</a>"
@@ -588,25 +588,25 @@
       "United flight",
       "FAIL",
       "PASS",
-      "PASS - recorded Luna fallback",
+      "PASS - recorded Luna recovery",
       "No verified clip retained; the original capture was excluded after frame review.",
       "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Luna</a>",
-      "Recorded fallback"
+      "Recorded recovery"
     ],
     [
       "Thai restaurant",
       "FAIL - CDN block",
       "PARTIAL",
-      "PASS - recorded fallback reached reservation details",
+      "PASS - recorded recovery reached reservation details",
       "Jev",
       "Luna",
-      "Recorded fallback"
+      "Recorded recovery"
     ],
     [
       "Google Drive",
       "FAIL",
       "FAIL / HUNG",
-      "FAIL - recorded fallback did not find target",
+      "FAIL - recorded recovery did not find target",
       "Jev",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -615,7 +615,7 @@
       "Notion",
       "FAIL",
       "PASS",
-      "PASS - recorded Luna fallback",
+      "PASS - recorded Luna recovery",
       "Jev",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -633,7 +633,7 @@
       "Spotify",
       "FAIL",
       "PASS*",
-      "PASS* - recorded fallback",
+      "PASS* - recorded recovery",
       "Jev",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -642,7 +642,7 @@
       "Mail",
       "FAIL",
       "PASS",
-      "FAIL / AUTH - recorded fallback",
+      "FAIL / AUTH - recorded recovery",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -651,7 +651,7 @@
       "Calendar",
       "FAIL",
       "PASS",
-      "PASS - recorded Luna fallback",
+      "PASS - recorded Luna recovery",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -660,7 +660,7 @@
       "SauceDemo",
       "FAIL",
       "PASS*",
-      "PASS* - recorded fallback",
+      "PASS* - recorded recovery",
       "Jev",
       "No verified clip retained; the original capture was excluded after frame review.",
       "No verified clip retained; the original capture was excluded after frame review."
@@ -669,10 +669,10 @@
       "TodoMVC",
       "FAIL",
       "PASS",
-      "PASS - recorded Luna fallback",
+      "PASS - recorded Luna recovery",
       "Jev",
       "Luna",
-      "Recorded fallback"
+      "Recorded recovery"
     ]
   ],
   "strict_hybrid_rows": [
@@ -702,7 +702,7 @@
       "PASS",
       "~1m",
       "~10",
-      "Fallback note added and verified on the private page."
+      "Recovery note added and verified on the private page."
     ],
     [
       "Figma",
@@ -1135,14 +1135,14 @@
       "Research-only: Wikipedia two-hop",
       "PASS - 15.930 s; ~$0.020947",
       "PASS - ~15 s; ~4 CUA calls",
-      "PASS - Jev leg retained; no Luna fallback",
-      "Supplemental research check only; excluded from the real-world workflow lane."
+      "PASS - Jev leg retained; no Luna recovery needed",
+      "Research-only check; excluded from the real-world workflow lane."
     ],
     [
       "GitHub Cua issue research",
       "PASS - 8.544 s; ~$0.002258",
       "PASS - ~20 s; ~3 CUA calls",
-      "PASS - Jev leg retained; no Luna fallback",
+      "PASS - Jev leg retained; no Luna recovery needed",
       "Open the Cua issue list, select issue #3982, and verify its browser-dialog failure body."
     ]
   ],
