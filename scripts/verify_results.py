@@ -20,10 +20,17 @@ def main() -> None:
     overall = {item["system"]: item for item in results["overall"]["results"]}
     assert overall["Jev Browser"]["successes"] == 18
     assert overall["Jev Browser"]["total"] == 52
+    assert overall["Hybrid"]["successes"] == 54
+    assert overall["Hybrid"]["total"] == 57
+    assert results["lanes"]["simple_browser"]["results"][0]["successes"] == 42
     assert results["browser_tools_probe"]["supported_upload_control"]["successes"] == 3
     assert results["browser_tools_probe"]["supported_upload_control"]["total"] == 3
     assert results["browser_tools_probe"]["luna_normal_chrome_targeted_upload"]["successes"] == 3
     assert results["browser_tools_probe"]["luna_normal_chrome_targeted_upload"]["total"] == 3
+    hybrid_upload = results["browser_tools_probe"]["hybrid_normal_chrome_targeted_upload"]
+    assert hybrid_upload["successes"] == 3
+    assert hybrid_upload["total"] == 3
+    assert (ROOT / "data/hybrid-upload-attempts.json").exists()
     assert (ROOT / "data/luna-upload-trace.json").exists()
     for item in manifest["bundled"]:
         assert (ROOT / item["path"]).exists(), item["path"]

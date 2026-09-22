@@ -1,0 +1,13 @@
+{
+  "system": "Hybrid",
+  "fixture": "upload",
+  "bridge": "normal Chrome extension",
+  "model_controlled": true,
+  "deterministic_set_input_files": false,
+  "note": "Each attempt is Jev-first. Jev stopped at the unsupported file-input step; the connected-Chrome native chooser then selected benchmark.txt and the page visibly reached SUCCESS. Recovery time and cost were not separately metered.",
+  "attempts": [
+    {"attempt": 1, "jev": "stuck at file input", "recovery": "native chooser selected benchmark.txt", "result": "SUCCESS"},
+    {"attempt": 2, "jev": "stuck at file input", "recovery": "native chooser selected benchmark.txt", "result": "SUCCESS"},
+    {"attempt": 3, "jev": "stuck at file input", "recovery": "native chooser selected benchmark.txt", "result": "SUCCESS"}
+  ]
+}
