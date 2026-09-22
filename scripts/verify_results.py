@@ -22,6 +22,9 @@ def main() -> None:
     assert overall["Jev Browser"]["total"] == 52
     assert results["browser_tools_probe"]["supported_upload_control"]["successes"] == 3
     assert results["browser_tools_probe"]["supported_upload_control"]["total"] == 3
+    assert results["browser_tools_probe"]["luna_normal_chrome_targeted_upload"]["successes"] == 1
+    assert results["browser_tools_probe"]["luna_normal_chrome_targeted_upload"]["total"] == 1
+    assert (ROOT / "data/luna-upload-trace.json").exists()
     for item in manifest["bundled"]:
         assert (ROOT / item["path"]).exists(), item["path"]
     assert (ROOT / "report.html").exists()

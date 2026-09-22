@@ -63,6 +63,8 @@ A deterministic browser-tools probe passed 14/14, and a Jev-plus-JS replay passe
 
 The repeated 42-task Luna run missed the file-upload fixture three times. Those browser runs used Codex's visible in-app browser through CUA with screenshots, clicks, and typing, but no native file-picker/upload primitive. This is a harness limitation, not a general claim that Luna or Codex cannot upload files. A separate local file-input control rerun passed 3/3 in 0.31 seconds average at $0 local tool cost, but it is not a Luna score because no model turn chose the upload action.
 
+A separate model-controlled Luna turn using the normal Chrome bridge passed the same upload fixture **1/1**: it opened the native macOS chooser, selected `benchmark.txt`, clicked Upload fixture, and verified the visible success state. The bridge exposed no usable DOM/JavaScript handle, so this is a targeted upload result only. It is not folded into the 39/42 headline score, and it does not measure Luna with JavaScript evaluation. See [`data/luna-upload-trace.json`](data/luna-upload-trace.json).
+
 ## Safety boundary
 
 No purchase, reservation, payment, email send, calendar save, share, publish, or other external side effect was submitted. The real-world tasks stopped at meaningful review or confirmation boundaries.

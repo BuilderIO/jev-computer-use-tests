@@ -1,0 +1,19 @@
+{
+  "benchmark": "jev-vs-luna",
+  "lane": "targeted normal Chrome upload",
+  "fixture_url": "http://127.0.0.1:8768/?task=upload",
+  "timestamp": "2026-09-21T19:43:41-07:00",
+  "bridge": "normal Chrome extension bridge",
+  "model_controlled": true,
+  "page_inspection": false,
+  "javascript_evaluation": false,
+  "actions": [
+    {"name": "navigate_existing_tab", "actor": "model-chosen"},
+    {"name": "open_native_file_chooser", "actor": "model-chosen"},
+    {"name": "select_fixture", "actor": "model-chosen", "filename": "benchmark.txt"},
+    {"name": "submit_upload", "actor": "model-chosen"},
+    {"name": "verify_success", "actor": "deterministic", "result": "visible SUCCESS and benchmark.txt"}
+  ],
+  "result": {"status": "success", "filename": "benchmark.txt"},
+  "recheck": {"status": "not_run", "reason": "The same bridge exposed no usable page-inspection or JavaScript-evaluation handle."}
+}

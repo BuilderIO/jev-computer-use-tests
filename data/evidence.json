@@ -19,7 +19,8 @@
     "deterministic_js_probe": {"successes": 14, "total": 14, "model_controlled": false},
     "jev_plus_js_replay": {"successes": 42, "total": 42, "model_controlled": false},
     "headline_luna_js_enabled": false,
-    "file_upload_result": "Headline CUA had no native file-picker or file-input binding, so the upload fixture could not be attached. Separate file-input control: 3/3, 0.31 s average, $0 local cost; not a Luna score."
+    "file_upload_result": "Headline in-app CUA had no native file-picker or file-input binding, so the repeated upload fixture missed. Separate local file-input control: 3/3, 0.31 s average, $0 local cost. A targeted model-controlled normal-Chrome Luna turn passed upload 1/1 through the native macOS chooser; no usable JS handle was exposed, so it is not a JS-enabled rerun or a change to the 42-task score.",
+    "luna_normal_chrome_targeted_upload": {"successes": 1, "total": 1, "rate": 1.0, "model_controlled": true, "js_enabled": false, "trace": "data/luna-upload-trace.json"}
   },
   "harness": {
     "luna_browser": "Codex visible in-app browser through CUA: screenshots, clicks, and typing; no Playwright/CDP file-upload adapter in the measured run.",

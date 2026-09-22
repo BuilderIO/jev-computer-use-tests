@@ -56,6 +56,7 @@
     "deterministic_browser_tool_proxy": {"successes": 14, "total": 14, "rate": 1.0, "not_a_model_score": true},
     "jev_plus_deterministic_replay": {"successes": 42, "total": 42, "rate": 1.0, "not_a_model_score": true},
     "supported_upload_control": {"successes": 3, "total": 3, "rate": 1.0, "avg_seconds": 0.31, "cost_usd": 0, "not_a_model_score": true, "runs_ms": [320, 310, 298]},
+    "luna_normal_chrome_targeted_upload": {"successes": 1, "total": 1, "rate": 1.0, "avg_seconds": null, "cost_usd": null, "model_controlled": true, "js_enabled": false, "trace": "data/luna-upload-trace.json"},
     "note": "JavaScript/page inspection was kept as a separate capability check. It was not folded into Luna's model-controlled headline score."
   },
   "recording_policy": {

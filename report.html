@@ -58,9 +58,10 @@
   <div class="callout warning"><strong>Video audit:</strong> old Jev native screen captures are intentionally excluded because frame review found the wrong window or an unpaired trace. The score is trace-verified; no misleading Jev desktop clip is presented as evidence.</div>
 
   <h2>Browser tools and upload control</h2>
-  <p>The headline Luna browser run used Codex’s visible in-app browser through CUA, which exposed screenshots, clicks, and typing but no native file-picker action. That is why the upload fixture was missed. A separate local file-input-capable Playwright control passed 3 / 3 in 0.31 seconds average at $0 local tool cost. It is not a Luna score.</p>
+  <p>The headline Luna browser run used Codex’s visible in-app browser through CUA, which exposed screenshots, clicks, and typing but no native file-picker action. That is why the upload fixture was missed. A separate model-controlled Luna turn in the normal Chrome bridge opened the native macOS chooser, selected <code>benchmark.txt</code>, and reached the visible success state once. The bridge exposed no usable DOM/JavaScript handle, so this is a targeted upload-only result, not a JS-enabled rerun or a change to the 42-task score. A separate local file-input-capable Playwright control passed 3 / 3 in 0.31 seconds average at $0 local tool cost.</p>
   <div class="table-wrap"><table><thead><tr><th>Control</th><th>Success</th><th>Rate</th><th>Time</th><th>Score type</th></tr></thead><tbody>
     <tr><td>File-input upload control</td><td>3 / 3</td><td>100%</td><td>0.31 s average</td><td>Harness control, not model-controlled</td></tr>
+    <tr><td>Luna normal Chrome upload</td><td>1 / 1</td><td>100%</td><td>Not measured</td><td>Targeted model-controlled result; see data/luna-upload-trace.json</td></tr>
     <tr><td>Deterministic browser-tools probe</td><td>14 / 14</td><td>100%</td><td>69 ms</td><td>Capability check, not model-controlled</td></tr>
   </tbody></table></div>
 
