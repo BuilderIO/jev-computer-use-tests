@@ -445,19 +445,19 @@
 
 <section id="what-agents-see" class="perception-card">
 <div class="section-kicker">Perception</div>
-<div class="perception-intro"><h2>What each approach can see</h2><p>These diagrams show the information available to the decision loop. Jev Web gets a normalized, unstyled page representation plus controls; Jev Computer Use gets macOS Accessibility data; Luna works from the visible desktop surface.</p></div>
+<div class="perception-intro"><h2>What each approach can see</h2><p>These diagrams show the information available to the decision loop. Jev Web gets normalized, unstyled page content plus controls; Jev Computer Use gets macOS Accessibility data; Luna works from the visible desktop surface. The web HTML below is an illustrative DOM shape, not a claim that the benchmark always passes raw HTML bytes.</p></div>
 <div class="perception-tabs" role="tablist" aria-label="What each approach can see">
 <button type="button" class="perception-tab active" role="tab" aria-selected="true" aria-controls="perception-web">Jev Web</button>
 <button type="button" class="perception-tab" role="tab" aria-selected="false" aria-controls="perception-native">Jev Computer Use</button>
 <button type="button" class="perception-tab" role="tab" aria-selected="false" aria-controls="perception-luna">Luna</button>
 </div>
 <div id="perception-web" class="perception-panel active" role="tabpanel">
-<div><h3>Unstyled HTML / DOM shape</h3><pre class="perception-code"><code><span class="syntax-comment">&lt;!-- CSS is not part of this representation --&gt;</span>
+<div><h3>Illustrative unstyled HTML / DOM shape</h3><pre class="perception-code"><code><span class="syntax-comment">&lt;!-- CSS is not part of this representation --&gt;</span>
 <span class="syntax-tag">&lt;form</span> <span class="syntax-attr">aria-label</span>=<span class="syntax-string">"Search"</span><span class="syntax-tag">&gt;</span>
   <span class="syntax-tag">&lt;label</span> <span class="syntax-attr">for</span>=<span class="syntax-string">"destination"</span><span class="syntax-tag">&gt;</span>Where to?<span class="syntax-tag">&lt;/label&gt;</span>
   <span class="syntax-tag">&lt;input</span> <span class="syntax-attr">id</span>=<span class="syntax-string">"destination"</span> <span class="syntax-attr">value</span>=<span class="syntax-string">"San Francisco"</span><span class="syntax-tag">&gt;</span>
   <span class="syntax-tag">&lt;button</span> <span class="syntax-attr">type</span>=<span class="syntax-string">"submit"</span><span class="syntax-tag">&gt;</span>Search<span class="syntax-tag">&lt;/button&gt;</span>
-<span class="syntax-tag">&lt;/form&gt;</span></code></pre><div class="perception-key"><span>structure</span><span>text + value</span><span>control semantics</span></div><p class="perception-caption">The benchmark adapter normalizes this kind of page into text, links, and controls. The retained Wikipedia trace contains Markdown-like page content, not the page's CSS pixels or a raw HTML byte dump.</p></div>
+<span class="syntax-tag">&lt;/form&gt;</span></code></pre><div class="perception-key"><span>structure</span><span>text + value</span><span>control semantics</span></div><p class="perception-caption">This shows the unstyled DOM shape a web adapter can derive. The retained Wikipedia trace contains Markdown-like page content plus controls, not the page's CSS pixels or a literal raw-HTML byte dump.</p></div>
 <pre class="perception-code"><code><span class="syntax-punctuation">{</span>
   <span class="syntax-property">"content"</span>: <span class="syntax-string">"[Search](/search)\n\n# Results\n\n..."</span>,
   <span class="syntax-property">"controls"</span>: [
