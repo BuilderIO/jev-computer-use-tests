@@ -1031,7 +1031,7 @@
           "lane": "real-world",
           "duration": "3m 54s",
           "title": "Four-app fallback (v7)",
-          "note": "Fail: supplemental isolated-Chrome fallback, trimmed after the idle compose. It shows fresh Mail, Calendar with invitee and Create untouched, fresh Content, and fresh Design generation; Slides was not reached. The direct Jev bridge leg was not independently scored, so this recording is not a Hybrid benchmark score.",
+          "note": "Fail: supplemental isolated-Chrome fallback, trimmed after the idle compose. It shows fresh Mail, Calendar with invitee and Create untouched, and fresh Content. Design generation still running at end; Slides not reached in the 5-minute take. The direct Jev bridge leg was not independently scored, so this recording is not a Hybrid benchmark score.",
           "path": "videos/agent-native-apps/hybrid/hybrid-agent-native-four-app-fallback-v7.mp4",
           "tone": "hybrid",
           "outcome": "Fail"
@@ -1239,7 +1239,7 @@
     "A fresh file-upload-capable Playwright control passed the upload fixture 3/3 at 320, 310, and 298 ms ($0 local cost); three model-directed normal-Chrome Luna reruns and three Jev-first Hybrid recovery reruns also passed the upload fixture, supporting connected-Chrome 42/42 for both alongside each original in-app-browser 39/42.",
     "Captioned retained videos were rebuilt with labels and timers in a reserved bottom band outside the recorded app surface.",
     "The new 4m59s Luna Chrome-window recording succeeds at five visible safe checkpoints: Mail draft, Calendar draft/cancel, Content editing, Design generation, and Slides editing; it is supplemental evidence, not a new benchmark score.",
-    "The prior 5m21s companion was a stitched composite and is excluded from the video library. The retained Hybrid-filtered fallback is a 3m54s trimmed v7 capture covering fresh Mail, Calendar, Content, and Design generation; Slides was not reached and the direct Jev bridge leg was not independently scored, so it is marked Fail and excluded from the Hybrid score.",
+    "The prior 5m21s companion was a stitched composite and is excluded from the video library. The retained Hybrid-filtered fallback is a 3m54s trimmed v7 capture covering fresh Mail, Calendar, and Content; Design generation was still running at end and Slides was not reached in the five-minute take. The direct Jev bridge leg was not independently scored, so it is marked Fail and excluded from the Hybrid score.",
     "Two short Jev authenticated-app clips end shortly after the final action with the stopping state in a reserved bottom band; both are marked Fail and do not change the score.",
     "The preferred v8 one-take was rejected after frame review because its eight-minute cap ended during fresh Design generation before Slides; it remains in attempts, not the curated library."
   ]

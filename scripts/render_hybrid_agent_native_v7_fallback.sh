@@ -6,7 +6,7 @@ input="$root/attempts/hybrid-agent-native-live-v7/hybrid-agent-native-five-app-l
 trim="$root/attempts/hybrid-agent-native-live-v7/hybrid-agent-native-four-app-fallback-v7.mov"
 output="$root/artifacts/videos/agent-native-apps/hybrid/hybrid-agent-native-four-app-fallback-v7.mp4"
 frame_root="$root/attempts/hybrid-agent-native-live-v7/fallback-overlay-frames"
-label='Hybrid | agent-native 4-app run | Jev leg / Luna recovery (design generating at end, slides not reached)'
+label='Hybrid | agent-native 4-app run | Jev leg / Luna recovery'
 
 mkdir -p "$frame_root" "${output:h}"
 ffmpeg -y -hide_banner -loglevel error -ss 66 -i "$input" -t 234 \
