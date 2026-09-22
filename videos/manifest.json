@@ -12,7 +12,7 @@
       "note": "Authenticated Mail draft, Calendar draft/cancel, Content edit, Design generation, and Slides edit. No send, event creation, publish, share, or payment."
     },
     {
-      "path": "videos/agent-native-apps/jev-mail-draft-headed-stop-final.mp4",
+      "path": "videos/agent-native-apps/jev/jev-mail-draft-headed-stop-final.mp4",
       "approach": "Jev Browser",
       "lane": "real-world browser",
       "duration_seconds": 7.333008,
@@ -21,7 +21,7 @@
       "note": "Fresh headed Chrome reached mail.agent-native.com/sign-in and stopped because the authenticated draft was unavailable. The URL bar and stop reason are visible; no padded tail."
     },
     {
-      "path": "videos/agent-native-apps/jev-slides-create-edit-headed-stop-clean.mp4",
+      "path": "videos/agent-native-apps/jev/jev-slides-create-edit-headed-stop-clean.mp4",
       "approach": "Jev Browser",
       "lane": "real-world browser",
       "duration_seconds": 6.666667,
