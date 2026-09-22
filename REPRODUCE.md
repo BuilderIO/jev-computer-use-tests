@@ -38,10 +38,10 @@ The original private runner used separate adapters for browser Jev, the Jev Ultr
 - Review sampled frames before linking a recording as evidence.
 
 The private local report also contains short Jev authenticated-app stop clips,
-window-scoped native clips, and longer Luna/Hybrid walkthroughs. They are
-listed in the local report and generated manifest, but authenticated raw clips
-are intentionally not copied into this public snapshot because they contain
-private account state.
+window-scoped native clips, a long Luna five-app walkthrough, and a clearly
+marked stitched Composite/N/A companion. They are listed in the local report
+and generated manifest, but authenticated raw clips are intentionally not
+copied into this public snapshot because they contain private account state.
 
 The headline Jev Browser denominator is 52: 42 simple tasks plus 10 strict
 real-world browser tasks. It does not include native desktop tasks. Jev

@@ -102,9 +102,9 @@
       "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
       "approach": "Hybrid",
       "lane": "agent-native apps",
-      "outcome": "Observed",
+      "outcome": "N/A",
       "duration_seconds": 320.833332,
-      "note": "Staged five-app walkthrough for supplemental context; not a matched live turn and not scored."
+      "note": "Stitched Jev and Luna footage; listed under Hybrid for filtering, but not one live run and not scored as Hybrid evidence."
     }
   ],
   "excluded": [

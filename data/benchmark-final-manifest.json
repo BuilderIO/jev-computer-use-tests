@@ -994,7 +994,7 @@
     },
     {
       "group": "Agent-Native app attempts",
-      "description": "Short Jev stop-point clips plus the long Luna and staged Hybrid app walkthroughs. The app walkthroughs are supplemental evidence and do not change the strict score.",
+      "description": "Short Jev stop-point clips plus the long Luna app walkthrough and a clearly marked composite. The walkthroughs are supplemental evidence and do not change the measured score.",
       "videos": [
         {
           "system": "Jev",
@@ -1021,20 +1021,20 @@
           "lane": "real-world",
           "duration": "4m 59s",
           "title": "Five-app walkthrough",
-          "note": "Observed: Chrome moves through Mail, Calendar, Content, Design, and Slides with meaningful edits. This is evidence, not an added strict score.",
+          "note": "Success: the five safe checkpoints are visible - Mail draft, Calendar draft/cancel, Content edit, Design generation, and Slides edit. This is evidence, not an added measured score.",
           "path": "videos/agent-native-apps/curated/chrome-window-agent-native-five-app-flow.mp4",
           "tone": "luna",
-          "outcome": "Observed"
+          "outcome": "Success"
         },
         {
           "system": "Hybrid",
           "lane": "real-world",
           "duration": "5m 21s",
-          "title": "Five-app staged handoff",
-          "note": "Observed staged sequence: Jev stops in Mail and Slides, then Luna continues through the five apps. This is not a matched live Hybrid turn and is not scored.",
+          "title": "Five-app composite: Jev attempts + Luna recovery",
+          "note": "Composite only: the app order is stitched from separate Jev and Luna footage, so it is not a live Hybrid turn and is not used in the Hybrid score. It is listed under Hybrid so the approach filter does not hide the evidence.",
           "path": "videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
           "tone": "hybrid",
-          "outcome": "Observed"
+          "outcome": "Composite"
         }
       ]
     }
@@ -1238,7 +1238,8 @@
     "Controlled fixture text used a scripted helper; Ultrafast used a small text model for literal strings after Jev target selection; native Jev used task-supplied literal strings.",
     "A fresh file-upload-capable Playwright control passed the upload fixture 3/3 at 320, 310, and 298 ms ($0 local cost); three model-directed normal-Chrome Luna reruns also passed the upload fixture, supporting an inferred connected-Chrome 42/42 alongside the original in-app-browser 39/42.",
     "Captioned retained videos were rebuilt with labels and timers in a reserved bottom band outside the recorded app surface.",
-    "A new 4m59s Chrome-window recording covers a Mail draft, Calendar draft/cancel, Content editing, Design generation, and Slides editing; it is supplemental walkthrough evidence, not a new Jev, Luna, or Hybrid score.",
+    "The new 4m59s Luna Chrome-window recording succeeds at five visible safe checkpoints: Mail draft, Calendar draft/cancel, Content editing, Design generation, and Slides editing; it is supplemental evidence, not a new benchmark score.",
+    "The 5m21s companion is a stitched composite of Jev and Luna footage. It is listed under Hybrid for video filtering, labeled Composite, and excluded from the Hybrid score.",
     "Two short Jev authenticated-app clips end shortly after the final action with the stopping state in a reserved bottom band; both are marked Fail and do not change the score."
   ]
 }
