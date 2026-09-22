@@ -4,10 +4,10 @@
     "ranking": "success rate first, then cost per successful task",
     "approaches": ["Hybrid", "Luna", "Jev Browser", "Jev Ultrafast"],
     "overall": [
-      {"approach": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "cost_per_success_usd": 0.009},
-      {"approach": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "cost_per_success_usd": 0.0128},
-      {"approach": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "cost_per_success_usd": 0.0012, "note": "native desktop not measured"},
-      {"approach": "Jev Browser", "successes": 19, "total": 57, "rate": 0.333, "avg_seconds": 4.26, "cost_per_success_usd": 0.00208}
+      {"approach": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.009},
+      {"approach": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128},
+      {"approach": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "total_cost_usd": 0.0224, "cost_per_success_usd": 0.0012, "note": "native desktop not measured"},
+      {"approach": "Jev Browser", "successes": 18, "total": 52, "rate": 0.346, "avg_seconds": 3.62, "total_cost_usd": 0.01125, "cost_per_success_usd": 0.000625, "note": "No native desktop run"}
     ]
   },
   "lanes": {
@@ -19,13 +19,13 @@
     "deterministic_js_probe": {"successes": 14, "total": 14, "model_controlled": false},
     "jev_plus_js_replay": {"successes": 42, "total": 42, "model_controlled": false},
     "headline_luna_js_enabled": false,
-    "file_upload_result": "The CUA surface had no native file-picker or file-input binding, so the upload fixture could not be attached."
+    "file_upload_result": "Headline CUA had no native file-picker or file-input binding, so the upload fixture could not be attached. Separate file-input control: 3/3, 0.31 s average, $0 local cost; not a Luna score."
   },
   "harness": {
     "luna_browser": "Codex visible in-app browser through CUA: screenshots, clicks, and typing; no Playwright/CDP file-upload adapter in the measured run.",
     "jev_browser": "Structured browser-action wrapper.",
     "jev_ultrafast": "Separate CDP browser runner with a text helper.",
-    "jev_native": "Local arc-cua runner with macOS accessibility/OCR backend and TypeSafe Jev policy.",
+    "jev_native": "Local arc-cua runner with macOS accessibility/OCR backend and TypeSafe Jev policy. Old native screen captures were excluded after wrong-window/unpaired-trace review; 1/5 remains trace-verified.",
     "hybrid": "Jev first, postcondition verification, then Luna fallback when needed."
   },
   "cost_model": {

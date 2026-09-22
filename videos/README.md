@@ -1,10 +1,10 @@
 # Video evidence
 
-The full local report contains a curated video library for the runs. This repository does not copy the raw recordings because many clips contain authenticated/private app sessions, account names, or local browser state.
+The full local report contains a curated video library for the runs. This repository does not copy the raw benchmark recordings because many clips contain authenticated/private app sessions, account names, or local browser state.
 
 The local artifact library is about 2.6 GB, so it is also intentionally kept separate from the Git history. The report still documents the clip names, lanes, outcomes, and review policy.
 
-The current local report lists 28 frame-reviewed clips: 12 original curated runs plus 16 expanded browser/desktop evidence clips. The expanded outputs live under `videos/expanded-evidence/browser/` and `videos/expanded-evidence/computer-use/`. See [`../EXPANDED_EVIDENCE.md`](../EXPANDED_EVIDENCE.md) for the stopping point and failure reason for every expanded clip.
+The local report currently lists only frame-audited clips. See [`manifest.json`](manifest.json) for the exact bundled/local-only inventory and the exclusions. The local report's expanded evidence notes remain in [`../EXPANDED_EVIDENCE.md`](../EXPANDED_EVIDENCE.md).
 
 The local library is organized by:
 
@@ -13,10 +13,9 @@ The local library is organized by:
 - `videos/extended-e2e/hybrid/` - verified Hybrid browser clips showing the Jev attempt and fallback boundary.
 - `videos/native-desktop/luna/` - verified Luna desktop clips.
 - `videos/native-desktop/hybrid/` - verified Hybrid desktop clips.
-- `videos/native-desktop/jev/` - verified Jev desktop attempts, including failures.
-- `videos/expanded-evidence/browser/` - additional bottom-timer browser attempts and recovery clips.
-- `videos/expanded-evidence/computer-use/` - additional bottom-timer native desktop attempts and recovery clips.
+- `videos/native-desktop/jev/` - local-only Jev desktop traces; old screen captures are not featured unless window-reviewed.
+- `videos/agent-native-apps/` - the bundled supplemental Chrome bridge walkthrough.
 
-The local report links only to recordings that were sampled at multiple timestamps. The earlier 16-minute Luna browser capture and other blank-window captures were removed after review because they showed the wrong Chrome window for the entire run.
+The local report links only to recordings that were sampled at multiple timestamps. The earlier 16-minute Luna browser capture and other blank-window or wrong-app captures were removed after review.
 
 For an external release, export sanitized clips with account names and private data removed, then add them here deliberately. Do not publish the authenticated originals.

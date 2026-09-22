@@ -6,10 +6,10 @@
   "overall": {
     "definition": "All measured tasks for each system, ranked by success rate then estimated cost per successful task.",
     "results": [
-      {"system": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "cost_per_success_usd": 0.0090},
-      {"system": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "cost_per_success_usd": 0.0128},
-      {"system": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "cost_per_success_usd": 0.0012, "note": "Native desktop computer use was not measured."},
-      {"system": "Jev Browser", "successes": 19, "total": 57, "rate": 0.333, "avg_seconds": 4.26, "cost_per_success_usd": 0.00208}
+      {"system": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.0090},
+      {"system": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128},
+      {"system": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "total_cost_usd": 0.0224, "cost_per_success_usd": 0.0012, "note": "Native desktop computer use was not measured."},
+      {"system": "Jev Browser", "successes": 18, "total": 52, "rate": 0.346, "avg_seconds": 3.62, "total_cost_usd": 0.01125, "cost_per_success_usd": 0.000625, "note": "Simple browser 18/42 plus strict real-world browser 0/10; no native desktop run."}
     ]
   },
   "lanes": {
@@ -55,6 +55,7 @@
   "browser_tools_probe": {
     "deterministic_browser_tool_proxy": {"successes": 14, "total": 14, "rate": 1.0, "not_a_model_score": true},
     "jev_plus_deterministic_replay": {"successes": 42, "total": 42, "rate": 1.0, "not_a_model_score": true},
+    "supported_upload_control": {"successes": 3, "total": 3, "rate": 1.0, "avg_seconds": 0.31, "cost_usd": 0, "not_a_model_score": true, "runs_ms": [320, 310, 298]},
     "note": "JavaScript/page inspection was kept as a separate capability check. It was not folded into Luna's model-controlled headline score."
   },
   "recording_policy": {

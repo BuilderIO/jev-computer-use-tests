@@ -16,7 +16,7 @@ The ranking rule is success rate first, then estimated cost per successful task.
 | Hybrid | 51/57 - 89.5% | 39/42 - 92.9% | 7/10 - 70%* | 5/5 - 100% |
 | Luna | 51/57 - 89.5% | 39/42 - 92.9% | 7/10 - 70% | 5/5 - 100% |
 | Jev Ultrafast | 19/51 - 37.3% | 18/42 - 42.9% | 1/9 - 11.1%** | not measured |
-| Jev Browser | 19/57 - 33.3% | 18/42 - 42.9% | 0/10 - 0% | 1/5 - 20% |
+| Jev Browser | 18/52 - 34.6% | 18/42 - 42.9% | 0/10 - 0% | not measured |
 
 \* Hybrid's ten-task browser result is a staged recorded fallback comparison, not one uninterrupted live interleaved turn.
 
@@ -31,7 +31,7 @@ The complete interactive report is [`report.html`](report.html). It has light/da
 | Hybrid | $0.0090 | 29.68 s/task | ~$0.0126 proxy | ~36.1 s/task |
 | Luna | $0.0128 | 44.57 s/task | ~$0.0091 proxy | ~37.8 s/task |
 | Jev Ultrafast | $0.0012 | 1.07 s/task | not measured | not measured |
-| Jev Browser | $0.00208 | 4.26 s/task | ~$0.0282 | 10.85 s/task |
+| Jev Browser | $0.000625 | 3.62 s/task | not measured | not measured |
 
 The native Hybrid cost is higher than Luna because every native task pays for the Jev-first attempt plus the verification/fallback path. Jev directly passed only the clean TextEdit task; Keynote and Numbers still required Luna recovery. The Hybrid path was slightly faster in this small lane, but it did not reduce the expensive work enough to beat pure Luna on cost.
 
@@ -61,7 +61,7 @@ The Luna browser runs used Codex's visible in-app browser through CUA. The surfa
 
 That is why the three repeated 42-task Luna misses were file-upload fixtures. It is a limitation of that harness configuration, not evidence that Luna or Codex can never upload files. A different browser adapter can expose a native chooser or bind directly to a file input.
 
-The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model.
+The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The old Jev native screen captures were excluded after review because they showed the wrong window or were not paired with their traces; the 1/5 Jev native result is trace-verified, but this snapshot does not present those captures as video evidence.
 
 ## Repository contents
 
@@ -70,6 +70,8 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 - [`RESULTS.md`](RESULTS.md) - concise methodology and result tables.
 - [`data/results.json`](data/results.json) - machine-readable headline results.
 - [`data/evidence.json`](data/evidence.json) - safe provenance, task lanes, cost model, and harness notes.
+- [`videos/manifest.json`](videos/manifest.json) - bundled versus local-only recording inventory and audit exclusions.
+- [`scripts/verify_results.py`](scripts/verify_results.py) - dependency-free snapshot integrity check.
 - [`tasks/`](tasks/) - public/demo task definitions that do not require private accounts.
 - [`videos/README.md`](videos/README.md) - recording inventory and why raw clips are not committed here.
 - [`cua-driver-control/`](cua-driver-control/) - a separate TryCua Cua Driver-only native Accessibility control, with result JSON, recording, and verified screenshot; excluded from the Jev/Luna leaderboard.
@@ -81,11 +83,13 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 ```bash
 python3 -m json.tool data/results.json
 python3 -m json.tool data/evidence.json
-open report.html
+python3 scripts/verify_results.py
+python3 -m http.server 8000
+# then open http://127.0.0.1:8000/report.html
 ```
 
 The full authenticated run requires private test accounts, local browser profiles, a Jev API key supplied through an environment variable, and native macOS applications. Those credentials and profiles are intentionally not part of this repository. See [`REPRODUCE.md`](REPRODUCE.md) for the boundary between the safe snapshot and the private local rerun.
 
 ## Recording policy
 
-Only frame-reviewed recordings belong in the local report. Earlier captures that showed the wrong blank Chrome window were excluded. The local raw video directory is about 2.6 GB and includes authenticated material, so it is not copied into this Git repository.
+Only frame-reviewed recordings belong in the local report. Earlier captures that showed the wrong blank Chrome window or the wrong native app window were excluded. The local raw video directory is about 2.6 GB and includes authenticated material, so it is not copied into this Git repository. One five-app Chrome bridge walkthrough is bundled as a supplemental, unscored example.

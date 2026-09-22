@@ -1,0 +1,64 @@
+{
+  "generated": "2026-09-21",
+  "policy": "Only frame-reviewed clips are listed as evidence. Private authenticated raw recordings stay local.",
+  "bundled": [
+    {
+      "path": "videos/agent-native-apps/curated/chrome-window-agent-native-five-app-flow.mp4",
+      "approach": "Chrome bridge walkthrough",
+      "lane": "supplemental",
+      "duration_seconds": 299.83,
+      "scored": false,
+      "outcome": "walkthrough",
+      "note": "Authenticated Mail draft, Calendar draft/cancel, Content edit, Design generation, and Slides edit. No send, event creation, publish, share, or payment."
+    },
+    {
+      "path": "cua-driver-control/textedit/recording.mp4",
+      "approach": "mac-cua AX driver",
+      "lane": "computer-use control",
+      "duration_seconds": null,
+      "scored": false,
+      "outcome": "control evidence",
+      "note": "Driver-only TextEdit control. It is not a Jev, Luna, or Hybrid model run."
+    }
+  ],
+  "local_only_evidence": [
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov",
+      "approach": "Luna",
+      "lane": "real-world browser",
+      "outcome": "Success at safe traveler/payment boundary",
+      "note": "Not bundled because it contains authenticated local-browser footage."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/e2e/luna-flights-restaurants-full.mp4",
+      "approach": "Luna",
+      "lane": "real-world browser",
+      "outcome": "Success at safe review boundary",
+      "note": "Not bundled because it contains authenticated local-browser footage."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/hybrid/hybrid-united-jev-to-luna-boundary.mp4",
+      "approach": "Hybrid",
+      "lane": "real-world browser",
+      "outcome": "Success at safe traveler/payment boundary",
+      "note": "Not bundled because it contains authenticated local-browser footage."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/expanded-evidence/browser/jev-resy-search-boundary.mp4",
+      "approach": "Jev Browser",
+      "lane": "real-world browser",
+      "outcome": "Success at named reservation-details boundary",
+      "note": "The clip shows Song Wat, Sat Sep 26 2026 at 7:00 PM, party 2, and Reserve Now; nothing was submitted."
+    }
+  ],
+  "excluded": [
+    {
+      "pattern": "old Jev native full-screen captures",
+      "reason": "Frame review found the wrong window or an unpaired trace. They must not be used as Jev desktop evidence."
+    },
+    {
+      "pattern": "OpenTable Jev CDN-boundary clip",
+      "reason": "The file was only 0.88 seconds and is not a useful end-to-end recording."
+    }
+  ]
+}

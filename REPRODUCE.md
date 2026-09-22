@@ -7,6 +7,7 @@ This repository contains the safe, inspectable result snapshot. It does not cont
 ```bash
 python3 -m json.tool data/results.json
 python3 -m json.tool data/evidence.json
+python3 scripts/verify_results.py
 open report.html
 ```
 
@@ -26,6 +27,11 @@ The original private runner used separate adapters for browser Jev, the Jev Ultr
 - Keep the same task text, starting state, timeout, and stopping boundary across approaches.
 - Score only verified postconditions, not movement or a self-reported completion message.
 - Keep deterministic JS probes separate from model-controlled Luna scores.
+- Treat the 3/3 file-input upload result as a harness control, not as a Luna score.
 - Report public discovery flows separately from the strict ten-task real-world denominator.
 - Report token/API estimates as estimates, not provider invoices.
 - Review sampled frames before linking a recording as evidence.
+
+The headline Jev Browser denominator is 52: 42 simple tasks plus 10 strict
+real-world browser tasks. It does not include native desktop tasks. Jev
+Ultrafast's denominator is 51 because it was not run on native desktop.
