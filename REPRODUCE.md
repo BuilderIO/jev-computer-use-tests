@@ -37,10 +37,11 @@ The original private runner used separate adapters for browser Jev, the Jev Ultr
 - Report token/API estimates as estimates, not provider invoices.
 - Review sampled frames before linking a recording as evidence.
 
-The private local report also contains two 60-second Jev authenticated-app
-attempts and additional native/browser clips. They are listed in the local
-report and local manifest, but are intentionally not copied into this public
-snapshot because they contain private account state.
+The private local report also contains short Jev authenticated-app stop clips,
+window-scoped native clips, and longer Luna/Hybrid walkthroughs. They are
+listed in the local report and generated manifest, but authenticated raw clips
+are intentionally not copied into this public snapshot because they contain
+private account state.
 
 The headline Jev Browser denominator is 52: 42 simple tasks plus 10 strict
 real-world browser tasks. It does not include native desktop tasks. Jev

@@ -51,52 +51,60 @@
       "note": "The clip shows Song Wat, Sat Sep 26 2026 at 7:00 PM, party 2, and Reserve Now; nothing was submitted."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/native-desktop/jev/textedit-window-scoped-native-jev-stopwatch.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/native-desktop/jev/textedit-window-scoped-native-jev-stop.mp4",
       "approach": "Jev",
       "lane": "computer use",
       "outcome": "Success",
-      "duration_seconds": 64.81,
-      "note": "Window-scoped TextEdit recording: Jev entered three exact lines and the app window stays visible while the label and timer sit below it."
+      "duration_seconds": 18.0,
+      "note": "Short window-scoped capture: Jev entered three exact lines; the app window stays visible and the label/timer sit below it."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/native-desktop/jev/pages-window-scoped-native-jev-stopwatch.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/native-desktop/jev/pages-window-scoped-native-jev-stop.mp4",
       "approach": "Jev",
       "lane": "computer use",
-      "outcome": "Not a success - false completion",
-      "duration_seconds": 65.01,
-      "note": "Window-scoped Pages recording: Jev reported completion, but the final Body remained empty; the label and timer sit below the app window."
+      "outcome": "Fail - false completion",
+      "duration_seconds": 18.0,
+      "note": "Short window-scoped capture: Jev reported completion, but the final Body remained empty; the stop reason is shown below the app window."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-flights-attempt-observation-60s.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-google-flights-window-scoped-stopwatch.mp4",
       "approach": "Jev Browser",
       "lane": "real-world browser",
-      "outcome": "Incomplete",
-      "duration_seconds": 59.84,
-      "note": "Jev reaches Google Flights results and stops before a verified selection; the final portion is an explicitly labeled observation hold."
+      "outcome": "Fail",
+      "duration_seconds": 11.033333,
+      "note": "Jev stopped after typing an invalid partial location; no matching flight was found. The frozen observation tail was removed."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-spotify-attempt-observation-60s.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/extended-e2e/jev-browser-stopwatch-v2/jev-spotify-window-scoped-stopwatch.mp4",
       "approach": "Jev Browser",
       "lane": "real-world browser",
-      "outcome": "Incomplete",
-      "duration_seconds": 59.84,
-      "note": "Jev reaches Spotify search/account gating but does not complete the task; the final portion is an explicitly labeled observation hold."
+      "outcome": "Fail",
+      "duration_seconds": 30.008333,
+      "note": "Jev reached Spotify's sign-up wall and stopped. The frozen observation tail was removed."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-mail-draft-attempt-60s.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-mail-draft-attempt-stop.mp4",
       "approach": "Jev",
       "lane": "real-world browser",
-      "outcome": "Not a success",
-      "duration_seconds": 60.0,
-      "note": "Authenticated Mail draft attempt held at its stopping state: the composer opened, but the recipient and requested body were not verified."
+      "outcome": "Fail",
+      "duration_seconds": 13.666667,
+      "note": "Authenticated Mail attempt stopped after the composer opened; recipient and requested body were not verified. The static tail was removed."
     },
     {
-      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-slides-attempt-60s.mp4",
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/jev/jev-slides-attempt-stop.mp4",
       "approach": "Jev",
       "lane": "real-world browser",
-      "outcome": "Not a success",
-      "duration_seconds": 60.0,
-      "note": "Authenticated Slides attempt held at its stopping state: visible chrome text appeared, but the canvas remained in a loading/placeholder state."
+      "outcome": "Fail",
+      "duration_seconds": 7.333008,
+      "note": "Authenticated Slides attempt stopped while the canvas remained in a loading/placeholder state. The static tail was removed."
+    },
+    {
+      "source": "framework/.tmp/jev-benchmark/artifacts/videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
+      "approach": "Hybrid",
+      "lane": "agent-native apps",
+      "outcome": "Observed",
+      "duration_seconds": 320.833332,
+      "note": "Staged five-app walkthrough for supplemental context; not a matched live turn and not scored."
     }
   ],
   "excluded": [

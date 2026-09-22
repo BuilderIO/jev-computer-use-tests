@@ -1,0 +1,1244 @@
+{
+  "date": "2026-09-21",
+  "leaderboard": [
+    [
+      "Luna",
+      "Basic browser",
+      "42 / 42*",
+      "100%",
+      "32.49 s",
+      "$0.41890",
+      "$0.010741"
+    ],
+    [
+      "Hybrid",
+      "Basic browser",
+      "39 / 42",
+      "92.9%",
+      "25.19 s",
+      "$0.26997",
+      "$0.006922"
+    ],
+    [
+      "Jev Browser",
+      "Basic browser",
+      "18 / 42",
+      "42.9%",
+      "1.77 s",
+      "$0.00542",
+      "$0.000301"
+    ],
+    [
+      "Jev Ultrafast",
+      "Basic browser",
+      "18 / 42",
+      "42.9%",
+      "0.77 s",
+      "$0.00816",
+      "$0.000453"
+    ],
+    [
+      "Luna",
+      "Real-world browser - public",
+      "9 / 9",
+      "100%",
+      "35.253 s",
+      "~$0.0828",
+      "~$0.00920"
+    ],
+    [
+      "Jev Browser",
+      "Real-world browser - public",
+      "3 / 9",
+      "33.3%",
+      "5.160 s",
+      "~$0.012997",
+      "~$0.004332"
+    ],
+    [
+      "Luna",
+      "Real-world browser - exact 10",
+      "7 / 10",
+      "70%",
+      "~98.7 s*",
+      "~$0.1876*",
+      "~$0.0268*"
+    ],
+    [
+      "Hybrid",
+      "Real-world browser - exact 10 recorded run",
+      "7 / 10",
+      "70%",
+      "~45.3 s*",
+      "~$0.1241*",
+      "~$0.0177*"
+    ],
+    [
+      "Luna",
+      "Real-world computer use - native",
+      "5 / 5",
+      "100%",
+      "37.82 s",
+      "~$0.04563",
+      "~$0.00913"
+    ],
+    [
+      "Jev",
+      "Real-world computer use - native",
+      "1 / 5",
+      "20%",
+      "10.85 s",
+      "~$0.0282",
+      "~$0.0282"
+    ],
+    [
+      "Hybrid",
+      "Real-world computer use - native",
+      "5 / 5",
+      "100%",
+      "36.11 s",
+      "~$0.06322 proxy",
+      "~$0.012644"
+    ]
+  ],
+  "overall_leaderboard": [
+    [
+      "Luna",
+      "Overall",
+      "54 / 57*",
+      "94.7%",
+      "44.57 s",
+      "$0.65213",
+      "$0.01279"
+    ],
+    [
+      "Hybrid",
+      "Overall",
+      "51 / 57",
+      "89.5%",
+      "29.68 s",
+      "$0.45729",
+      "$0.00897"
+    ],
+    [
+      "Jev Ultrafast",
+      "Overall",
+      "19 / 51*",
+      "37.3%",
+      "1.07 s",
+      "$0.02241",
+      "$0.00118"
+    ],
+    [
+      "Jev Browser",
+      "Overall",
+      "18 / 52",
+      "34.6%",
+      "3.62 s",
+      "$0.01125",
+      "$0.000625"
+    ]
+  ],
+  "real_world_browser_leaderboard": [
+    [
+      "Jev Browser",
+      "Public Flights/OpenTable/Resy discovery",
+      "3 / 9",
+      "33.3%",
+      "5.160 s",
+      "~$0.012997",
+      "~$0.004332"
+    ],
+    [
+      "Jev Ultrafast",
+      "Public Flights/OpenTable/Resy discovery",
+      "1 / 9",
+      "11.1%",
+      "2.449 s",
+      "~$0.014248",
+      "~$0.014248"
+    ],
+    [
+      "Luna",
+      "Public Flights/OpenTable/Resy discovery",
+      "9 / 9",
+      "100%",
+      "35.253 s",
+      "~$0.0828",
+      "~$0.00920"
+    ],
+    [
+      "Jev Browser",
+      "Exact extended real-world browser",
+      "0 / 10",
+      "0%",
+      "11.4 s",
+      "~$0.00583",
+      "All ten retained Jev attempts failed strict postconditions."
+    ],
+    [
+      "Luna",
+      "Exact extended real-world browser",
+      "7 / 10",
+      "70%",
+      "~98.7 s*",
+      "~$0.1876*",
+      "Nine tasks completed; Drive remained on a non-matching result and hung past 20 minutes."
+    ],
+    [
+      "Hybrid",
+      "Exact extended real-world browser recorded run",
+      "7 / 10",
+      "70%",
+      "~45.3 s*",
+      "~$0.1241*",
+      "Jev 0/10 plus a fresh recorded Luna recovery run; staged, not one interleaved live turn."
+    ],
+    [
+      "Jev",
+      "Authenticated Agent-Native apps",
+      "1 / 8",
+      "12.5%",
+      "13.489 s",
+      "~$0.043794",
+      "~$0.043794"
+    ],
+    [
+      "Luna",
+      "Authenticated Agent-Native apps",
+      "5 / 5",
+      "100%",
+      "82.647 s",
+      "~$0.098 proxy",
+      "~$0.0196"
+    ]
+  ],
+  "browser_js_tool_proxy": [],
+  "controlled": [
+    [
+      "Jev Browser",
+      "18 / 42",
+      "42.9%",
+      "1.77 s",
+      "$0.00542",
+      "$0.000301",
+      "Jev API estimate"
+    ],
+    [
+      "Jev Ultrafast",
+      "18 / 42",
+      "42.9%",
+      "0.77 s",
+      "$0.00816",
+      "$0.000453",
+      "Jev API estimate"
+    ],
+    [
+      "Luna",
+      "42 / 42*",
+      "100%",
+      "32.49 s",
+      "$0.41890",
+      "$0.010741",
+      "connected Chrome; original in-app browser was 39 / 42"
+    ],
+    [
+      "Hybrid",
+      "39 / 42",
+      "92.9%",
+      "25.19 s",
+      "$0.26997",
+      "$0.006922",
+      "Jev first, Luna recovery after a failed postcondition"
+    ]
+  ],
+  "native": [
+    {
+      "task": "Spotify: Radiohead \u2192 Karma Police \u2192 play",
+      "surface": "Desktop app; Electron/web surface, not pure native",
+      "jev": [
+        "FAIL",
+        "8.57 s",
+        "$0.00656",
+        "No verified clip retained; the original capture was excluded after frame review."
+      ],
+      "luna": [
+        "PASS",
+        "40.41 s",
+        "$0.01521",
+        "spotify-search-play-timer.mp4"
+      ],
+      "hybrid": [
+        "PASS",
+        "49.43 s",
+        "$0.01839",
+        "spotify-radiohead-fallback-timer.mp4"
+      ],
+      "note": "Jev played the wrong Radiohead song; Luna recovered Karma Police. Hybrid used Luna after a verified Jev miss."
+    },
+    {
+      "task": "Pages: type two-line draft",
+      "surface": "Native-style AppKit rich-text editor",
+      "jev": [
+        "FAIL - false completion",
+        "8.88 s",
+        "$0.00320",
+        "<a href=\"videos/native-desktop/jev/pages-window-scoped-native-jev-stop.mp4\">Jev window-scoped clip</a>"
+      ],
+      "luna": [
+        "PASS",
+        "18.31 s",
+        "$0.00507",
+        "pages-draft-timer.mp4"
+      ],
+      "hybrid": [
+        "PASS",
+        "20.90 s",
+        "$0.00827",
+        "pages-draft-fallback-timer.mp4"
+      ],
+      "note": "Jev reported SUBTASK_COMPLETE while Pages' Body remained empty. The hybrid verifier caught that and invoked Luna."
+    },
+    {
+      "task": "TextEdit: type three exact lines",
+      "surface": "Pure native AppKit text editor",
+      "jev": [
+        "PASS",
+        "5.01 s",
+        "$0.00080",
+        "<a href=\"videos/native-desktop/jev/textedit-window-scoped-native-jev-stop.mp4\">Jev window-scoped clip</a>"
+      ],
+      "luna": [
+        "PASS",
+        "18.08 s",
+        "$0.00507",
+        "textedit-notes-timer.mp4"
+      ],
+      "hybrid": [
+        "PASS - Jev leg; no fallback",
+        "5.01 s",
+        "$0.00080",
+        "textedit-notes-frontmost-timer.mp4"
+      ],
+      "note": "The exact text was verified in the native text area. A fresh window-scoped capture shows only TextEdit with the exact lines; the older full-screen capture was excluded after frame review."
+    },
+    {
+      "task": "Keynote: create two-slide presentation",
+      "surface": "Pure native Apple presentation app",
+      "jev": [
+        "FAIL - false completion",
+        "21.86 s",
+        "$0.01305",
+        "No verified clip retained; the original capture was excluded after frame review."
+      ],
+      "luna": [
+        "PASS - requested fields verified",
+        "56.88 s",
+        "$0.01352 proxy",
+        "<a href=\"videos/native-desktop/luna/keynote-two-slide-luna-stopwatch.mp4\">keynote-two-slide-luna-stopwatch.mp4</a>"
+      ],
+      "hybrid": [
+        "PASS - Luna fallback",
+        "~83.0 s",
+        "~$0.03069 proxy",
+        "<a href=\"videos/native-desktop/hybrid/keynote-hybrid-composite-stopwatch.mp4\">keynote-hybrid-composite-stopwatch.mp4</a>"
+      ],
+      "note": "Synchronized rerun: Jev reported SUBTASK_COMPLETE, but the final presentation still showed blank placeholders; Luna then repaired and verified both slides. The hybrid clip is a labeled composite of the two continuous phases, with a 204-second stopwatch capture."
+    },
+    {
+      "task": "Numbers: enter a two-row status table",
+      "surface": "Pure native Apple spreadsheet app",
+      "jev": [
+        "FAIL - blank spreadsheet",
+        "9.94 s",
+        "$0.00457",
+        "Synchronized rerun; no retained link"
+      ],
+      "luna": [
+        "PASS - six cells verified",
+        "55.45 s",
+        "$0.00676 proxy",
+        "<a href=\"videos/native-desktop/luna/numbers-two-row-luna-stopwatch.mp4\">numbers-two-row-luna-stopwatch.mp4</a>"
+      ],
+      "hybrid": [
+        "PASS - Luna fallback",
+        "~22.2 s",
+        "~$0.00507 proxy",
+        "<a href=\"videos/native-desktop/hybrid/numbers-hybrid-composite-stopwatch.mp4\">numbers-hybrid-composite-stopwatch.mp4</a>"
+      ],
+      "note": "Synchronized rerun: Jev created the workbook but never entered the requested cells; Luna then entered A1:B3 in the same fresh workbook and verified all six values. The hybrid clip is a labeled composite of the two continuous phases, with a 220-second stopwatch capture."
+    }
+  ],
+  "native_summary": [
+    [
+      "Jev",
+      "1 / 5",
+      "20%",
+      "10.85 s",
+      "~$0.0282",
+      "~$0.0282"
+    ],
+    [
+      "Luna",
+      "5 / 5",
+      "100%",
+      "37.82 s",
+      "~$0.04563 proxy",
+      "~$0.00913"
+    ],
+    [
+      "Hybrid",
+      "5 / 5",
+      "100%",
+      "~36.11 s",
+      "~$0.06322 proxy",
+      "~$0.012644"
+    ]
+  ],
+  "mac_cua_controls": [
+    [
+      "Jev, accessibility driver",
+      "Pages draft",
+      "PASS",
+      "Fresh AX tree + canvas click + background typing; both requested lines visible in the final screenshot."
+    ],
+    [
+      "Jev, accessibility driver",
+      "Keynote two-slide edit",
+      "FAIL",
+      "Created slides and exposed AX placeholders, but the title/body target drifted and the final slide contained duplicated title text and a blank bullet."
+    ],
+    [
+      "Jev, accessibility driver",
+      "Numbers six-cell edit",
+      "FAIL",
+      "AX cells were exposed and editable, but stale indices shifted values; final table did not match the requested six-cell layout."
+    ],
+    [
+      "Jev, accessibility driver",
+      "Spotify Radiohead \u2192 Karma Police",
+      "FAIL",
+      "Spotify exposed only a sparse window tree; the coordinate click did not reach the artist/track state, and no Karma Police playback was verified."
+    ]
+  ],
+  "supported_upload_control": [
+    [
+      "Luna",
+      "3 / 3",
+      "100%",
+      "not measured",
+      "not measured",
+      "Three model-directed normal-Chrome reruns selected benchmark.txt through the native chooser and visibly reached SUCCESS; this is the upload slice, not a fresh 42-task run"
+    ],
+    [
+      "Hybrid",
+      "0 / 3 in-app",
+      "0%",
+      "not measured",
+      "not measured",
+      "The original in-app run had no file-picker action; a matched model-directed normal-Chrome rerun was not retained, so the Hybrid headline remains 39 / 42"
+    ]
+  ],
+  "extended_real_world": [
+    [
+      "United flight",
+      "BLOCKED",
+      "PARTIAL - itinerary selected; traveler/payment boundary (not booked)<br><a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Luna boundary clip</a>",
+      "PARTIAL - Jev short failure -> Luna traveler boundary<br>Hybrid composite",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Google Flights concrete fare",
+      "DRIFTED - 0 / 1",
+      "Partial search/results only",
+      "Partial search/results only",
+      "<a href=\"videos/extended-e2e/jev-browser-stopwatch-v2/google-flights-fare-boundary.mp4\">google-flights-fare-boundary.mp4</a>"
+    ],
+    [
+      "Thai restaurant reservation",
+      "FAIL - OpenTable CDN/EdgeSuite block before app UI",
+      "PARTIAL - Hed Very Thai, Mon Sep 21 8:00 PM, party 2; reached \u201cYou\u2019re almost done\u201d / Complete reservation, then released the temporary hold. Luna turn: 64.4 s, ~$0.0169 CUA-call proxy<br>Luna Chrome boundary clip",
+      "PARTIAL - Jev hit the same transport boundary; Luna reached reservation details<br>Hybrid composite",
+      "<a href=\"videos/expanded-evidence/browser/jev-resy-search-boundary.mp4\">Jev Resy details clip</a>"
+    ],
+    [
+      "Spotify public track",
+      "STOPPED SHORT",
+      "No matched full trace",
+      "Native desktop lane scored separately",
+      "spotify-public-track-boundary.mp4"
+    ],
+    [
+      "SauceDemo checkout",
+      "STUCK",
+      "Cart/checkpoint evidence only",
+      "No matched extended trace",
+      "saucedemo-checkout-boundary.mp4"
+    ],
+    [
+      "TodoMVC project tracker",
+      "STUCK",
+      "PASS - Completed filter verified; final Active state retained<br>Luna Chrome clip",
+      "PASS - Jev short attempt -> Luna add/complete/filter recovery<br>Hybrid composite",
+      "todomvc-project-tracker.mp4"
+    ],
+    [
+      "Google Drive private edit",
+      "AUTH",
+      "Authenticated checkpoint exists",
+      "No matched extended trace",
+      "drive-private-doc-create-edit.mp4"
+    ],
+    [
+      "Notion private edit",
+      "AUTH",
+      "Authenticated checkpoint exists",
+      "No matched extended trace",
+      "notion-private-page-create-edit.mp4"
+    ],
+    [
+      "Figma private design",
+      "AUTH",
+      "Editor checkpoint exists",
+      "No matched extended trace",
+      "figma-private-design-create-edit.mp4"
+    ],
+    [
+      "Mail private draft",
+      "ERROR",
+      "Authenticated draft checkpoint exists",
+      "No matched extended trace",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ]
+  ],
+  "strict_real_world_luna": [
+    [
+      "United flight",
+      "PASS",
+      "145.0 s",
+      "SFO \u2192 EWR, Oct 10\u201317, one adult; traveler/payment boundary visible; purchase untouched.",
+      "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Verified Luna clip</a>"
+    ],
+    [
+      "Thai restaurant",
+      "PARTIAL",
+      "123.9 s",
+      "Oct 10, 7:00 PM, party 2, eight Thai results visible; no named reservation-details step.",
+      "Verified Luna clip"
+    ],
+    [
+      "Google Drive",
+      "FAIL / HUNG",
+      ">20 min",
+      "Search returned only \u201cAI Frontend Generation Benchmark\u201d owned by Brent; the requested private Jev document was not opened.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Notion",
+      "PASS",
+      "part of 619.4 s continuation",
+      "Private page \u201cJev benchmark private Notion test\u201d visibly contains the requested sentence.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Figma",
+      "FAIL / AUTH",
+      "part of 619.4 s continuation",
+      "Reached Google SSO and stopped at the device-passkey confirmation for steve@builder.io.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Spotify",
+      "PASS*",
+      "part of 619.4 s continuation",
+      "Khruangbin \u2192 Texas Sun selected; public playback was gated by signup, so the conditional playback goal could not go further.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Mail",
+      "PASS",
+      "part of 619.4 s continuation",
+      "Jev-related draft found, addressed to steve@builder.io, requested subject/body visible; Send untouched.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Calendar",
+      "PASS",
+      "part of 619.4 s continuation",
+      "Title, Oct 20 2026, 10:00\u201310:30 AM visible; Create untouched.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "SauceDemo",
+      "PASS*",
+      "part of 619.4 s continuation",
+      "Fleece Jacket checkout overview with Ada Lovelace and ZIP 94025; site exposes no email field; Finish untouched.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "TodoMVC",
+      "PASS",
+      "part of 619.4 s continuation",
+      "Buy coffee and Review Jev benchmark completed; Completed filter visible; Send dinner options remains active.",
+      "Verified Luna clip"
+    ]
+  ],
+  "strict_real_world_matrix": [
+    [
+      "United flight",
+      "FAIL",
+      "PASS",
+      "PASS - recorded Luna fallback",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "<a href=\"videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov\">Luna</a>",
+      "Recorded fallback"
+    ],
+    [
+      "Thai restaurant",
+      "FAIL - CDN block",
+      "PARTIAL",
+      "PASS - recorded fallback reached reservation details",
+      "Jev",
+      "Luna",
+      "Recorded fallback"
+    ],
+    [
+      "Google Drive",
+      "FAIL",
+      "FAIL / HUNG",
+      "FAIL - recorded fallback did not find target",
+      "Jev",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Notion",
+      "FAIL",
+      "PASS",
+      "PASS - recorded Luna fallback",
+      "Jev",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Figma",
+      "FAIL",
+      "FAIL / AUTH",
+      "FAIL / AUTH - recorded fallback",
+      "Jev",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Spotify",
+      "FAIL",
+      "PASS*",
+      "PASS* - recorded fallback",
+      "Jev",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Mail",
+      "FAIL",
+      "PASS",
+      "FAIL / AUTH - recorded fallback",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "Calendar",
+      "FAIL",
+      "PASS",
+      "PASS - recorded Luna fallback",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "SauceDemo",
+      "FAIL",
+      "PASS*",
+      "PASS* - recorded fallback",
+      "Jev",
+      "No verified clip retained; the original capture was excluded after frame review.",
+      "No verified clip retained; the original capture was excluded after frame review."
+    ],
+    [
+      "TodoMVC",
+      "FAIL",
+      "PASS",
+      "PASS - recorded Luna fallback",
+      "Jev",
+      "Luna",
+      "Recorded fallback"
+    ]
+  ],
+  "strict_hybrid_rows": [
+    [
+      "United flight",
+      "PASS",
+      "~4m",
+      "~22",
+      "Traveler Info/payment boundary; Continue untouched."
+    ],
+    [
+      "Thai restaurant",
+      "PASS",
+      "~2m",
+      "~12",
+      "Named OpenTable slot and reservation-details boundary; reservation untouched."
+    ],
+    [
+      "Google Drive",
+      "FAIL",
+      "~1m",
+      "~9",
+      "No matching private benchmark file found."
+    ],
+    [
+      "Notion",
+      "PASS",
+      "~1m",
+      "~10",
+      "Fallback note added and verified on the private page."
+    ],
+    [
+      "Figma",
+      "FAIL / AUTH",
+      "<1m",
+      "~2",
+      "Google/Figma sign-in required."
+    ],
+    [
+      "Spotify",
+      "PASS*",
+      "~2m",
+      "~5",
+      "Texas Sun selected; signup gate blocked playback."
+    ],
+    [
+      "Mail",
+      "FAIL / AUTH",
+      "<1m",
+      "~2",
+      "Google re-verification required before draft access."
+    ],
+    [
+      "Calendar",
+      "PASS",
+      "~2m",
+      "~6",
+      "Oct 20, 10:00\u201310:30 form filled; event not saved."
+    ],
+    [
+      "SauceDemo",
+      "PASS*",
+      "~2m",
+      "~8",
+      "Final overview visible; Finish untouched."
+    ],
+    [
+      "TodoMVC",
+      "PASS",
+      "~1m",
+      "~7",
+      "Three items added, first two completed, Completed filter visible."
+    ]
+  ],
+  "strict_real_world_summary": [
+    [
+      "Jev Browser",
+      "0 / 10",
+      "0%",
+      "11.4 s",
+      "~$0.00583 proxy",
+      "All ten exact Jev attempts failed strict postconditions."
+    ],
+    [
+      "Luna",
+      "7 / 10",
+      "70%",
+      "~98.7 s*",
+      "~$0.1876* known proxy",
+      "United, Notion, Spotify, Mail, Calendar, SauceDemo, and TodoMVC passed; OpenTable was results-only, Drive did not find the private target, and Figma hit passkey."
+    ],
+    [
+      "Hybrid",
+      "7 / 10",
+      "70%",
+      "~45.3 s*",
+      "~$0.1241* proxy",
+      "Recorded Jev-first plus Luna recovery run. Not one interleaved live turn."
+    ]
+  ],
+  "strict_hybrid_recording": {
+    "recording": "videos/strict-ten/hybrid-browser-exact-live-stopwatch.mp4",
+    "raw_recording": "videos/strict-ten/hybrid-browser-exact-live-raw.mov",
+    "duration_s": 441.862,
+    "cua_calls": 70,
+    "fallback_successes": 7,
+    "fallback_total": 10,
+    "fallback_success_rate": "70%",
+    "fallback_cost_proxy_usd": 0.1183,
+    "jev_leg_cost_proxy_usd": 0.00582708,
+    "hybrid_cost_proxy_usd": 0.12412708,
+    "hybrid_avg_time_s": 45.3262,
+    "protocol": "Retained Jev 0/10 strict leg followed by one fresh sequential Luna fallback run; no external side effects.",
+    "live_interleaving": false
+  },
+  "video_library": [
+    {
+      "group": "Curated evidence",
+      "description": "Frame-audited clips with the intended app window visible. Success means the stated end state is visible; otherwise it is a Fail.",
+      "videos": [
+        {
+          "system": "Jev",
+          "lane": "real-world",
+          "duration": "11s",
+          "title": "Google Flights stopped",
+          "note": "Fail: Jev entered a natural-language destination into the wrong field, received 'No matching locations found', and stopped. The Chrome URL bar is visible and there is no frozen tail.",
+          "path": "videos/extended-e2e/jev-browser-stopwatch-v2/jev-google-flights-window-scoped-stopwatch.mp4",
+          "tone": "jev",
+          "outcome": "Fail"
+        },
+        {
+          "system": "Jev",
+          "lane": "real-world",
+          "duration": "30s",
+          "title": "Spotify stopped",
+          "note": "Fail: Jev reached the public Spotify account wall and stopped. The Chrome URL bar is visible and there is no frozen tail.",
+          "path": "videos/extended-e2e/jev-browser-stopwatch-v2/jev-spotify-window-scoped-stopwatch.mp4",
+          "tone": "jev",
+          "outcome": "Fail"
+        },
+        {
+          "system": "Jev",
+          "duration": "33s",
+          "title": "Resy reservation details",
+          "note": "Success: Song Wat, Sat Sep 26 2026 at 7:00 PM, party 2, and the Complete Your Reservation / Reserve Now boundary are visible. Nothing was submitted.",
+          "path": "videos/expanded-evidence/browser/jev-resy-search-boundary.mp4",
+          "tone": "jev",
+          "outcome": "Success"
+        },
+        {
+          "system": "Luna",
+          "duration": "1m 00s",
+          "title": "United flight to traveler page",
+          "note": "Success: itinerary and traveler/payment page are visible; purchase is untouched.",
+          "path": "videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Luna",
+          "duration": "2m 21s",
+          "title": "Flights and restaurant search",
+          "note": "Success: the continuous browser run reaches concrete flight results after multi-step navigation.",
+          "path": "videos/e2e/luna-flights-restaurants-full.mp4",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "duration": "7m 30s",
+          "title": "TodoMVC long run",
+          "note": "Success: the clean Chrome run ends with the requested completed and active items visible.",
+          "path": "videos/strict-ten/hybrid-browser-exact-live-stopwatch.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "duration": "2m 27s",
+          "title": "Google Flights handoff",
+          "note": "Success: the browser run ends on concrete flight results after the Jev-first handoff.",
+          "path": "videos/e2e/hybrid-google-flights-full.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        },
+        {
+          "system": "Luna",
+          "duration": "2m 29s",
+          "title": "Keynote two-slide edit",
+          "note": "Success: both slide titles and the body text are visible at the end.",
+          "path": "videos/native-desktop/luna/keynote-two-slide-luna-stopwatch.mp4",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Luna",
+          "duration": "2m 30s",
+          "title": "Numbers six-cell edit",
+          "note": "Success: the requested spreadsheet cells are visible at the end.",
+          "path": "videos/native-desktop/luna/numbers-two-row-luna-stopwatch.mp4",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "duration": "3m 24s",
+          "title": "Keynote recovery",
+          "note": "Success: Luna repairs the Jev miss and the final slide content is visible.",
+          "path": "videos/native-desktop/hybrid/keynote-hybrid-composite-stopwatch.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "duration": "3m 40s",
+          "title": "Numbers recovery",
+          "note": "Success: Luna repairs the Jev miss and the final spreadsheet values are visible.",
+          "path": "videos/native-desktop/hybrid/numbers-hybrid-composite-stopwatch.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        },
+        {
+          "system": "Jev",
+          "lane": "computer-use",
+          "duration": "18s",
+          "title": "TextEdit exact text",
+          "note": "Success: a fresh native TextEdit window shows all three exact lines. The label and timer are in a reserved band below the app.",
+          "path": "videos/native-desktop/jev/textedit-window-scoped-native-jev-stop.mp4",
+          "tone": "jev",
+          "outcome": "Success"
+        },
+        {
+          "system": "Jev",
+          "lane": "computer-use",
+          "duration": "18s",
+          "title": "Pages false completion",
+          "note": "Fail: Jev reports completion but the Pages body is empty. The short clean capture keeps the label and timer below the app.",
+          "path": "videos/native-desktop/jev/pages-window-scoped-native-jev-stop.mp4",
+          "tone": "jev",
+          "outcome": "Fail"
+        }
+      ]
+    },
+    {
+      "group": "Expanded evidence",
+      "description": "Additional frame-audited clips across more everyday browser and desktop examples. These add coverage; they do not change the headline benchmark scores.",
+      "videos": [
+        {
+          "system": "Luna",
+          "lane": "real-world",
+          "duration": "2m 29s",
+          "title": "TodoMVC project tracker",
+          "note": "Success: the requested tasks and the completed/active views are visible at the end.",
+          "path": "videos/expanded-evidence/browser/luna-todomvc-success.mp4",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "lane": "real-world",
+          "duration": "2m 42s",
+          "title": "OpenTable recovery boundary",
+          "note": "Fail: Luna reaches restaurant results, but the clip ends before the named reservation-details state.",
+          "path": "videos/expanded-evidence/browser/hybrid-opentable-recovery.mp4",
+          "tone": "hybrid",
+          "outcome": "Fail"
+        },
+        {
+          "system": "Hybrid",
+          "lane": "real-world",
+          "duration": "2m 32s",
+          "title": "TodoMVC recovery",
+          "note": "Success: Luna completes the add/complete/filter workflow after the Jev-first attempt.",
+          "path": "videos/expanded-evidence/browser/hybrid-todomvc-recovery.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        },
+        {
+          "system": "Luna",
+          "lane": "computer-use",
+          "duration": "1m 00s",
+          "title": "Pages edit",
+          "note": "Success: the requested text is visible in the native Pages document at the end.",
+          "path": "videos/expanded-evidence/computer-use/luna-pages-success.mp4",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Luna",
+          "lane": "computer-use",
+          "duration": "1m 00s",
+          "title": "Spotify search and play",
+          "note": "Success: the requested Radiohead track page and active playback state are visible.",
+          "path": "videos/expanded-evidence/computer-use/luna-spotify-success.mp4",
+          "tone": "luna",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "lane": "computer-use",
+          "duration": "1m 00s",
+          "title": "Pages recovery",
+          "note": "Success: Luna repairs the Jev miss and the requested text is visible in Pages.",
+          "path": "videos/expanded-evidence/computer-use/hybrid-pages-recovery.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        },
+        {
+          "system": "Hybrid",
+          "lane": "computer-use",
+          "duration": "59s",
+          "title": "Spotify recovery",
+          "note": "Success: Luna repairs the Jev-first attempt and the requested Radiohead playback state is visible.",
+          "path": "videos/expanded-evidence/computer-use/hybrid-spotify-recovery.mp4",
+          "tone": "hybrid",
+          "outcome": "Success"
+        }
+      ]
+    },
+    {
+      "group": "Agent-Native app attempts",
+      "description": "Short Jev stop-point clips plus the long Luna and staged Hybrid app walkthroughs. The app walkthroughs are supplemental evidence and do not change the strict score.",
+      "videos": [
+        {
+          "system": "Jev",
+          "lane": "real-world",
+          "duration": "14s",
+          "title": "Mail draft stopped",
+          "note": "Fail: the composer opened, but the recipient and body were not verified. The clip ends shortly after Jev's last action.",
+          "path": "videos/agent-native-apps/jev/jev-mail-draft-attempt-stop.mp4",
+          "tone": "jev",
+          "outcome": "Fail"
+        },
+        {
+          "system": "Jev",
+          "lane": "real-world",
+          "duration": "7s",
+          "title": "Slides stopped",
+          "note": "Fail: Jev stopped while the slide remained in a loading state. The clip ends shortly after the last action.",
+          "path": "videos/agent-native-apps/jev/jev-slides-attempt-stop.mp4",
+          "tone": "jev",
+          "outcome": "Fail"
+        },
+        {
+          "system": "Luna",
+          "lane": "real-world",
+          "duration": "4m 59s",
+          "title": "Five-app walkthrough",
+          "note": "Observed: Chrome moves through Mail, Calendar, Content, Design, and Slides with meaningful edits. This is evidence, not an added strict score.",
+          "path": "videos/agent-native-apps/curated/chrome-window-agent-native-five-app-flow.mp4",
+          "tone": "luna",
+          "outcome": "Observed"
+        },
+        {
+          "system": "Hybrid",
+          "lane": "real-world",
+          "duration": "5m 21s",
+          "title": "Five-app staged handoff",
+          "note": "Observed staged sequence: Jev stops in Mail and Slides, then Luna continues through the five apps. This is not a matched live Hybrid turn and is not scored.",
+          "path": "videos/agent-native-apps/curated/hybrid-agent-native-five-app-staged.mp4",
+          "tone": "hybrid",
+          "outcome": "Observed"
+        }
+      ]
+    }
+  ],
+  "exploratory_public_cua_summary": [
+    [
+      "Jev Browser",
+      "3 / 9",
+      "33.3%",
+      "5.160 s",
+      "~$0.012997",
+      "~$0.004332",
+      "Three fresh starts each for Flights, OpenTable, and Resy; stop at discovery/results."
+    ],
+    [
+      "Jev Ultrafast",
+      "1 / 9",
+      "11.1%",
+      "2.449 s",
+      "~$0.014248",
+      "~$0.014248",
+      "Same repeated public lane; three OpenTable attempts were transport-blocked."
+    ],
+    [
+      "Luna",
+      "9 / 9",
+      "100%",
+      "35.253 s",
+      "~$0.0828 proxy",
+      "~$0.00920 proxy",
+      "Same nine read-only discovery/results flows; not bookings."
+    ],
+    [
+      "Hybrid",
+      "N/A",
+      "N/A",
+      "N/A",
+      "N/A",
+      "N/A",
+      "No comparable repeated public hybrid run was retained."
+    ]
+  ],
+  "exploratory_public_cua_flows": [
+    [
+      "Google Flights",
+      "0 / 3",
+      "1 / 3",
+      "3 / 3",
+      "Search/results only; Luna reached 18 results each run."
+    ],
+    [
+      "OpenTable",
+      "0 / 3",
+      "0 / 3",
+      "3 / 3",
+      "Jev contexts hit transport errors; visible Luna Chrome showed cards and 7:00 PM slots."
+    ],
+    [
+      "Resy",
+      "3 / 3",
+      "0 / 3",
+      "3 / 3",
+      "Party/date/time search; Jev Browser reached the 19:00 slot state."
+    ]
+  ],
+  "public_smoke_checks": [
+    [
+      "SauceDemo cart",
+      "FAIL",
+      "FAIL",
+      "PASS - 62.660 s",
+      "Log in, sort, add most expensive item, open cart."
+    ],
+    [
+      "The Internet secure login",
+      "FAIL",
+      "FAIL",
+      "PASS - 21.081 s",
+      "Reach the secure area; password input was the Jev boundary."
+    ],
+    [
+      "TodoMVC complete/filter",
+      "PASS",
+      "FAIL",
+      "PASS - 30.862 s",
+      "Add Buy coffee, complete it, filter Completed."
+    ],
+    [
+      "OpenTable discovery",
+      "transport blocked",
+      "transport blocked",
+      "PASS - 13.381 s",
+      "Environment differs: visible Luna Chrome had public cards."
+    ]
+  ],
+  "additional_public_tasks": [
+    [
+      "Research-only: Wikipedia two-hop",
+      "PASS - 15.930 s; ~$0.020947",
+      "PASS - ~15 s; ~4 CUA calls",
+      "PASS - Jev leg retained; no Luna fallback",
+      "Supplemental research check only; excluded from the real-world workflow lane."
+    ],
+    [
+      "GitHub Cua issue research",
+      "PASS - 8.544 s; ~$0.002258",
+      "PASS - ~20 s; ~3 CUA calls",
+      "PASS - Jev leg retained; no Luna fallback",
+      "Open the Cua issue list, select issue #3982, and verify its browser-dialog failure body."
+    ]
+  ],
+  "authenticated_summary": [
+    [
+      "Jev",
+      "1 / 8",
+      "12.5%",
+      "13.489 s",
+      "~$0.043794",
+      "Exact eight-task authenticated runner; Slides was the strict pass."
+    ],
+    [
+      "Luna",
+      "5 / 5",
+      "100%",
+      "82.647 s",
+      "~$0.098 proxy",
+      "One safe composite checkpoint in each requested Agent-Native app."
+    ],
+    [
+      "Hybrid",
+      "N/A",
+      "N/A",
+      "N/A",
+      "N/A",
+      "No matched authenticated hybrid run was retained."
+    ]
+  ],
+  "authenticated_apps": [
+    [
+      "Mail",
+      "FAIL - 0 / 3 Jev tasks",
+      "PASS - searched and edited an unsent draft",
+      "<a href=\"videos/luna-native-chrome/mail-draft.mp4\">mail-draft.mp4</a>"
+    ],
+    [
+      "Calendar",
+      "FAIL - 0 / 2 Jev tasks",
+      "PASS - week/search boundary; no event saved",
+      "<a href=\"videos/luna-native-chrome/calendar-edit-boundary.mp4\">calendar-edit-boundary.mp4</a>"
+    ],
+    [
+      "Design",
+      "FAIL - target error",
+      "PASS - visible design artifact and edit",
+      "<a href=\"videos/luna-native-chrome/design-edit.mp4\">design-edit.mp4</a>"
+    ],
+    [
+      "Slides",
+      "PASS - create/edit",
+      "PASS - visible deck edit; generation caveat",
+      "<a href=\"videos/luna-native-chrome/slides-edit.mp4\">slides-edit.mp4</a>"
+    ],
+    [
+      "Content",
+      "FAIL - remained Churning",
+      "PASS - visible document create/edit",
+      "<a href=\"videos/luna-native-chrome/content-edit.mp4\">content-edit.mp4</a>"
+    ]
+  ],
+  "supplemental_agent_native_walkthrough": "videos/agent-native-apps/curated/chrome-window-agent-native-five-app-flow.mp4",
+  "hybrid_browser_composites": [
+    "videos/strict-ten/hybrid-browser-exact-live-stopwatch.mp4",
+    "videos/e2e/hybrid-google-flights-full.mp4"
+  ],
+  "strict_luna_recordings": [
+    "videos/luna-real-world/luna-united-sfo-ewr-full-v2.mov",
+    "videos/e2e/luna-flights-restaurants-full.mp4"
+  ],
+  "notes": [
+    "Native Pages Jev is a verified false completion: the final Body value was empty.",
+    "Native TextEdit Jev, Luna, and hybrid exact text were verified in the native text area.",
+    "Native Spotify is a desktop Electron/web surface and is labeled separately from pure native apps.",
+    "Native Keynote and Numbers are pure native Apple app tests: Luna passed both; synchronized Jev reruns failed with blank Keynote placeholders and an empty Numbers table.",
+    "The separate accessibility-driver control passed Pages visually but failed Keynote, Numbers, and Spotify controls; it is a driver capability check, not a model leaderboard lane.",
+    "Matched native hybrid now covers all five tasks at 5/5: Jev directly passed only TextEdit, while Luna repaired the native misses.",
+    "The new native hybrid totals are estimated from the observed Jev leg plus 11 Keynote and 3 Numbers Luna CUA calls at the calibrated proxy rate; they are not provider invoices.",
+    "The deterministic browser controls passed 14/14 probes and replayed Jev failures at 42/42; they are not model runs and are not merged into any of the four approach scores.",
+    "The exact ten-task real-world browser rerun is now scored: Jev 0/10, Luna 7/10, and a matched Jev-first replay 7/10; the replay is explicitly not one interleaved live turn.",
+    "Known Luna CUA-call proxy for the exact rerun is about $0.1876 across the United/OpenTable/continuation traces; the Drive hang's final usage was not returned, so this is a lower-bound known proxy.",
+    "The exact rerun's nine non-hung tasks average about 98.7 seconds; Drive remained on a non-matching search result beyond 20 minutes and is reported as a hang.",
+    "A clean 149.1s Chrome-foreground Luna TodoMVC recording verified a multi-step add/complete/filter workflow before the exact ten-task rerun; the exact rerun now supersedes that earlier partial denominator.",
+    "The retained 60.0s Luna United v2 clip reaches a concrete itinerary and traveler/payment boundary; it intentionally stops before identity, payment, or purchase.",
+    "A clean 149.1s Chrome-foreground Luna OpenTable clip reaches the named Hed Very Thai reservation-details page and Complete reservation button, then releases the temporary hold without submitting.",
+    "Three labeled browser composites now show Jev-first to Luna recovery for United, OpenTable, and TodoMVC; they are task-level evidence, not one uninterrupted live handoff or a full ten-task aggregate.",
+    "The clean long-form Luna recordings are 141.0s and 130.9s browser captures of search/results flows; neither is a completed booking.",
+    "Luna also has a new 119.0s full-screen native TextEdit capture with approximately 75s of active work and a visible stopwatch overlay.",
+    "The old 180s United capture was excluded after frame inspection because the foreground switched away from the browser.",
+    "The exploratory public CUA lane is 9 repeated read-only Flights/OpenTable/Resy flows: Jev Browser 3/9, Jev Ultrafast 1/9, Luna 9/9; hybrid was not run on that exact lane.",
+    "The auxiliary Wikipedia and GitHub research rows were completed in one serialized Luna Chrome follow-up: Luna passed both, and the hybrid retained the already-passing Jev leg without invoking fallback.",
+    "Authenticated Agent-Native evidence is a separate denominator: Jev Ultrafast 1/8 exact tasks, Luna 5/5 safe composite checkpoints, and no matched authenticated hybrid run.",
+    "Controlled fixture text used a scripted helper; Ultrafast used a small text model for literal strings after Jev target selection; native Jev used task-supplied literal strings.",
+    "A fresh file-upload-capable Playwright control passed the upload fixture 3/3 at 320, 310, and 298 ms ($0 local cost); three model-directed normal-Chrome Luna reruns also passed the upload fixture, supporting an inferred connected-Chrome 42/42 alongside the original in-app-browser 39/42.",
+    "Captioned retained videos were rebuilt with labels and timers in a reserved bottom band outside the recorded app surface.",
+    "A new 4m59s Chrome-window recording covers a Mail draft, Calendar draft/cancel, Content editing, Design generation, and Slides editing; it is supplemental walkthrough evidence, not a new Jev, Luna, or Hybrid score.",
+    "Two short Jev authenticated-app clips end shortly after the final action with the stopping state in a reserved bottom band; both are marked Fail and do not change the score."
+  ]
+}

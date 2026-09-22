@@ -13,16 +13,18 @@ The ranking rule is success rate first, then estimated cost per successful task.
 
 | Approach | Overall | Simple browser | Real-world browser | Computer use |
 | --- | ---: | ---: | ---: | ---: |
-| Hybrid | 51/57 - 89.5% | 39/42 - 92.9% | 7/10 - 70%* | 5/5 - 100% |
-| Luna | 51/57 - 89.5% | 39/42 - 92.9% | 7/10 - 70% | 5/5 - 100% |
+| Luna | 54/57 - 94.7%* | 42/42 - 100%* | 7/10 - 70% | 5/5 - 100% |
+| Hybrid | 51/57 - 89.5% | 39/42 - 92.9% | 7/10 - 70%† | 5/5 - 100% |
 | Jev Ultrafast | 19/51 - 37.3% | 18/42 - 42.9% | 1/9 - 11.1%** | not measured |
 | Jev Browser | 18/52 - 34.6% | 18/42 - 42.9% | 0/10 - 0% | not measured |
 
-\* Hybrid's ten-task browser result is a staged recorded fallback comparison, not one uninterrupted live interleaved turn.
+\* Luna's connected-Chrome headline combines the original 39/42 in-app-browser result with three targeted normal-Chrome upload reruns; the original in-app-browser result remains the footnote.
+
+† Hybrid's ten-task browser result is a staged recorded fallback comparison, not one uninterrupted live interleaved turn.
 
 \*\* Jev Ultrafast's real-world number is a separate public nine-flow discovery lane.
 
-The complete interactive report is [`report.html`](report.html). It has light/dark mode, a pass-rate-versus-cost chart, lane filters, approach filters for recorded runs, and links to the locally retained clips when those clips are present.
+The complete interactive report is [`report.html`](report.html). It has light/dark mode, a pass-rate-versus-cost chart, lane filters, approach filters for recorded runs, and links to the locally retained clips when those clips are present. [`data/benchmark-final-manifest.json`](data/benchmark-final-manifest.json) is the generated machine-readable report snapshot.
 
 ## Cost and speed
 
@@ -65,7 +67,7 @@ Three model-controlled Luna turns in the normal Chrome bridge ran the upload fix
 
 Hybrid was not rerun through the model-controlled normal-Chrome upload path, so its headline remains 39/42 rather than being silently changed.
 
-The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The local report includes frame-reviewed 60-second Jev browser/app attempts, a window-scoped TextEdit success, and a Pages false-completion recording. The old Jev native screen captures were excluded after review because they showed the wrong window or were not paired with their traces.
+The native Jev lane used the local `arc-cua` runner with a macOS accessibility/OCR backend and a TypeSafe Jev policy. The Hybrid result is a policy plus verification and fallback, not a separate model. The local report includes short window-scoped Jev browser/app stop clips, a window-scoped TextEdit success, and a Pages false-completion recording. Long frozen tails were excluded after frame review; the long Luna walkthrough and staged Hybrid app walkthrough remain supplemental evidence rather than new scores.
 
 ## Repository contents
 
@@ -74,6 +76,7 @@ The native Jev lane used the local `arc-cua` runner with a macOS accessibility/O
 - [`RESULTS.md`](RESULTS.md) - concise methodology and result tables.
 - [`data/results.json`](data/results.json) - machine-readable headline results.
 - [`data/evidence.json`](data/evidence.json) - safe provenance, task lanes, cost model, and harness notes.
+- [`data/benchmark-final-manifest.json`](data/benchmark-final-manifest.json) - generated report data and retained-video inventory.
 - [`data/luna-upload-trace.json`](data/luna-upload-trace.json) - sanitized model-controlled normal-Chrome upload trace.
 - [`data/luna-upload-attempts.json`](data/luna-upload-attempts.json) - sanitized 3/3 normal-Chrome upload rerun summary.
 - [`videos/manifest.json`](videos/manifest.json) - bundled versus local-only recording inventory and audit exclusions.

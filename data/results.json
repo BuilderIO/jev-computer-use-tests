@@ -7,7 +7,7 @@
     "definition": "All measured tasks for each system, ranked by success rate then estimated cost per successful task.",
     "results": [
       {"system": "Hybrid", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 29.68, "total_cost_usd": 0.4573, "cost_per_success_usd": 0.0090},
-      {"system": "Luna", "successes": 51, "total": 57, "rate": 0.895, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128},
+      {"system": "Luna", "successes": 54, "total": 57, "rate": 0.947, "avg_seconds": 44.57, "total_cost_usd": 0.6521, "cost_per_success_usd": 0.0128, "note": "Connected-Chrome headline includes three targeted upload reruns; original in-app-browser score was 51/57."},
       {"system": "Jev Ultrafast", "successes": 19, "total": 51, "rate": 0.373, "avg_seconds": 1.07, "total_cost_usd": 0.0224, "cost_per_success_usd": 0.0012, "note": "Native desktop computer use was not measured."},
       {"system": "Jev Browser", "successes": 18, "total": 52, "rate": 0.346, "avg_seconds": 3.62, "total_cost_usd": 0.01125, "cost_per_success_usd": 0.000625, "note": "Simple browser 18/42 plus strict real-world browser 0/10; no native desktop run."}
     ]
@@ -17,7 +17,7 @@
       "total": 42,
       "results": [
         {"system": "Hybrid", "successes": 39, "rate": 0.929, "avg_seconds": 25.19, "cost_per_success_usd": 0.006922},
-        {"system": "Luna", "successes": 39, "rate": 0.929, "avg_seconds": 32.49, "cost_per_success_usd": 0.010741},
+        {"system": "Luna", "successes": 42, "rate": 1.0, "avg_seconds": 32.49, "cost_per_success_usd": 0.010741, "note": "Connected-Chrome headline includes three targeted upload reruns; original in-app-browser score was 39/42."},
         {"system": "Jev Browser", "successes": 18, "rate": 0.429, "avg_seconds": 1.77, "cost_per_success_usd": 0.000301},
         {"system": "Jev Ultrafast", "successes": 18, "rate": 0.429, "avg_seconds": 0.77, "cost_per_success_usd": 0.000453}
       ]
@@ -58,7 +58,7 @@
     "supported_upload_control": {"successes": 3, "total": 3, "rate": 1.0, "avg_seconds": 0.31, "cost_usd": 0, "not_a_model_score": true, "runs_ms": [320, 310, 298]},
     "luna_normal_chrome_targeted_upload": {"successes": 3, "total": 3, "rate": 1.0, "avg_seconds": null, "cost_usd": null, "model_controlled": true, "js_enabled": false, "runs_ms": [320, 310, 298], "trace": "data/luna-upload-trace.json"},
     "hybrid_normal_chrome_targeted_upload": {"status": "not_run", "model_controlled": false, "reason": "No matched model-directed normal-Chrome Hybrid rerun was retained; headline remains 39/42"},
-    "note": "JavaScript/page inspection was kept as a separate capability check. It was not folded into Luna's model-controlled headline score."
+    "note": "Connected-Chrome Luna headline uses the three model-controlled upload reruns. JavaScript/page inspection was not available in that bridge and was not folded into the score."
   },
   "recording_policy": {
     "public_repo": "Results and safe methodology only; private authenticated raw videos and traces are omitted.",
